@@ -1,13 +1,13 @@
 PODS:
-  - Nimble (7.0.3)
-  - Quick (1.2.0)
+  - Nimble (8.0.1)
+  - Quick (2.0.0)
   - TuringErrorImplementation (0.1.0):
     - TuringErrorInterface (~> 0.1.0)
   - TuringErrorInterface (0.1.0)
 
 DEPENDENCIES:
-  - Nimble (~> 7.0.2)
-  - Quick (~> 1.2.0)
+  - Nimble
+  - Quick
   - TuringErrorImplementation (from `../`)
   - TuringErrorInterface (from `../../Interface/`)
 
@@ -23,11 +23,11 @@ EXTERNAL SOURCES:
     :path: "../../Interface/"
 
 SPEC CHECKSUMS:
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
   TuringErrorImplementation: b156a0d8c3da8ab33b5f3e3a75ad65e928b40aa4
   TuringErrorInterface: 1b5b7bb16d4c09e1f29be114f1db9c44fc67e076
 
-PODFILE CHECKSUM: e2cb0b3dfb3dba8c38b87a3d73c3c4854ac2515e
+PODFILE CHECKSUM: 1f668c85b771dd04b9017e8db846c3b2137b48a0
 
 COCOAPODS: 1.5.3
