@@ -1,0 +1,27 @@
+{
+  "name": "TuringErrorImplementation",
+  "version": "0.1.0",
+  "summary": "A short description of TuringErrorImplementation.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/drybochkin/TuringErrorImplementation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "drybochkin": "dmitry.rybochkin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/drybochkin/TuringErrorImplementation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TuringErrorImplementation/Classes/**/*",
+  "dependencies": {
+    "TuringErrorInterface": [
+      "~> 0.1.0"
+    ]
+  }
+}

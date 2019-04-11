@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TuringErrorInterface_Example' do
+  pod 'TuringErrorInterface', :path => '../'
+
+  target 'TuringErrorInterface_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

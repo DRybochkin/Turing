@@ -1,0 +1,33 @@
+PODS:
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - TuringErrorImplementation (0.1.0):
+    - TuringErrorInterface (~> 0.1.0)
+  - TuringErrorInterface (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - TuringErrorImplementation (from `../`)
+  - TuringErrorInterface (from `../../TuringErrorInterface/`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  TuringErrorImplementation:
+    :path: "../"
+  TuringErrorInterface:
+    :path: "../../TuringErrorInterface/"
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  TuringErrorImplementation: 4a2ce08df45618c6133eb878b183f5ab4e3a39fa
+  TuringErrorInterface: e29e790548ffa6312236dd6f46005b5910729ae7
+
+PODFILE CHECKSUM: e21ba979bcd062e5c1cfc4c42cbcf5511b1ea7af
+
+COCOAPODS: 1.5.3
