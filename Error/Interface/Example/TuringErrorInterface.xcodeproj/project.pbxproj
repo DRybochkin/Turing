@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D7EC42A225F856C0058C258 /* TuringErrorInterface.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1D7EC429225F856C0058C258 /* TuringErrorInterface.podspec */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -16,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1DFA1253DCD004A5BD4EFEE1 /* TuringErrorInterface.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TuringErrorInterface.podspec; path = ../TuringErrorInterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1D7EC429225F856C0058C258 /* TuringErrorInterface.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringErrorInterface.podspec; path = ../../../TuringErrorInterface.podspec; sourceTree = "<group>"; };
 		4FC126B7167307CB54AC4433 /* Pods-TuringErrorInterface_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorInterface_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TuringErrorInterface_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringErrorInterface_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,7 +88,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				1DFA1253DCD004A5BD4EFEE1 /* TuringErrorInterface.podspec */,
+				1D7EC429225F856C0058C258 /* TuringErrorInterface.podspec */,
 				D8E30E66A08C8B834FE03C8E /* README.md */,
 				EB20C99C46DC98CBF67F7D41 /* LICENSE */,
 			);
@@ -173,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7EC42A225F856C0058C258 /* TuringErrorInterface.podspec in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
