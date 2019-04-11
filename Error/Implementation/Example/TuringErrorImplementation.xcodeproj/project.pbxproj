@@ -7,170 +7,170 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0732B703C337BD6DA7269240 /* Pods_TuringErrorImplementation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173720217A6FADC5AA475C54 /* Pods_TuringErrorImplementation_Tests.framework */; };
-		1D58B0AEEF205A0C8194B366 /* Pods_TuringErrorImplementation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4299F58485142523F37659 /* Pods_TuringErrorImplementation_Example.framework */; };
-		1D7EC3EE225F70980058C258 /* TestErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EC3ED225F70980058C258 /* TestErrorCode.swift */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		1CB509572BCDA6D683D60109BE137A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E6EFD15AD963A7E1973137478C7EF /* ViewController.swift */; };
+		351A9676F3172201FA852593136D82C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C6C1588767EF1A56A9E0BBBAAE76C /* AppDelegate.swift */; };
+		5AB7A3C614FBB96CC5F515D197D4406C /* Pods_TuringErrorImplementation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C75997A6D5089330901D9318C746C /* Pods_TuringErrorImplementation_Example.framework */; };
+		6ADA7776E2D8A76A803E030B2EEFECB4 /* TestErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCEA52FE28D8A612F38FD75D9AC9259 /* TestErrorCode.swift */; };
+		77487F039DEF5FA850C102533C17C999 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4AAA8A13E9F1CDA848EEE68909ABB61 /* LaunchScreen.xib */; };
+		D34CF20E52FCA090DDE58A1F738615EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6F80EC575A745897EC663017246E1A /* Images.xcassets */; };
+		E3DC2CCFF6488BB9780A8D3E8C6ED594 /* Pods_TuringErrorImplementation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6A1D1B2B37FB05830789C7FC8406B6 /* Pods_TuringErrorImplementation_Tests.framework */; };
+		E8056AE72E372B1E2673ADC0C356D914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4D1DF5C1B6D266E3E3C9E59FD5E2F1 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+		87321013D1591267FBF5B3D6919BF299 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			containerPortal = AD9F99783381865B6FC9154126AD0BD7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteGlobalIDString = F923050C89929BF93A0ECEA681BE1E93;
 			remoteInfo = TuringErrorImplementation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		173720217A6FADC5AA475C54 /* Pods_TuringErrorImplementation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorImplementation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		18B1D42BBFC29C85DA26137C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1D7EC3ED225F70980058C258 /* TestErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrorCode.swift; sourceTree = "<group>"; };
-		2EE94BEC514BBCA55D868846 /* TuringErrorImplementation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TuringErrorImplementation.podspec; path = ../TuringErrorImplementation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5189549D99CF511032C105B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* TuringErrorImplementation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringErrorImplementation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* TuringErrorImplementation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringErrorImplementation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74C3CA946600FB71979CFD5C /* Pods-TuringErrorImplementation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example.release.xcconfig"; sourceTree = "<group>"; };
-		858514C2804277C6F84AEFCC /* Pods-TuringErrorImplementation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Tests/Pods-TuringErrorImplementation_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		96A11846D65F01036D2E1552 /* Pods-TuringErrorImplementation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B0B7971F5AAD243CC5E39942 /* Pods-TuringErrorImplementation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Tests/Pods-TuringErrorImplementation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FC4299F58485142523F37659 /* Pods_TuringErrorImplementation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorImplementation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3C75997A6D5089330901D9318C746C /* Pods_TuringErrorImplementation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorImplementation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD73353E748770E2E3742A2BF1B8839 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1E952D42781E118EEB283AE185DB7829 /* TuringErrorImplementation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringErrorImplementation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2228DBD3B3EBFD246AFBD22729652BF2 /* Pods-TuringErrorImplementation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		230FBDBC30C1103364152BA624DFC0B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		485E6EFD15AD963A7E1973137478C7EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F796353441C583926CB0CC314005623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5F43A111B5B16BA9220BC139AF38EDCF /* Pods-TuringErrorImplementation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Tests/Pods-TuringErrorImplementation_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		684CA1CABCC27702A5DE6C90C53565B5 /* TuringErrorImplementation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TuringErrorImplementation.podspec; path = ../TuringErrorImplementation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6FCEA52FE28D8A612F38FD75D9AC9259 /* TestErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrorCode.swift; sourceTree = "<group>"; };
+		8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringErrorImplementation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringErrorImplementation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A471A38F7BA7AF4002DEB84A947B118B /* Pods-TuringErrorImplementation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Tests/Pods-TuringErrorImplementation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE6A1D1B2B37FB05830789C7FC8406B6 /* Pods_TuringErrorImplementation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorImplementation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6F80EC575A745897EC663017246E1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C33F127B5E17810A4675DA5F1BE211BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8A4B9E244A510D6E027471AD25A61AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CE58BE673D210E1815B7BA55E5E7E6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52C6C1588767EF1A56A9E0BBBAAE76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6A0BE219BD35DAEF8B22D0438825DDD /* Pods-TuringErrorImplementation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+		A0F1A144C66D84B6F2C920E4AD1D5D88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D58B0AEEF205A0C8194B366 /* Pods_TuringErrorImplementation_Example.framework in Frameworks */,
+				5AB7A3C614FBB96CC5F515D197D4406C /* Pods_TuringErrorImplementation_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		3BDDB4DFE394FCDB0EE3FCB5B20ED493 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0732B703C337BD6DA7269240 /* Pods_TuringErrorImplementation_Tests.framework in Frameworks */,
+				E3DC2CCFF6488BB9780A8D3E8C6ED594 /* Pods_TuringErrorImplementation_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		167D534A1045A012DC36DADC /* Frameworks */ = {
+		BFC7F3BBEE2DC728B37DFB923FA9AC41 = {
 			isa = PBXGroup;
 			children = (
-				FC4299F58485142523F37659 /* Pods_TuringErrorImplementation_Example.framework */,
-				173720217A6FADC5AA475C54 /* Pods_TuringErrorImplementation_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		607FACC71AFB9204008FA782 = {
-			isa = PBXGroup;
-			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for TuringErrorImplementation */,
-				607FACE81AFB9204008FA782 /* Tests */,
-				607FACD11AFB9204008FA782 /* Products */,
-				7E4830F0CAF0A97B0FB273CE /* Pods */,
-				167D534A1045A012DC36DADC /* Frameworks */,
+				E15F2F38FCA297E4A164589E70773483 /* Example for TuringErrorImplementation */,
+				8FC8445205D9BFD3A3886466B87F5193 /* Frameworks */,
+				C32321E7D0481D8BDB013369B0437E7F /* Pods */,
+				5BD1ED775D8F3979D4B0A5CAE2EEF207 /* Podspec Metadata */,
+				ABE13021023B012AF0A42739586F3E3A /* Products */,
+				BFAE25A216D77A52AF06F6A662203C21 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
-		607FACD11AFB9204008FA782 /* Products */ = {
+		ABE13021023B012AF0A42739586F3E3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* TuringErrorImplementation_Example.app */,
-				607FACE51AFB9204008FA782 /* TuringErrorImplementation_Tests.xctest */,
+				1E952D42781E118EEB283AE185DB7829 /* TuringErrorImplementation_Example.app */,
+				8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringErrorImplementation_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for TuringErrorImplementation */ = {
+		E15F2F38FCA297E4A164589E70773483 /* Example for TuringErrorImplementation */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				771BB782176FC0C8705D9BE2E261379E /* Supporting Files */,
+				F52C6C1588767EF1A56A9E0BBBAAE76C /* AppDelegate.swift */,
+				BC6F80EC575A745897EC663017246E1A /* Images.xcassets */,
+				D4AAA8A13E9F1CDA848EEE68909ABB61 /* LaunchScreen.xib */,
+				8A4D1DF5C1B6D266E3E3C9E59FD5E2F1 /* Main.storyboard */,
+				485E6EFD15AD963A7E1973137478C7EF /* ViewController.swift */,
 			);
 			name = "Example for TuringErrorImplementation";
 			path = TuringErrorImplementation;
 			sourceTree = "<group>";
 		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+		771BB782176FC0C8705D9BE2E261379E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
+				C33F127B5E17810A4675DA5F1BE211BB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
+		BFAE25A216D77A52AF06F6A662203C21 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-				1D7EC3ED225F70980058C258 /* TestErrorCode.swift */,
+				874C6F40A4BD50C37562AAF5189BBCA7 /* Supporting Files */,
+				6FCEA52FE28D8A612F38FD75D9AC9259 /* TestErrorCode.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+		874C6F40A4BD50C37562AAF5189BBCA7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
+				CE58BE673D210E1815B7BA55E5E7E6C6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+		5BD1ED775D8F3979D4B0A5CAE2EEF207 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				2EE94BEC514BBCA55D868846 /* TuringErrorImplementation.podspec */,
-				5189549D99CF511032C105B0 /* README.md */,
-				18B1D42BBFC29C85DA26137C /* LICENSE */,
+				0AD73353E748770E2E3742A2BF1B8839 /* LICENSE */,
+				C8A4B9E244A510D6E027471AD25A61AA /* README.md */,
+				684CA1CABCC27702A5DE6C90C53565B5 /* TuringErrorImplementation.podspec */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		7E4830F0CAF0A97B0FB273CE /* Pods */ = {
+		C32321E7D0481D8BDB013369B0437E7F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				96A11846D65F01036D2E1552 /* Pods-TuringErrorImplementation_Example.debug.xcconfig */,
-				74C3CA946600FB71979CFD5C /* Pods-TuringErrorImplementation_Example.release.xcconfig */,
-				B0B7971F5AAD243CC5E39942 /* Pods-TuringErrorImplementation_Tests.debug.xcconfig */,
-				858514C2804277C6F84AEFCC /* Pods-TuringErrorImplementation_Tests.release.xcconfig */,
+				2228DBD3B3EBFD246AFBD22729652BF2 /* Pods-TuringErrorImplementation_Example.debug.xcconfig */,
+				F6A0BE219BD35DAEF8B22D0438825DDD /* Pods-TuringErrorImplementation_Example.release.xcconfig */,
+				A471A38F7BA7AF4002DEB84A947B118B /* Pods-TuringErrorImplementation_Tests.debug.xcconfig */,
+				5F43A111B5B16BA9220BC139AF38EDCF /* Pods-TuringErrorImplementation_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8FC8445205D9BFD3A3886466B87F5193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C75997A6D5089330901D9318C746C /* Pods_TuringErrorImplementation_Example.framework */,
+				AE6A1D1B2B37FB05830789C7FC8406B6 /* Pods_TuringErrorImplementation_Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* TuringErrorImplementation_Example */ = {
+		F923050C89929BF93A0ECEA681BE1E93 /* TuringErrorImplementation_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Example" */;
+			buildConfigurationList = 2C94A36C4999AE2A4DB8746D61B39911 /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Example" */;
 			buildPhases = (
-				90D35ADEB1BE2098A8467EA6 /* [CP] Check Pods Manifest.lock */,
-				607FACCC1AFB9204008FA782 /* Sources */,
-				607FACCD1AFB9204008FA782 /* Frameworks */,
-				607FACCE1AFB9204008FA782 /* Resources */,
-				4FF1470E9AA8718C326AFC65 /* [CP] Embed Pods Frameworks */,
+				224CD139E08DEC76D51363A874F4EBF6 /* [CP] Check Pods Manifest.lock */,
+				42A7BECC8620B12BC8E1205C7B5C1EA2 /* Sources */,
+				A0F1A144C66D84B6F2C920E4AD1D5D88 /* Frameworks */,
+				4D3940852BE02EEF42491DB4EDEA545C /* Resources */,
+				3E8F5E072BF761D935C5F33AFE6C8C35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,53 +178,53 @@
 			);
 			name = TuringErrorImplementation_Example;
 			productName = TuringErrorImplementation;
-			productReference = 607FACD01AFB9204008FA782 /* TuringErrorImplementation_Example.app */;
+			productReference = 1E952D42781E118EEB283AE185DB7829 /* TuringErrorImplementation_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* TuringErrorImplementation_Tests */ = {
+		402AE7D3D92D65CF0EFB407B6E208BF5 /* TuringErrorImplementation_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Tests" */;
+			buildConfigurationList = 1D0C7E0A8AF44C9B8F06BD553945AB2C /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Tests" */;
 			buildPhases = (
-				CBF2A79BA78951742555998F /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				A6CCF3608286B915C462AABC /* [CP] Embed Pods Frameworks */,
+				160A69E7206F12B0C2DE621F3867A631 /* [CP] Check Pods Manifest.lock */,
+				901F430755CA3858653BEE8693057B38 /* Sources */,
+				3BDDB4DFE394FCDB0EE3FCB5B20ED493 /* Frameworks */,
+				FDBAC4C87D247A3410D7F27090211185 /* Resources */,
+				3093D3ACB024C1212E5961A4210EA611 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+				E80C28A2D04FA03B35D1B834BCEE7382 /* PBXTargetDependency */,
 			);
 			name = TuringErrorImplementation_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* TuringErrorImplementation_Tests.xctest */;
+			productReference = 8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringErrorImplementation_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		607FACC81AFB9204008FA782 /* Project object */ = {
+		AD9F99783381865B6FC9154126AD0BD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
+					F923050C89929BF93A0ECEA681BE1E93 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 7S572U2C68;
 						LastSwiftMigration = 0900;
 					};
-					607FACE41AFB9204008FA782 = {
+					402AE7D3D92D65CF0EFB407B6E208BF5 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 7S572U2C68;
 						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+						TestTargetID = F923050C89929BF93A0ECEA681BE1E93;
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TuringErrorImplementation" */;
+			buildConfigurationList = D754A67F604B893378DBCE383C87AB9C /* Build configuration list for PBXProject "TuringErrorImplementation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,29 +232,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 607FACC71AFB9204008FA782;
-			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			mainGroup = BFC7F3BBEE2DC728B37DFB923FA9AC41;
+			productRefGroup = ABE13021023B012AF0A42739586F3E3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* TuringErrorImplementation_Example */,
-				607FACE41AFB9204008FA782 /* TuringErrorImplementation_Tests */,
+				F923050C89929BF93A0ECEA681BE1E93 /* TuringErrorImplementation_Example */,
+				402AE7D3D92D65CF0EFB407B6E208BF5 /* TuringErrorImplementation_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACCE1AFB9204008FA782 /* Resources */ = {
+		4D3940852BE02EEF42491DB4EDEA545C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				D34CF20E52FCA090DDE58A1F738615EB /* Images.xcassets in Resources */,
+				77487F039DEF5FA850C102533C17C999 /* LaunchScreen.xib in Resources */,
+				E8056AE72E372B1E2673ADC0C356D914 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
+		FDBAC4C87D247A3410D7F27090211185 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,53 +264,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4FF1470E9AA8718C326AFC65 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TuringErrorImplementation/TuringErrorImplementation.framework",
-				"${BUILT_PRODUCTS_DIR}/TuringErrorInterface/TuringErrorInterface.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorImplementation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorInterface.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90D35ADEB1BE2098A8467EA6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TuringErrorImplementation_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6CCF3608286B915C462AABC /* [CP] Embed Pods Frameworks */ = {
+		3093D3ACB024C1212E5961A4210EA611 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -334,7 +288,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorImplementation_Tests/Pods-TuringErrorImplementation_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CBF2A79BA78951742555998F /* [CP] Check Pods Manifest.lock */ = {
+		160A69E7206F12B0C2DE621F3867A631 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,49 +310,95 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		224CD139E08DEC76D51363A874F4EBF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuringErrorImplementation_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E8F5E072BF761D935C5F33AFE6C8C35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TuringErrorImplementation/TuringErrorImplementation.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringErrorInterface/TuringErrorInterface.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorImplementation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorInterface.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACCC1AFB9204008FA782 /* Sources */ = {
+		42A7BECC8620B12BC8E1205C7B5C1EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				351A9676F3172201FA852593136D82C0 /* AppDelegate.swift in Sources */,
+				1CB509572BCDA6D683D60109BE137A17 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		901F430755CA3858653BEE8693057B38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D7EC3EE225F70980058C258 /* TestErrorCode.swift in Sources */,
+				6ADA7776E2D8A76A803E030B2EEFECB4 /* TestErrorCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+		E80C28A2D04FA03B35D1B834BCEE7382 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* TuringErrorImplementation_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+			target = F923050C89929BF93A0ECEA681BE1E93 /* TuringErrorImplementation_Example */;
+			targetProxy = 87321013D1591267FBF5B3D6919BF299 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		8A4D1DF5C1B6D266E3E3C9E59FD5E2F1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
+				230FBDBC30C1103364152BA624DFC0B6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+		D4AAA8A13E9F1CDA848EEE68909ABB61 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				4F796353441C583926CB0CC314005623 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		607FACED1AFB9204008FA782 /* Debug */ = {
+		EB067D8E8F0CF4BF993BA1FA5146A474 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -463,7 +463,7 @@
 			};
 			name = Debug;
 		};
-		607FACEE1AFB9204008FA782 /* Release */ = {
+		895B7CD72E0177A29EF935EF616C433F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -513,9 +513,9 @@
 			};
 			name = Release;
 		};
-		607FACF01AFB9204008FA782 /* Debug */ = {
+		87F102804F640A0770DB901DCAB136A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96A11846D65F01036D2E1552 /* Pods-TuringErrorImplementation_Example.debug.xcconfig */;
+			baseConfigurationReference = 2228DBD3B3EBFD246AFBD22729652BF2 /* Pods-TuringErrorImplementation_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S572U2C68;
@@ -529,9 +529,9 @@
 			};
 			name = Debug;
 		};
-		607FACF11AFB9204008FA782 /* Release */ = {
+		FD67A2FF0C18C6574367C9A78148E04E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74C3CA946600FB71979CFD5C /* Pods-TuringErrorImplementation_Example.release.xcconfig */;
+			baseConfigurationReference = F6A0BE219BD35DAEF8B22D0438825DDD /* Pods-TuringErrorImplementation_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S572U2C68;
@@ -545,9 +545,9 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
+		1F976DD7A21C06AA431E76C2834E1C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0B7971F5AAD243CC5E39942 /* Pods-TuringErrorImplementation_Tests.debug.xcconfig */;
+			baseConfigurationReference = A471A38F7BA7AF4002DEB84A947B118B /* Pods-TuringErrorImplementation_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7S572U2C68;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -568,9 +568,9 @@
 			};
 			name = Debug;
 		};
-		607FACF41AFB9204008FA782 /* Release */ = {
+		988A1BE4B032D349198CA32DE41FB5E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 858514C2804277C6F84AEFCC /* Pods-TuringErrorImplementation_Tests.release.xcconfig */;
+			baseConfigurationReference = 5F43A111B5B16BA9220BC139AF38EDCF /* Pods-TuringErrorImplementation_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7S572U2C68;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -590,34 +590,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TuringErrorImplementation" */ = {
+		D754A67F604B893378DBCE383C87AB9C /* Build configuration list for PBXProject "TuringErrorImplementation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACED1AFB9204008FA782 /* Debug */,
-				607FACEE1AFB9204008FA782 /* Release */,
+				EB067D8E8F0CF4BF993BA1FA5146A474 /* Debug */,
+				895B7CD72E0177A29EF935EF616C433F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Example" */ = {
+		2C94A36C4999AE2A4DB8746D61B39911 /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF01AFB9204008FA782 /* Debug */,
-				607FACF11AFB9204008FA782 /* Release */,
+				87F102804F640A0770DB901DCAB136A1 /* Debug */,
+				FD67A2FF0C18C6574367C9A78148E04E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Tests" */ = {
+		1D0C7E0A8AF44C9B8F06BD553945AB2C /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
+				1F976DD7A21C06AA431E76C2834E1C2A /* Debug */,
+				988A1BE4B032D349198CA32DE41FB5E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+	rootObject = AD9F99783381865B6FC9154126AD0BD7 /* Project object */;
 }
