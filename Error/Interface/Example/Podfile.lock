@@ -2,15 +2,15 @@ PODS:
   - TuringErrorInterface (0.1.0)
 
 DEPENDENCIES:
-  - TuringErrorInterface (from `../`)
+  - TuringErrorInterface (from `../../../`)
 
 EXTERNAL SOURCES:
   TuringErrorInterface:
-    :path: "../"
+    :path: "../../../"
 
 SPEC CHECKSUMS:
-  TuringErrorInterface: 4d1f3ac2dacada19dd6b26d1a1201fb9bd97e60e
+  TuringErrorInterface: 0a7761317340dd67a15262eb20accbdd1931a49b
 
-PODFILE CHECKSUM: 2c60b0ffceb94c9c2df240f039bf6f1b6fd00114
+PODFILE CHECKSUM: 6cf286244118bdcb4e9dfe0414696212ed60abc5
 
 COCOAPODS: 1.5.3

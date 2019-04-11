@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D7EC429225F856C0058C258 /* TuringErrorInterface.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringErrorInterface.podspec; path = ../../../TuringErrorInterface.podspec; sourceTree = "<group>"; };
+		1D7EC429225F856C0058C258 /* TuringErrorInterface.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringErrorInterface.podspec; path = ../../../TuringErrorInterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4FC126B7167307CB54AC4433 /* Pods-TuringErrorInterface_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorInterface_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TuringErrorInterface_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringErrorInterface_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
