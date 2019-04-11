@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of TuringErrorInterface.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/drybochkin/Turing/Error/Interface",
+  "homepage": "https://github.com/DRybochkin/Turing/tree/master/Error/Interface",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
