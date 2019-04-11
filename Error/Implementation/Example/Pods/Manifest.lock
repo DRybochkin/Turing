@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  TuringErrorImplementation: 3ffb1f3f5d520f33d3a8eaf7d0131bf81d6f5ac2
+  TuringErrorImplementation: b156a0d8c3da8ab33b5f3e3a75ad65e928b40aa4
   TuringErrorInterface: 76ab27dd5415ff090e944e5bf1b1ed69ea08f27b
 
 PODFILE CHECKSUM: 8280e276e8f2f4a52d8b7509387c6603142dfffd

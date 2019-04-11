@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-  s.homepage         = 'https://github.com/drybochkin/Turing/Error/Interface'
+  s.homepage         = 'https://github.com/DRybochkin/Turing/tree/master/Error/Interface'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
