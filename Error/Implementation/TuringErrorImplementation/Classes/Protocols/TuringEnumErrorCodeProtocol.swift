@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TuringErrorInterface
 
 public protocol TuringEnumErrorCodeProtocol: TuringErrorCodeProtocol {
 

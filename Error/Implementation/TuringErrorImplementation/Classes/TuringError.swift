@@ -9,20 +9,32 @@
 import Foundation
 import TuringErrorInterface
 
-struct TuringError<ErrorCode: TuringEnumErrorCodeProtocol>: TuringErrorProtocol {
+public struct TuringError<ErrorCode: TuringEnumErrorCodeProtocol>: TuringErrorProtocol {
 
     // MARK: - Properties
 
-    let domainCode: String = "SE"
-    let code: TuringErrorCodeProtocol
-    var underlying: TuringErrorProtocol?
-    let userInfo: Info?
+    public let domainCode: String = "SE"
+    public let code: TuringErrorCodeProtocol
+    public let underlying: TuringErrorProtocol?
+    public let userInfo: Info?
 
     // MARK: - Constructors
 
-    init(code: ErrorCode, underlying: TuringErrorProtocol? = nil, userInfo: Info? = nil) {
+    public init(code: ErrorCode, underlying: TuringErrorProtocol? = nil, userInfo: Info? = nil) {
         self.code = code
         self.underlying = underlying
         self.userInfo = userInfo
+    }
+
+    public init(code: ErrorCode, underlying: NSError, userInfo: Info? = nil) {
+        self.init(code: code,
+                  underlying: NSErrorWrapper(error: underlying),
+                  userInfo: userInfo)
+    }
+
+    public init(code: ErrorCode, underlying: Error, userInfo: Info? = nil) {
+        self.init(code: code,
+                  underlying: NSErrorWrapper(error: underlying as NSError),
+                  userInfo: userInfo)
     }
 }

@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import TuringErrorInterface
 
 public extension TuringErrorProtocol {
 
-    // MARK: - Abstract properties
+    // MARK: - Properties
 
     var domain: String {
         switch code {
@@ -40,22 +41,6 @@ public extension TuringErrorProtocol {
                 return "\($0.domain)\($0.code.description)"
             }
         }).joined(separator: "-")
-    }
-}
-
-public extension TuringErrorCodeProtocol {
-
-    var path: String {
-        return "\(rawValue)"
-    }
-
-    var description: String {
-        let selfType = "\(self)"
-        guard let shortSelfType = selfType.split(separator: "(").first else {
-            return selfType
-        }
-
-        return String(shortSelfType)
     }
 }
 

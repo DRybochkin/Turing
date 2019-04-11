@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		0732B703C337BD6DA7269240 /* Pods_TuringErrorImplementation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173720217A6FADC5AA475C54 /* Pods_TuringErrorImplementation_Tests.framework */; };
 		1D58B0AEEF205A0C8194B366 /* Pods_TuringErrorImplementation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4299F58485142523F37659 /* Pods_TuringErrorImplementation_Example.framework */; };
+		1D7EC3EE225F70980058C258 /* TestErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EC3ED225F70980058C258 /* TestErrorCode.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		173720217A6FADC5AA475C54 /* Pods_TuringErrorImplementation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorImplementation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B1D42BBFC29C85DA26137C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1D7EC3ED225F70980058C258 /* TestErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrorCode.swift; sourceTree = "<group>"; };
 		2EE94BEC514BBCA55D868846 /* TuringErrorImplementation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TuringErrorImplementation.podspec; path = ../TuringErrorImplementation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5189549D99CF511032C105B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TuringErrorImplementation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringErrorImplementation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +42,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TuringErrorImplementation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringErrorImplementation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		74C3CA946600FB71979CFD5C /* Pods-TuringErrorImplementation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		858514C2804277C6F84AEFCC /* Pods-TuringErrorImplementation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Tests/Pods-TuringErrorImplementation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		96A11846D65F01036D2E1552 /* Pods-TuringErrorImplementation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				1D7EC3ED225F70980058C258 /* TestErrorCode.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -226,10 +226,9 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TuringErrorImplementation" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -373,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				1D7EC3EE225F70980058C258 /* TestErrorCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
