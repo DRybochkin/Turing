@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CB509572BCDA6D683D60109BE137A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E6EFD15AD963A7E1973137478C7EF /* ViewController.swift */; };
-		1D7EC428225F85330058C258 /* TuringErrorImplementation.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1D7EC427225F85330058C258 /* TuringErrorImplementation.podspec */; };
+		1D7EC428225F85330058C258 /* TuringError.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1D7EC427225F85330058C258 /* TuringError.podspec */; };
 		351A9676F3172201FA852593136D82C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C6C1588767EF1A56A9E0BBBAAE76C /* AppDelegate.swift */; };
 		5AB7A3C614FBB96CC5F515D197D4406C /* Pods_TuringErrorImplementation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C75997A6D5089330901D9318C746C /* Pods_TuringErrorImplementation_Example.framework */; };
 		6ADA7776E2D8A76A803E030B2EEFECB4 /* TestErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCEA52FE28D8A612F38FD75D9AC9259 /* TestErrorCode.swift */; };
@@ -31,15 +31,15 @@
 /* Begin PBXFileReference section */
 		0A3C75997A6D5089330901D9318C746C /* Pods_TuringErrorImplementation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorImplementation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD73353E748770E2E3742A2BF1B8839 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1D7EC427225F85330058C258 /* TuringErrorImplementation.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringErrorImplementation.podspec; path = ../../../TuringErrorImplementation.podspec; sourceTree = "<group>"; };
-		1E952D42781E118EEB283AE185DB7829 /* TuringErrorImplementation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringErrorImplementation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7EC427225F85330058C258 /* TuringError.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringError.podspec; path = ../../../TuringError.podspec; sourceTree = "<group>"; };
+		1E952D42781E118EEB283AE185DB7829 /* TuringError_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringError_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2228DBD3B3EBFD246AFBD22729652BF2 /* Pods-TuringErrorImplementation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Example/Pods-TuringErrorImplementation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		230FBDBC30C1103364152BA624DFC0B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		485E6EFD15AD963A7E1973137478C7EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F796353441C583926CB0CC314005623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5F43A111B5B16BA9220BC139AF38EDCF /* Pods-TuringErrorImplementation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Tests/Pods-TuringErrorImplementation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6FCEA52FE28D8A612F38FD75D9AC9259 /* TestErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrorCode.swift; sourceTree = "<group>"; };
-		8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringErrorImplementation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringErrorImplementation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringError_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringError_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471A38F7BA7AF4002DEB84A947B118B /* Pods-TuringErrorImplementation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorImplementation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorImplementation_Tests/Pods-TuringErrorImplementation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE6A1D1B2B37FB05830789C7FC8406B6 /* Pods_TuringErrorImplementation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorImplementation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6F80EC575A745897EC663017246E1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		5BD1ED775D8F3979D4B0A5CAE2EEF207 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				1D7EC427225F85330058C258 /* TuringErrorImplementation.podspec */,
+				1D7EC427225F85330058C258 /* TuringError.podspec */,
 				0AD73353E748770E2E3742A2BF1B8839 /* LICENSE */,
 				C8A4B9E244A510D6E027471AD25A61AA /* README.md */,
 			);
@@ -108,8 +108,8 @@
 		ABE13021023B012AF0A42739586F3E3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E952D42781E118EEB283AE185DB7829 /* TuringErrorImplementation_Example.app */,
-				8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringErrorImplementation_Tests.xctest */,
+				1E952D42781E118EEB283AE185DB7829 /* TuringError_Example.app */,
+				8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringError_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 		BFC7F3BBEE2DC728B37DFB923FA9AC41 = {
 			isa = PBXGroup;
 			children = (
-				E15F2F38FCA297E4A164589E70773483 /* Example for TuringErrorImplementation */,
+				E15F2F38FCA297E4A164589E70773483 /* Example for TuringError */,
 				8FC8445205D9BFD3A3886466B87F5193 /* Frameworks */,
 				C32321E7D0481D8BDB013369B0437E7F /* Pods */,
 				5BD1ED775D8F3979D4B0A5CAE2EEF207 /* Podspec Metadata */,
@@ -146,7 +146,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E15F2F38FCA297E4A164589E70773483 /* Example for TuringErrorImplementation */ = {
+		E15F2F38FCA297E4A164589E70773483 /* Example for TuringError */ = {
 			isa = PBXGroup;
 			children = (
 				771BB782176FC0C8705D9BE2E261379E /* Supporting Files */,
@@ -156,16 +156,16 @@
 				8A4D1DF5C1B6D266E3E3C9E59FD5E2F1 /* Main.storyboard */,
 				485E6EFD15AD963A7E1973137478C7EF /* ViewController.swift */,
 			);
-			name = "Example for TuringErrorImplementation";
+			name = "Example for TuringError";
 			path = TuringErrorImplementation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		402AE7D3D92D65CF0EFB407B6E208BF5 /* TuringErrorImplementation_Tests */ = {
+		402AE7D3D92D65CF0EFB407B6E208BF5 /* TuringError_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D0C7E0A8AF44C9B8F06BD553945AB2C /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Tests" */;
+			buildConfigurationList = 1D0C7E0A8AF44C9B8F06BD553945AB2C /* Build configuration list for PBXNativeTarget "TuringError_Tests" */;
 			buildPhases = (
 				160A69E7206F12B0C2DE621F3867A631 /* [CP] Check Pods Manifest.lock */,
 				901F430755CA3858653BEE8693057B38 /* Sources */,
@@ -178,14 +178,14 @@
 			dependencies = (
 				E80C28A2D04FA03B35D1B834BCEE7382 /* PBXTargetDependency */,
 			);
-			name = TuringErrorImplementation_Tests;
+			name = TuringError_Tests;
 			productName = Tests;
-			productReference = 8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringErrorImplementation_Tests.xctest */;
+			productReference = 8812C1EFCEDFCFA18501E1D48CE2E8F0 /* TuringError_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F923050C89929BF93A0ECEA681BE1E93 /* TuringErrorImplementation_Example */ = {
+		F923050C89929BF93A0ECEA681BE1E93 /* TuringError_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C94A36C4999AE2A4DB8746D61B39911 /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Example" */;
+			buildConfigurationList = 2C94A36C4999AE2A4DB8746D61B39911 /* Build configuration list for PBXNativeTarget "TuringError_Example" */;
 			buildPhases = (
 				224CD139E08DEC76D51363A874F4EBF6 /* [CP] Check Pods Manifest.lock */,
 				42A7BECC8620B12BC8E1205C7B5C1EA2 /* Sources */,
@@ -197,9 +197,9 @@
 			);
 			dependencies = (
 			);
-			name = TuringErrorImplementation_Example;
+			name = TuringError_Example;
 			productName = TuringErrorImplementation;
-			productReference = 1E952D42781E118EEB283AE185DB7829 /* TuringErrorImplementation_Example.app */;
+			productReference = 1E952D42781E118EEB283AE185DB7829 /* TuringError_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D754A67F604B893378DBCE383C87AB9C /* Build configuration list for PBXProject "TuringErrorImplementation" */;
+			buildConfigurationList = D754A67F604B893378DBCE383C87AB9C /* Build configuration list for PBXProject "TuringError" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,8 +238,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F923050C89929BF93A0ECEA681BE1E93 /* TuringErrorImplementation_Example */,
-				402AE7D3D92D65CF0EFB407B6E208BF5 /* TuringErrorImplementation_Tests */,
+				F923050C89929BF93A0ECEA681BE1E93 /* TuringError_Example */,
+				402AE7D3D92D65CF0EFB407B6E208BF5 /* TuringError_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 			files = (
 				D34CF20E52FCA090DDE58A1F738615EB /* Images.xcassets in Resources */,
 				77487F039DEF5FA850C102533C17C999 /* LaunchScreen.xib in Resources */,
-				1D7EC428225F85330058C258 /* TuringErrorImplementation.podspec in Resources */,
+				1D7EC428225F85330058C258 /* TuringError.podspec in Resources */,
 				E8056AE72E372B1E2673ADC0C356D914 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +383,7 @@
 /* Begin PBXTargetDependency section */
 		E80C28A2D04FA03B35D1B834BCEE7382 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F923050C89929BF93A0ECEA681BE1E93 /* TuringErrorImplementation_Example */;
+			target = F923050C89929BF93A0ECEA681BE1E93 /* TuringError_Example */;
 			targetProxy = 87321013D1591267FBF5B3D6919BF299 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -427,7 +427,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringErrorImplementation_Example.app/TuringErrorImplementation_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringError_Example.app/TuringError_Example";
 			};
 			name = Debug;
 		};
@@ -512,7 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringErrorImplementation_Example.app/TuringErrorImplementation_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringError_Example.app/TuringError_Example";
 			};
 			name = Release;
 		};
@@ -592,7 +592,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D0C7E0A8AF44C9B8F06BD553945AB2C /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Tests" */ = {
+		1D0C7E0A8AF44C9B8F06BD553945AB2C /* Build configuration list for PBXNativeTarget "TuringError_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F976DD7A21C06AA431E76C2834E1C2A /* Debug */,
@@ -601,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C94A36C4999AE2A4DB8746D61B39911 /* Build configuration list for PBXNativeTarget "TuringErrorImplementation_Example" */ = {
+		2C94A36C4999AE2A4DB8746D61B39911 /* Build configuration list for PBXNativeTarget "TuringError_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87F102804F640A0770DB901DCAB136A1 /* Debug */,
@@ -610,7 +610,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D754A67F604B893378DBCE383C87AB9C /* Build configuration list for PBXProject "TuringErrorImplementation" */ = {
+		D754A67F604B893378DBCE383C87AB9C /* Build configuration list for PBXProject "TuringError" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB067D8E8F0CF4BF993BA1FA5146A474 /* Debug */,

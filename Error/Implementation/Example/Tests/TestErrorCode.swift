@@ -1,13 +1,13 @@
 //
 //  TestError.swift
-//  TuringErrorImplementation_Tests
+//  TuringError_Tests
 //
 //  Created by Dmitry Rybochkin on 11/04/2019.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
 import Foundation
-import TuringErrorImplementation
+import TuringError
 
 enum TestErrorCode: Int, TuringEnumErrorCodeProtocol {
 

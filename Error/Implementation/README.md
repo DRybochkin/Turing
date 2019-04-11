@@ -1,9 +1,9 @@
-# TuringErrorImplementation
+# TuringError
 
-[![CI Status](https://img.shields.io/travis/drybochkin/TuringErrorImplementation.svg?style=flat)](https://travis-ci.org/drybochkin/TuringErrorImplementation)
-[![Version](https://img.shields.io/cocoapods/v/TuringErrorImplementation.svg?style=flat)](https://cocoapods.org/pods/TuringErrorImplementation)
-[![License](https://img.shields.io/cocoapods/l/TuringErrorImplementation.svg?style=flat)](https://cocoapods.org/pods/TuringErrorImplementation)
-[![Platform](https://img.shields.io/cocoapods/p/TuringErrorImplementation.svg?style=flat)](https://cocoapods.org/pods/TuringErrorImplementation)
+[![CI Status](https://img.shields.io/travis/drybochkin/TuringError.svg?style=flat)](https://travis-ci.org/drybochkin/TuringError)
+[![Version](https://img.shields.io/cocoapods/v/TuringError.svg?style=flat)](https://cocoapods.org/pods/TuringError)
+[![License](https://img.shields.io/cocoapods/l/TuringError.svg?style=flat)](https://cocoapods.org/pods/TuringError)
+[![Platform](https://img.shields.io/cocoapods/p/TuringError.svg?style=flat)](https://cocoapods.org/pods/TuringError)
 
 ## Example
 
@@ -13,11 +13,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-TuringErrorImplementation is available through [CocoaPods](https://cocoapods.org). To install
+TuringError is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'TuringErrorImplementation'
+pod 'TuringError'
 ```
 
 ## Author
@@ -26,4 +26,4 @@ drybochkin, dmitry.rybochkin@gmail.com
 
 ## License
 
-TuringErrorImplementation is available under the MIT license. See the LICENSE file for more info.
+TuringError is available under the MIT license. See the LICENSE file for more info.

@@ -1,12 +1,12 @@
 //
 //  ViewController.swift
-//  TuringErrorImplementation
+//  TuringError
 //
 //  Created by drybochkin on 04/11/2019.
 //  Copyright (c) 2019 drybochkin. All rights reserved.
 //
 
-import TuringErrorImplementation
+import TuringError
 import UIKit
 
 final class ViewController: UIViewController {

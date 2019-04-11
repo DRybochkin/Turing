@@ -1,6 +1,6 @@
 //
 //  NSErrorCodeWrapper.swift
-//  TuringErrorImplementation
+//  TuringError
 //
 //  Created by Dmitry Rybochkin on 11/04/2019.
 //

@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'TuringErrorImplementation_Example' do
-  pod 'TuringErrorImplementation', :git => 'git@github.com:DRybochkin/Turing.git' :branch => 'develop'
+target 'TuringError_Example' do
+  pod 'TuringError', :git => 'git@github.com:DRybochkin/Turing.git', :branch => 'develop'
 
-  target 'TuringErrorImplementation_Tests' do
+  target 'TuringError_Tests' do
     inherit! :search_paths
 
     pod 'Quick'
