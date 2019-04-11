@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TuringErrorInterface: 1bbad2bb34dad71ea44f6ccd5007614074489fa9
+  TuringErrorInterface: 1b5b7bb16d4c09e1f29be114f1db9c44fc67e076
 
-PODFILE CHECKSUM: fa09d7664bc33e105ba9fabd7cac20744c1a3536
+PODFILE CHECKSUM: 2c60b0ffceb94c9c2df240f039bf6f1b6fd00114
 
 COCOAPODS: 1.5.3
