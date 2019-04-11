@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/drybochkin/Turing/Error/TuringErrorImplementation'
+  s.homepage         = 'https://github.com/drybochkin/Turing/Error/Implementation'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
-  s.source           = { :git => 'https://github.com/drybochkin/TuringErrorImplementation.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'TuringErrorImplementation_Example' do
   pod 'TuringErrorImplementation', :path => '../'
-  pod 'TuringErrorInterface', :path => '../../TuringErrorInterface/'
+  pod 'TuringErrorInterface', :path => '../../Interface/'
 
   target 'TuringErrorImplementation_Tests' do
     inherit! :search_paths

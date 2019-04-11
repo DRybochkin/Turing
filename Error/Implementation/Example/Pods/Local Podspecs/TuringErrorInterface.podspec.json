@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of TuringErrorInterface.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/drybochkin/TuringErrorInterface",
+  "homepage": "https://github.com/drybochkin/Turing/Error/Interface",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "drybochkin": "dmitry.rybochkin@gmail.com"
   },
   "source": {
-    "git": "https://github.com/drybochkin/TuringErrorInterface.git",
+    "git": "https://github.com/drybochkin/Turing.git",
     "tag": "0.1.0"
   },
   "platforms": {
