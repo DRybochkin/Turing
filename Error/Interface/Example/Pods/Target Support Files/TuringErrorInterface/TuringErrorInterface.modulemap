@@ -1,6 +1,0 @@
-framework module TuringErrorInterface {
-  umbrella header "TuringErrorInterface-umbrella.h"
-
-  export *
-  module * { export * }
-}
