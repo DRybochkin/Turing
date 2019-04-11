@@ -24,12 +24,12 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
-  s.source           = { :http => 'https://github.com/DRybochkin/Turing/tree/master/Error/Interface', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TuringErrorInterface/Classes/**/*'
+  s.source_files = 'Error/Interface/TuringErrorInterface/Classes/**/*'
   
   # s.resource_bundles = {
   #   'TuringErrorInterface' => ['TuringErrorInterface/Assets/*.png']

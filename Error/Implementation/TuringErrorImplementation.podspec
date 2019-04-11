@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/DRybochkin/Turing/tree/master/Error/Implementation'
+  s.homepage         = 'https://github.com/DRybochkin/Turing/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TuringErrorImplementation/Classes/**/*'
+  s.source_files = 'Error/Implementation/TuringErrorImplementation/Classes/**/*'
   
   # s.resource_bundles = {
   #   'TuringErrorImplementation' => ['TuringErrorImplementation/Assets/*.png']
