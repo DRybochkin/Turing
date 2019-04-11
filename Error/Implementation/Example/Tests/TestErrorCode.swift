@@ -1,6 +1,6 @@
 //
 //  TestError.swift
-//  TuringError_Tests
+//  TuringErrorImplementation_Tests
 //
 //  Created by Dmitry Rybochkin on 11/04/2019.
 //  Copyright © 2019 CocoaPods. All rights reserved.

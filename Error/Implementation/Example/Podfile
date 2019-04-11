@@ -1,7 +1,9 @@
+platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringError_Example' do
-  pod 'TuringError', :git => 'git@github.com:DRybochkin/Turing.git', :branch => 'develop'
+  pod 'TuringErrorInterface', :path => '../../../'
+  pod 'TuringError', :path => '../../../'
 
   target 'TuringError_Tests' do
     inherit! :search_paths

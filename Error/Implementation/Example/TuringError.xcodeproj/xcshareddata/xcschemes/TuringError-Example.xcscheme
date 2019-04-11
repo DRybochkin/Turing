@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F923050C89929BF93A0ECEA681BE1E93"
+               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
                BuildableName = "TuringError_Example.app"
                BlueprintName = "TuringError_Example"
                ReferencedContainer = "container:TuringError.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "402AE7D3D92D65CF0EFB407B6E208BF5"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "TuringError_Tests.xctest"
                BlueprintName = "TuringError_Tests"
                ReferencedContainer = "container:TuringError.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "402AE7D3D92D65CF0EFB407B6E208BF5"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "TuringError_Tests.xctest"
                BlueprintName = "TuringError_Tests"
                ReferencedContainer = "container:TuringError.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F923050C89929BF93A0ECEA681BE1E93"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "TuringError_Example.app"
             BlueprintName = "TuringError_Example"
             ReferencedContainer = "container:TuringError.xcodeproj">
@@ -79,7 +79,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F923050C89929BF93A0ECEA681BE1E93"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "TuringError_Example.app"
             BlueprintName = "TuringError_Example"
             ReferencedContainer = "container:TuringError.xcodeproj">
@@ -98,7 +98,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F923050C89929BF93A0ECEA681BE1E93"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "TuringError_Example.app"
             BlueprintName = "TuringError_Example"
             ReferencedContainer = "container:TuringError.xcodeproj">

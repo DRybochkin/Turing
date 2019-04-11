@@ -1,6 +1,6 @@
 use_frameworks!
 
 target 'TuringErrorInterface_Example' do
-  pod 'TuringErrorInterface', :path => '../'
+  pod 'TuringErrorInterface', :path => '../../../'
 
 end
