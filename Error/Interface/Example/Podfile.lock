@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TuringErrorInterface: 1b5b7bb16d4c09e1f29be114f1db9c44fc67e076
+  TuringErrorInterface: 4d1f3ac2dacada19dd6b26d1a1201fb9bd97e60e
 
 PODFILE CHECKSUM: 2c60b0ffceb94c9c2df240f039bf6f1b6fd00114
 

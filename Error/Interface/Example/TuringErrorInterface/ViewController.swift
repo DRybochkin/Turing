@@ -13,46 +13,19 @@ final class ViewController: UIViewController {
 
     // MARK: - Properties
 
-    var error: TuringErrorProtocol = ViewControllerError(underlying: nil,
-                                                         code: ErrorCode.error2,
-                                                         userInfo: ["data": "data1"])
-    var errorEnum: TuringEnumErrorCodeProtocol = ErrorCode.error0
-    var errorCode: TuringErrorCodeProtocol = ErrorCode.error1
-
     // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        error = ViewControllerEnumError.error3(error, ["data2": "data3"])
+        let error = ViewControllerEnumError.error3(ViewControllerEnumError.error0, ["data2": "data3"])
+        print(error.path)
     }
 }
 
 private extension ViewController {
 
     // MARK: - Errors
-
-    enum ErrorCode: Int, TuringEnumErrorCodeProtocol {
-        case error0
-        case error1
-        case error2
-        case error3
-
-        var path: String {
-            return "\(domainCode).\(rawValue)"
-        }
-
-        var description: String {
-            return "\(domain)\(self)"
-        }
-
-        var domain: String {
-            return "ViewController"
-        }
-        var domainCode: String {
-            return "VC"
-        }
-    }
 
     struct ViewControllerError: TuringErrorProtocol {
         let underlying: TuringErrorProtocol?

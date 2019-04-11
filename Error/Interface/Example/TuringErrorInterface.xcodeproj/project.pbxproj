@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41C7151516AE20A76085E2C8 /* Pods_TuringErrorInterface_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447FB3530BFFD86620E7201B /* Pods_TuringErrorInterface_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		C0F93AE2592831BAFB55EA18 /* Pods_TuringErrorInterface_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EB965404DD2313BC7DA7F4 /* Pods_TuringErrorInterface_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DFA1253DCD004A5BD4EFEE1 /* TuringErrorInterface.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TuringErrorInterface.podspec; path = ../TuringErrorInterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		447FB3530BFFD86620E7201B /* Pods_TuringErrorInterface_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorInterface_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FC126B7167307CB54AC4433 /* Pods-TuringErrorInterface_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorInterface_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TuringErrorInterface_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringErrorInterface_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -25,9 +25,9 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7193EE8A90286EB1246B88E4 /* Pods-TuringErrorInterface_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorInterface_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		95BC8C59E4038E2C3E79CC1E /* Pods-TuringErrorInterface_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorInterface_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C9B5ADD2980EA7F8F0CAF375 /* Pods-TuringErrorInterface_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringErrorInterface_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D8E30E66A08C8B834FE03C8E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E3EB965404DD2313BC7DA7F4 /* Pods_TuringErrorInterface_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringErrorInterface_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB20C99C46DC98CBF67F7D41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41C7151516AE20A76085E2C8 /* Pods_TuringErrorInterface_Example.framework in Frameworks */,
+				C0F93AE2592831BAFB55EA18 /* Pods_TuringErrorInterface_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,8 +49,8 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for TuringErrorInterface */,
 				607FACD11AFB9204008FA782 /* Products */,
-				DA3F5720C9346EFD73FD88D3 /* Pods */,
-				FF70F77EFD01A11737A528C7 /* Frameworks */,
+				95AD55B1090D89BEC983BB93 /* Pods */,
+				F9F2F91D20143FDC345D29CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,19 +94,19 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		DA3F5720C9346EFD73FD88D3 /* Pods */ = {
+		95AD55B1090D89BEC983BB93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7193EE8A90286EB1246B88E4 /* Pods-TuringErrorInterface_Example.debug.xcconfig */,
-				95BC8C59E4038E2C3E79CC1E /* Pods-TuringErrorInterface_Example.release.xcconfig */,
+				4FC126B7167307CB54AC4433 /* Pods-TuringErrorInterface_Example.debug.xcconfig */,
+				C9B5ADD2980EA7F8F0CAF375 /* Pods-TuringErrorInterface_Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FF70F77EFD01A11737A528C7 /* Frameworks */ = {
+		F9F2F91D20143FDC345D29CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				447FB3530BFFD86620E7201B /* Pods_TuringErrorInterface_Example.framework */,
+				E3EB965404DD2313BC7DA7F4 /* Pods_TuringErrorInterface_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,11 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringErrorInterface_Example" */;
 			buildPhases = (
-				31877AA3EBBCF954B9481F93 /* [CP] Check Pods Manifest.lock */,
+				BE16089168715D02A5B8A6B0 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				9C994E2B85BD3FACBA07A02D /* [CP] Embed Pods Frameworks */,
+				9753FEFB916E359A33911956 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,29 +182,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31877AA3EBBCF954B9481F93 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TuringErrorInterface_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C994E2B85BD3FACBA07A02D /* [CP] Embed Pods Frameworks */ = {
+		9753FEFB916E359A33911956 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,6 +202,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE16089168715D02A5B8A6B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuringErrorInterface_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -369,7 +369,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7193EE8A90286EB1246B88E4 /* Pods-TuringErrorInterface_Example.debug.xcconfig */;
+			baseConfigurationReference = 4FC126B7167307CB54AC4433 /* Pods-TuringErrorInterface_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S572U2C68;
@@ -385,7 +385,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95BC8C59E4038E2C3E79CC1E /* Pods-TuringErrorInterface_Example.release.xcconfig */;
+			baseConfigurationReference = C9B5ADD2980EA7F8F0CAF375 /* Pods-TuringErrorInterface_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S572U2C68;
