@@ -1,0 +1,33 @@
+PODS:
+  - Nimble (8.0.1)
+  - Quick (2.0.0)
+  - TuringDI (0.1.0):
+    - TuringDIInterface (= 0.1.0)
+  - TuringDIInterface (0.1.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - TuringDI (from `../../../`)
+  - TuringDIInterface (from `../../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  TuringDI:
+    :path: "../../../"
+  TuringDIInterface:
+    :path: "../../../"
+
+SPEC CHECKSUMS:
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  TuringDI: 057dd4993a6cb2233b8082749ac350a8a95b7791
+  TuringDIInterface: 4e26c0a534e951ccd74a623c0d393bf3c36c240d
+
+PODFILE CHECKSUM: fa7e8789b61ecd8591d6790e6726397082de6e76
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,16 @@
+PODS:
+  - TuringDIInterface (0.1.0)
+
+DEPENDENCIES:
+  - TuringDIInterface (from `../../../`)
+
+EXTERNAL SOURCES:
+  TuringDIInterface:
+    :path: "../../../"
+
+SPEC CHECKSUMS:
+  TuringDIInterface: f9ee6b05c79407c71263f368e4c035951bdaed95
+
+PODFILE CHECKSUM: 22b1633017ee1ec8312ccf8240d2d69c1564201f
+
+COCOAPODS: 1.5.3
