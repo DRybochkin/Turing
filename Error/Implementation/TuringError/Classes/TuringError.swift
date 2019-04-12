@@ -31,10 +31,4 @@ public struct TuringError<ErrorCode: TuringEnumErrorCodeProtocol>: TuringErrorPr
                   underlying: NSErrorWrapper(error: underlying),
                   userInfo: userInfo)
     }
-
-    public init(code: ErrorCode, underlying: Error, userInfo: Info? = nil) {
-        self.init(code: code,
-                  underlying: NSErrorWrapper(error: underlying as NSError),
-                  userInfo: userInfo)
-    }
 }

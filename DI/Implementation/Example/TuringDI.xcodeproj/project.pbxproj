@@ -344,6 +344,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TuringDI/TuringDI.framework",
 				"${BUILT_PRODUCTS_DIR}/TuringDIInterface/TuringDIInterface.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringError/TuringError.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringErrorInterface/TuringErrorInterface.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -351,6 +353,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringDI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringDIInterface.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringError.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorInterface.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -2,15 +2,17 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringDI_Example' do
+    pod 'TuringErrorInterface', :path => '../../../'
+    pod 'TuringError', :path => '../../../'
     pod 'TuringDIInterface', :path => '../../../'
-  pod 'TuringDI', :path => '../../../'
+    pod 'TuringDI', :path => '../../../'
 
-  target 'TuringDI_Tests' do
-    inherit! :search_paths
+    target 'TuringDI_Tests' do
+        inherit! :search_paths
 
-    pod 'Quick'
-    pod 'Nimble'
-  end
+        pod 'Quick'
+        pod 'Nimble'
+    end
 end
 
 post_install do |installer|

@@ -1,0 +1,19 @@
+//
+//  TuringDIResolveProtocol.swift
+//  TuringDIInterface
+//
+//  Created by Dmitry Rybochkin on 12/04/2019.
+//
+
+import Foundation
+
+public protocol TuringDIResolveProtocol {
+
+    // MARK: - Functions
+
+    func resolve<T, P1, P2, P3>(_ protocolType: T.Type, parameter1: P1, parameter2: P2, parameter3: P3) -> T!
+    func resolve<T, P1, P2>(_ protocolType: T.Type, parameter1: P1, parameter2: P2) -> T!
+    func resolve<T, P>(_ protocolType: T.Type, parameter: P) -> T!
+    func resolve<T>(_ protocolType: T.Type) -> T!
+    func resolve<T>() -> T!
+}
