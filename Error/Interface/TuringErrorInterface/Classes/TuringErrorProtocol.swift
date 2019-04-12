@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol TuringErrorProtocol {
+public protocol TuringErrorProtocol: Error {
 
     // MARK: - Types
 
