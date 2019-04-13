@@ -2,8 +2,6 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringDI_Example' do
-    pod 'TuringErrorInterface', :path => '../../../'
-    pod 'TuringError', :path => '../../../'
     pod 'TuringDIInterface', :path => '../../../'
     pod 'TuringDI', :path => '../../../'
 

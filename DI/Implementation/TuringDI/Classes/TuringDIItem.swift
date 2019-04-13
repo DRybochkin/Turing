@@ -16,16 +16,16 @@ extension TuringDI {
 
         let protocolType: Any.Type
         let factory: Factory
-        let scope: TuringDIScopeProtocol
+        let completion: Any?
         var assembly: Any?
 
         // MARK: - Constructors
 
-        init(protocolType: Any.Type, factory: Factory, scope: TuringDIScopeProtocol, assembly: Any? = nil) {
+        init(protocolType: Any.Type, factory: Factory, completion: Any?) {
             self.protocolType = protocolType
             self.factory = factory
-            self.scope = scope
-            self.assembly = assembly
+            self.assembly = nil
+            self.completion = completion
         }
     }
 }

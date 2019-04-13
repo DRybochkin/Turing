@@ -12,7 +12,7 @@ extension TuringDISupportable {
 
     // MARK: - DISupportable Properties
 
-    var diContainer: TuringDIProtocol {
+    public var diContainer: TuringDIProtocol {
         return TuringDI.default
     }
 }

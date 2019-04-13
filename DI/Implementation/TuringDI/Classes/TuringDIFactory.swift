@@ -14,9 +14,10 @@ extension TuringDI {
         // MARK: - Cases
 
         case empty(Any)
-        case parameters(Any)
-        case container(Any)
-        case containerAndParameters(Any)
+        case zero(Any)
+        case one(Any)
+        case two(Any)
+        case three(Any)
     }
 }
 

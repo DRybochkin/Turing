@@ -8,23 +8,21 @@
 
 import Foundation
 import TuringDIInterface
-import TuringError
-import TuringErrorInterface
 
 public class TuringDI: TuringDIProtocol {
 
-    // MARK: - Types
-
-    public enum Scope: TuringDIScopeProtocol {
-        case new
-        case optional
-        case singleton
-    }
-
     // MARK: - Properties
 
+    // TODO: - добавить потокобезопасный словарь
     var items: [String: TuringDI.Item] = [:]
+    var depth: Int = 0
+    public var maxRecursiveDepth: Int = 10
     public static var `default`: TuringDIProtocol = TuringDI()
+
+    // MARK: - Constructos
+
+    public init() {
+    }
 
     // MARK: - Functions
 

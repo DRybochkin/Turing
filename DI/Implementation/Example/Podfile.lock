@@ -3,20 +3,13 @@ PODS:
   - Quick (2.0.0)
   - TuringDI (0.1.0):
     - TuringDIInterface (= 0.1.0)
-    - TuringError (= 0.1.0)
-    - TuringErrorInterface (= 0.1.0)
   - TuringDIInterface (0.1.0)
-  - TuringError (0.1.0):
-    - TuringErrorInterface (= 0.1.0)
-  - TuringErrorInterface (0.1.0)
 
 DEPENDENCIES:
   - Nimble
   - Quick
   - TuringDI (from `../../../`)
   - TuringDIInterface (from `../../../`)
-  - TuringError (from `../../../`)
-  - TuringErrorInterface (from `../../../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -28,19 +21,13 @@ EXTERNAL SOURCES:
     :path: "../../../"
   TuringDIInterface:
     :path: "../../../"
-  TuringError:
-    :path: "../../../"
-  TuringErrorInterface:
-    :path: "../../../"
 
 SPEC CHECKSUMS:
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
-  TuringDI: 5fa99276f6f06018944620ec4a61496b5b7a7b60
+  TuringDI: 057dd4993a6cb2233b8082749ac350a8a95b7791
   TuringDIInterface: 4e26c0a534e951ccd74a623c0d393bf3c36c240d
-  TuringError: f033bf6a7d28f39ad4b5bba9b46a17643bfc7a0f
-  TuringErrorInterface: 0a7761317340dd67a15262eb20accbdd1931a49b
 
-PODFILE CHECKSUM: 2ec8dcd0fa2ca0e95bb617be78d24c47f0a75605
+PODFILE CHECKSUM: 531ffb36767a64a8667c8bfab7337613fa5fdf6c
 
 COCOAPODS: 1.5.3

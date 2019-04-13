@@ -12,68 +12,85 @@ extension TuringDI: TuringDIRegisterProtocol {
 
     // MARK: - Functions
 
-    public func register<T, P1, P2, P3>(_ protocolType: T.Type, factory: @escaping FabricWithContainerAndThreeParameters<T, P1, P2, P3>, scope: TuringDIScopeProtocol) {
-        register(protocolType, parametersTypes: [P1.self, P2.self, P3.self], factory: .containerAndParameters(factory), scope: scope)
+    public func register<T>(_ protocolType: T.Type,
+                            factory: @escaping Fabric<T>) {
+        register(protocolType,
+                 factory: .empty(factory),
+                 completion: nil)
     }
 
-    public func register<T, P1, P2, P3>(_ protocolType: T.Type, factory: @escaping FabricWithContainerAndThreeParameters<T, P1, P2, P3>) {
-        register(protocolType, parametersTypes: [P1.self, P2.self, P3.self], factory: .containerAndParameters(factory), scope: Scope.new)
+    public func register<T>(_ protocolType: T.Type,
+                            factory: @escaping FabricZero<T>) {
+        register(protocolType,
+                 factory: .zero(factory),
+                 completion: nil)
     }
 
-    public func register<T, P1, P2>(_ protocolType: T.Type, factory: @escaping FabricWithContainerAndTwoParameters<T, P1, P2>, scope: TuringDIScopeProtocol) {
-        register(protocolType, parametersTypes: [P1.self, P2.self], factory: .containerAndParameters(factory), scope: scope)
+    public func register<T, P1>(_ protocolType: T.Type,
+                                factory: @escaping FabricOneParameter<T, P1>) {
+        register(protocolType,
+                 parametersTypes: [P1.self],
+                 factory: .one(factory),
+                 completion: nil)
     }
 
-    public func register<T, P1, P2>(_ protocolType: T.Type, factory: @escaping FabricWithContainerAndTwoParameters<T, P1, P2>) {
-        register(protocolType, parametersTypes: [P1.self, P2.self], factory: .containerAndParameters(factory), scope: Scope.new)
+    public func register<T, P1, P2>(_ protocolType: T.Type,
+                                    factory: @escaping FabricTwoParameters<T, P1, P2>) {
+        register(protocolType,
+                 parametersTypes: [P1.self, P2.self],
+                 factory: .two(factory),
+                 completion: nil)
     }
 
-    public func register<T, P>(_ protocolType: T.Type, factory: @escaping FabricWithContainerAndParameters<T, P>, scope: TuringDIScopeProtocol) {
-        register(protocolType, parametersTypes: [P.self], factory: .containerAndParameters(factory), scope: scope)
+    public func register<T, P1, P2, P3>(_ protocolType: T.Type,
+                                        factory: @escaping FabricThreeParameters<T, P1, P2, P3>) {
+        register(protocolType,
+                 parametersTypes: [P1.self, P2.self, P3.self],
+                 factory: .three(factory),
+                 completion: nil)
     }
 
-    public func register<T, P>(_ protocolType: T.Type, factory: @escaping FabricWithContainerAndParameters<T, P>) {
-        register(protocolType, parametersTypes: [P.self], factory: .containerAndParameters(factory), scope: Scope.new)
+    public func register<T>(_ protocolType: T.Type,
+                            factory: @escaping Fabric<T>,
+                            completion: @escaping FabricCompletion<T>) {
+        register(protocolType,
+                 factory: .empty(factory),
+                 completion: completion)
     }
 
-    public func register<T>(_ protocolType: T.Type, factory: @escaping FabricWithContainer<T>, scope: TuringDIScopeProtocol) {
-        register(protocolType, factory: .container(factory), scope: scope)
+    public func register<T>(_ protocolType: T.Type,
+                            factory: @escaping FabricZero<T>,
+                            completion: @escaping FabricCompletion<T>) {
+        register(protocolType,
+                 factory: .zero(factory),
+                 completion: completion)
     }
 
-    public func register<T>(_ protocolType: T.Type, factory: @escaping FabricWithContainer<T>) {
-        register(protocolType, factory: .container(factory), scope: Scope.new)
+    public func register<T, P1>(_ protocolType: T.Type,
+                                factory: @escaping FabricOneParameter<T, P1>,
+                                completion: @escaping FabricCompletion<T>) {
+        register(protocolType,
+                 parametersTypes: [P1.self],
+                 factory: .one(factory),
+                 completion: completion)
     }
 
-    public func register<T, P1, P2, P3>(_ protocolType: T.Type, factory: @escaping FabricWithThreeParameters<T, P1, P2, P3>, scope: TuringDIScopeProtocol) {
-        register(protocolType, parametersTypes: [P1.self, P2.self, P3.self], factory: .parameters(factory), scope: scope)
+    public func register<T, P1, P2>(_ protocolType: T.Type,
+                                    factory: @escaping FabricTwoParameters<T, P1, P2>,
+                                    completion: @escaping FabricCompletion<T>) {
+        register(protocolType,
+                 parametersTypes: [P1.self, P2.self],
+                 factory: .two(factory),
+                 completion: completion)
     }
 
-    public func registerNew<T, P1, P2, P3>(_ protocolType: T.Type, factory: @escaping FabricWithThreeParameters<T, P1, P2, P3>) {
-        register(protocolType, parametersTypes: [P1.self, P2.self, P3.self], factory: .parameters(factory), scope: Scope.new)
-    }
-
-    public func register<T, P1, P2>(_ protocolType: T.Type, factory: @escaping FabricWithTwoParameters<T, P1, P2>, scope: TuringDIScopeProtocol) {
-        register(protocolType, parametersTypes: [P1.self, P2.self], factory: .parameters(factory), scope: scope)
-    }
-
-    public func registerNew<T, P1, P2>(_ protocolType: T.Type, factory: @escaping FabricWithTwoParameters<T, P1, P2>) {
-        register(protocolType, parametersTypes: [P1.self, P2.self], factory: .parameters(factory), scope: Scope.new)
-    }
-
-    public func register<T, P>(_ protocolType: T.Type, factory: @escaping FabricWithParameters<T, P>, scope: TuringDIScopeProtocol) {
-        register(protocolType, parametersTypes: [P.self], factory: .parameters(factory), scope: scope)
-    }
-
-    public func registerNew<T, P>(_ protocolType: T.Type, factory: @escaping FabricWithParameters<T, P>) {
-        register(protocolType, parametersTypes: [P.self], factory: .parameters(factory), scope: Scope.new)
-    }
-
-    public func register<T>(_ protocolType: T.Type, factory: @escaping Fabric<T>, scope: TuringDIScopeProtocol) {
-        register(protocolType, factory: .empty(factory), scope: scope)
-    }
-
-    public func registerNew<T>(_ protocolType: T.Type, factory: @escaping Fabric<T>) {
-        register(protocolType, factory: .empty(factory), scope: Scope.new)
+    public func register<T, P1, P2, P3>(_ protocolType: T.Type,
+                                        factory: @escaping FabricThreeParameters<T, P1, P2, P3>,
+                                        completion: @escaping FabricCompletion<T>) {
+        register(protocolType,
+                 parametersTypes: [P1.self, P2.self, P3.self],
+                 factory: .three(factory),
+                 completion: completion)
     }
 
     public func unregister(_ protocolType: Any.Type) {
@@ -90,15 +107,24 @@ private extension TuringDI {
 
     // MARK: - Private functions
 
-    private func register<T>(_ protocolType: T.Type, parametersTypes: [Any.Type], factory: Factory, scope: TuringDIScopeProtocol) {
+    private func register<T>(_ protocolType: T.Type,
+                             parametersTypes: [Any.Type],
+                             factory: Factory,
+                             completion: FabricCompletion<T>?) {
         var parameters: [Any.Type] = [protocolType]
         parameters.append(contentsOf: parametersTypes)
         let key = hashKey(types: parameters)
-        items[key] = Item(protocolType: protocolType, factory: factory, scope: scope)
+        items[key] = Item(protocolType: protocolType,
+                          factory: factory,
+                          completion: completion)
     }
 
-    private func register<T>(_ protocolType: T.Type, factory: Factory, scope: TuringDIScopeProtocol) {
+    private func register<T>(_ protocolType: T.Type,
+                             factory: Factory,
+                             completion: FabricCompletion<T>?) {
         let key = hashKey(types: [protocolType])
-        items[key] = Item(protocolType: protocolType, factory: factory, scope: scope)
+        items[key] = Item(protocolType: protocolType,
+                          factory: factory,
+                          completion: completion)
     }
 }
