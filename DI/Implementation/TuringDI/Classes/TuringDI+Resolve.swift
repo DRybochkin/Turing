@@ -114,24 +114,18 @@ private extension TuringDI {
     // MARK: - Private functions
 
     private func incrementDepth() {
-        // TODO: - добавить потокобезопасность
-        depth += 1
+        depth.value = depth.value + 1
     }
 
     private func decrementDepth() {
-        // TODO: - добавить потокобезопасность
-        depth -= 1
+        depth.value = depth.value - 1
     }
 
     private func canContinue() -> Bool {
-        // TODO: - добавить потокобезопасность
-        return depth < maxRecursiveDepth
+        return depth.value < maxRecursiveDepth
     }
 
     private func resolve<T>(item: Item, scope: Scope) -> T? {
-        // TODO: - в рамках одного резолва с учетом суб резолвов и комплишенов нужно хранить созданные объекты и обращаться к ним
-        let key = hashKey(types: [item.protocolType])
-
         if case .singleton = scope, let assembly = item.assembly as? T {
             return assembly
         }
@@ -152,7 +146,7 @@ private extension TuringDI {
         }
 
         if case .singleton = scope {
-            items[key]?.assembly = assembly
+            item.assembly = assembly
         }
         if let completion = item.completion as? FabricCompletion<T> {
             completion(self, assembly)
@@ -162,8 +156,6 @@ private extension TuringDI {
     }
 
     private func resolve<T, P>(item: Item, parameter: P, scope: Scope) -> T? {
-        let key = hashKey(types: [item.protocolType, P.self])
-
         if case .singleton = scope, let assembly = item.assembly as? T {
             return assembly
         }
@@ -177,7 +169,7 @@ private extension TuringDI {
         }
 
         if case .singleton = scope {
-            items[key]?.assembly = assembly
+            item.assembly = assembly
         }
         if let completion = item.completion as? FabricCompletion<T> {
             completion(self, assembly)
@@ -187,8 +179,6 @@ private extension TuringDI {
     }
 
     private func resolve<T, P1, P2>(item: Item, parameter1: P1, parameter2: P2, scope: Scope) -> T? {
-        let key = hashKey(types: [item.protocolType, P1.self, P2.self])
-
         if case .singleton = scope, let assembly = item.assembly as? T {
             return assembly
         }
@@ -202,7 +192,7 @@ private extension TuringDI {
         }
 
         if case .singleton = scope {
-            items[key]?.assembly = assembly
+            item.assembly = assembly
         }
         if let completion = item.completion as? FabricCompletion<T> {
             completion(self, assembly)
@@ -212,8 +202,6 @@ private extension TuringDI {
     }
 
     private func resolve<T, P1, P2, P3>(item: Item, parameter1: P1, parameter2: P2, parameter3: P3, scope: Scope) -> T? {
-        let key = hashKey(types: [item.protocolType, P1.self, P2.self, P3.self])
-
         if case .singleton = scope, let assembly = item.assembly as? T {
             return assembly
         }
@@ -227,7 +215,7 @@ private extension TuringDI {
         }
 
         if case .singleton = scope {
-            items[key]?.assembly = assembly
+           item.assembly = assembly
         }
         if let completion = item.completion as? FabricCompletion<T> {
             completion(self, assembly)

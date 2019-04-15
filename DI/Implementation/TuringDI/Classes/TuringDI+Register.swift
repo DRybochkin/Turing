@@ -12,81 +12,66 @@ extension TuringDI: TuringDIRegisterProtocol {
 
     // MARK: - Functions
 
-    public func register<T>(_ protocolType: T.Type,
-                            factory: @escaping Fabric<T>) {
+    public func register<T>(_ protocolType: T.Type, factory: @escaping Fabric<T>) {
         register(protocolType,
                  factory: .empty(factory),
                  completion: nil)
     }
 
-    public func register<T>(_ protocolType: T.Type,
-                            factory: @escaping FabricZero<T>) {
+    public func register<T>(_ protocolType: T.Type, factory: @escaping FabricZero<T>) {
         register(protocolType,
                  factory: .zero(factory),
                  completion: nil)
     }
 
-    public func register<T, P1>(_ protocolType: T.Type,
-                                factory: @escaping FabricOneParameter<T, P1>) {
+    public func register<T, P1>(_ protocolType: T.Type, factory: @escaping FabricOneParameter<T, P1>) {
         register(protocolType,
                  parametersTypes: [P1.self],
                  factory: .one(factory),
                  completion: nil)
     }
 
-    public func register<T, P1, P2>(_ protocolType: T.Type,
-                                    factory: @escaping FabricTwoParameters<T, P1, P2>) {
+    public func register<T, P1, P2>(_ protocolType: T.Type, factory: @escaping FabricTwoParameters<T, P1, P2>) {
         register(protocolType,
                  parametersTypes: [P1.self, P2.self],
                  factory: .two(factory),
                  completion: nil)
     }
 
-    public func register<T, P1, P2, P3>(_ protocolType: T.Type,
-                                        factory: @escaping FabricThreeParameters<T, P1, P2, P3>) {
+    public func register<T, P1, P2, P3>(_ protocolType: T.Type, factory: @escaping FabricThreeParameters<T, P1, P2, P3>) {
         register(protocolType,
                  parametersTypes: [P1.self, P2.self, P3.self],
                  factory: .three(factory),
                  completion: nil)
     }
 
-    public func register<T>(_ protocolType: T.Type,
-                            factory: @escaping Fabric<T>,
-                            completion: @escaping FabricCompletion<T>) {
+    public func register<T>(_ protocolType: T.Type, factory: @escaping Fabric<T>, completion: @escaping FabricCompletion<T>) {
         register(protocolType,
                  factory: .empty(factory),
                  completion: completion)
     }
 
-    public func register<T>(_ protocolType: T.Type,
-                            factory: @escaping FabricZero<T>,
-                            completion: @escaping FabricCompletion<T>) {
+    public func register<T>(_ protocolType: T.Type, factory: @escaping FabricZero<T>, completion: @escaping FabricCompletion<T>) {
         register(protocolType,
                  factory: .zero(factory),
                  completion: completion)
     }
 
-    public func register<T, P1>(_ protocolType: T.Type,
-                                factory: @escaping FabricOneParameter<T, P1>,
-                                completion: @escaping FabricCompletion<T>) {
+    public func register<T, P1>(_ protocolType: T.Type, factory: @escaping FabricOneParameter<T, P1>, completion: @escaping FabricCompletion<T>) {
         register(protocolType,
                  parametersTypes: [P1.self],
                  factory: .one(factory),
                  completion: completion)
     }
 
-    public func register<T, P1, P2>(_ protocolType: T.Type,
-                                    factory: @escaping FabricTwoParameters<T, P1, P2>,
-                                    completion: @escaping FabricCompletion<T>) {
+    public func register<T, P1, P2>(_ protocolType: T.Type, factory: @escaping FabricTwoParameters<T, P1, P2>, completion: @escaping FabricCompletion<T>) {
         register(protocolType,
                  parametersTypes: [P1.self, P2.self],
                  factory: .two(factory),
                  completion: completion)
     }
 
-    public func register<T, P1, P2, P3>(_ protocolType: T.Type,
-                                        factory: @escaping FabricThreeParameters<T, P1, P2, P3>,
-                                        completion: @escaping FabricCompletion<T>) {
+    public func register<T, P1, P2, P3>(_ protocolType: T.Type, factory: @escaping FabricThreeParameters<T, P1, P2, P3>, completion: @escaping FabricCompletion<T>) {
         register(protocolType,
                  parametersTypes: [P1.self, P2.self, P3.self],
                  factory: .three(factory),
@@ -107,10 +92,7 @@ private extension TuringDI {
 
     // MARK: - Private functions
 
-    private func register<T>(_ protocolType: T.Type,
-                             parametersTypes: [Any.Type],
-                             factory: Factory,
-                             completion: FabricCompletion<T>?) {
+    private func register<T>(_ protocolType: T.Type, parametersTypes: [Any.Type], factory: Factory, completion: FabricCompletion<T>?) {
         var parameters: [Any.Type] = [protocolType]
         parameters.append(contentsOf: parametersTypes)
         let key = hashKey(types: parameters)
@@ -119,9 +101,7 @@ private extension TuringDI {
                           completion: completion)
     }
 
-    private func register<T>(_ protocolType: T.Type,
-                             factory: Factory,
-                             completion: FabricCompletion<T>?) {
+    private func register<T>(_ protocolType: T.Type, factory: Factory, completion: FabricCompletion<T>?) {
         let key = hashKey(types: [protocolType])
         items[key] = Item(protocolType: protocolType,
                           factory: factory,

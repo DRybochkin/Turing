@@ -10,135 +10,84 @@ import TuringDIInterface
 import TuringDI
 import UIKit
 
-protocol TestObjProtocol2: TestObjProtocol {
-}
-
-protocol TestObjProtocol: class {
-    var x: Int { get }
-    var y: Int { get }
-    var z: Int { get }
-    var testObj: TestObjProtocol? { get set }
-}
-
-struct TestParams {
-    var x: Int
-    var testObj: TestObjProtocol?
-}
-
-class TestObj: TestObjProtocol2 {
-
-    init(parameters: TestParams) {
-        x = parameters.x
-        y = 0
-        z = 0
-    }
-
-    init(x: Int, y: Int, z: Int) {
-        self.x = x
-        self.y = y
-        self.z = z
-    }
-
-    init(x: Int, y: Int) {
-        self.x = x
-        self.y = y
-        self.z = 0
-    }
-
-    init(x: Int) {
-        self.x = x
-        self.y = 0
-        self.z = 0
-    }
-
-    init() {
-        x = 0
-        y = 0
-        z = 0
-    }
-
-    init(testObj: TestObjProtocol?) {
-        self.testObj = testObj
-        x = testObj?.x ?? -1
-        y = testObj?.y ?? -1
-        z = testObj?.z ?? -1
-    }
-
-    weak var testObj: TestObjProtocol?
-
-    var x: Int
-    var y: Int
-    var z: Int
-}
-
 class ViewController: UIViewController {
-
-    private var testObj: TestObj?
-    private lazy var lazyTestObj: TestObj? = diContainer.resolve()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let di = diContainer
 
-        di.register(TestObjProtocol.self, factory: { di in
-            TestObj()
-        }, completion: { di, result in
-            let testObj: TestObjProtocol2? = di.resolve()
-            result?.testObj = testObj
-        })
+        // Zero params
+//        di.register(ParentProtocol.self, factory: {
+//            ParentClass()
+//        })
+//        let parentZero: ParentProtocol? = di.resolve()
+//        print("Zero: ", parentZero != nil)
+//
+//        // One params
+//        di.register(ParentProtocol.self, factory: { diContainer, parameter1 in
+//            ParentClass(property2: parameter1)
+//        })
+//        let parentInt: ParentProtocol? = di.resolve(parameter: 100)
+//        print("One: ", parentInt != nil, parentInt?.property2 == 100)
+//
+//        // Two params
+//        di.register(ParentProtocol.self, factory: { diContainer, parameter1, parameter2 in
+//            ParentClass(property3: parameter1, property4: parameter2)
+//        })
+//        let parentTwo: ParentProtocol? = di.resolve(parameter1: "200", parameter2: self as Any?)
+//        print("Two: ",
+//              parentTwo != nil,
+//              parentTwo?.property3 == "200",
+//              (parentTwo?.property4 as? ViewController) == self)
 
-        di.register(TestObjProtocol2.self, factory: { di in
-            TestObj()
-        }, completion: { di, result in
-            let testObj: TestObjProtocol? = di.resolve()
-            result?.testObj = testObj
-        })
-
-        let testObj: TestObjProtocol? = di.resolveSingletone()
-//        let testObj2: TestObjProtocol? = di.resolve()
-//        testObj?.testObj = testObj2
-//        testObj2?.testObj = testObj
-        print(testObj?.testObj?.x ?? -400)
-        print(testObj?.x ?? -500)
-//        if let testObj = testObj2 {
-//            print(testObj.x)
+        // Parent-Child zero params
+//        di.register(ChildProtocol.self, factory: {
+//            ChildClass()
+//        })
+//        di.register(ParentProtocol.self, factory: {
+//            ParentClass()
+//        })
+//        let parent: ParentProtocol? = di.resolve()
+//        let child: ChildProtocol? = di.resolve()
+//        parent?.property1 = child
+//        child?.parent = parent
+//        if let parent1 = parent, let parent2 = child?.parent {
+//            print("Parent-Child Zero: ", true, true, parent1 === parent2)
+//        } else {
+//            print("Parent-Child Zero: ", parent != nil, child != nil, false)
+//        }
+//        if let child1 = parent?.property1, let child2 = child {
+//            print("Child-Parent Zero: ", true, true, child1 === child2)
+//        } else {
+//            print("Child-Parent Zero: ", parent != nil, child != nil, false)
 //        }
 
-//        di.register(TestObjProtocol.self, factory: { _, parameters in
-//            TestObj(parameters: parameters)
-//        })
-//
-//        di.register(TestObjProtocol.self, factory: { _ in
-//            TestObj()
-//        })
-//
-//        di.register(TestObjProtocol.self, factory: { _, x in
-//            TestObj(x: x)
-//        })
-//
-//        di.register(TestObjProtocol.self, factory: { _, x, y in
-//            TestObj(x: x, y: y)
-//        })
-//
-//        di.register(TestObjProtocol.self, factory: { _, x, y, z in
-//            TestObj(x: x, y: y, z: z)
-//        })
-//
-//        let objT: TestObjProtocol? = di.resolve(TestObjProtocol.self, parameter: TestParams(x: 200))
-//        print(String(describing: objT))
-//
-//        let obj1: TestObjProtocol? = di.resolve(TestObjProtocol.self, parameter: 100)
-//        print(String(describing: obj1))
-//
-//        let obj2: TestObjProtocol? = di.resolve(TestObjProtocol.self, parameter1: 100, parameter2: 200)
-//        print(String(describing: obj2))
-//
-//        let obj3: TestObjProtocol? = di.resolve(TestObjProtocol.self, parameter1: 100, parameter2: 200, parameter3: 300)
-//        print(String(describing: obj3))
-//
-//        let obj0: TestObjProtocol? = di.resolve(TestObjProtocol.self)
-//        print(String(describing: obj0))
+        // Parent-Child one param
+        di.register(ParentProtocol.self, factory: { ParentClass() }, completion: { di, obj in
+            obj?.property1 = di.resolve(parameter: obj)
+        })
+        di.register(ChildProtocol.self, factory: { ChildClass() } )
+        di.register(ParentProtocol.self, factory: { di, child in
+            return child?.parent == nil ? ParentClass(property1: child) : child?.parent
+        })
+        di.register(ChildProtocol.self, factory: { di, parent in
+            ChildClass(parent: parent)
+        })
+        let parent0: ParentProtocol? = di.resolve()
+        let child0: ChildProtocol? = parent0?.property1
+        if let parent1 = parent0, let parent2 = child0?.parent {
+            print("Parent-Child Zero: ", true, true, parent1 === parent2)
+        } else {
+            print("Parent-Child Zero: ", parent0 != nil, child0 != nil, false)
+        }
+        let child: ChildProtocol? = di.resolve()
+        let parent: ParentProtocol? = di.resolve(parameter: child)
+        if let parent1 = parent, let parent2 = child?.parent {
+            print("Parent-Child Zero: ", true, true, parent1 === parent2)
+        } else {
+            print("Parent-Child Zero: ", parent != nil, child != nil, false)
+        }
 
     }
 }

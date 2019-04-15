@@ -11,17 +11,23 @@ import TuringDIInterface
 
 public class TuringDI: TuringDIProtocol {
 
+    // MARK: - Constants
+
+    private enum Constants {
+        static let maxRecursiveDepth: Int = 10
+    }
+
     // MARK: - Properties
 
-    // TODO: - добавить потокобезопасный словарь
-    var items: [String: TuringDI.Item] = [:]
-    var depth: Int = 0
-    public var maxRecursiveDepth: Int = 10
-    public static var `default`: TuringDIProtocol = TuringDI()
+    var items: TuringSafeDictionary<String, TuringDI.Item> = [:]
+    var depth: TuringSafeValue<Int> = TuringSafeValue<Int>(0)
+    var maxRecursiveDepth = Constants.maxRecursiveDepth
+    public static var `default`: TuringDIProtocol = TuringDI(maxDepth: Constants.maxRecursiveDepth)
 
     // MARK: - Constructos
 
-    public init() {
+    public init(maxDepth: Int) {
+        maxRecursiveDepth = maxDepth
     }
 
     // MARK: - Functions
@@ -30,3 +36,4 @@ public class TuringDI: TuringDIProtocol {
         return types.compactMap({ "\($0)" }).joined(separator: "-")
     }
 }
+

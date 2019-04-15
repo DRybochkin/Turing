@@ -13,5 +13,4 @@ public protocol TuringDIProtocol: class, TuringDIResolveProtocol, TuringDIRegist
     // MARK: - Properties
 
     static var `default`: TuringDIProtocol { get set }
-    var maxRecursiveDepth: Int { get set }
 }

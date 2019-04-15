@@ -7,6 +7,5 @@
 
 import Foundation
 
-public protocol TuringDIScopeProtocol {
-}
+public protocol TuringDIScopeProtocol { }
 
