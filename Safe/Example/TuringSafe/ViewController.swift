@@ -40,6 +40,7 @@ private extension ViewController {
                 array.removeLast(1)
                 array.append(last + 3)
 //                array.removeLast()
+                array.append(last + 10)
 
                 DispatchQueue.global().sync {
                     iterations -= 1

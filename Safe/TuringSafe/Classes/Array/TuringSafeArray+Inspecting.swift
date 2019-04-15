@@ -12,26 +12,20 @@ extension TuringSafeArray {
     // MARK: - Properties
 
     public var isEmpty: Bool {
-        var result = true
-        dispatchQueue.sync(flags: .barrier) {
-            result = array.isEmpty
+        return dispatchQueue.sync(flags: .barrier) {
+            array.isEmpty
         }
-        return result
     }
 
     public var count: Int {
-        var result = 0
-        dispatchQueue.sync(flags: .barrier) {
-            result = array.count
+        return dispatchQueue.sync(flags: .barrier) {
+            array.count
         }
-        return result
     }
 
     public var capacity: Int {
-        var result = 0
-        dispatchQueue.sync(flags: .barrier) {
-            result = array.capacity
+        return dispatchQueue.sync(flags: .barrier) {
+            array.capacity
         }
-        return result
     }
 }

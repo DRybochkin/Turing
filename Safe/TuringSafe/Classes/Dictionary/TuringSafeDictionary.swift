@@ -19,91 +19,82 @@ public final class TuringSafeDictionary<Key: Hashable, Value: Any>: Collection, 
 
     // MARK: - Properties
 
-    private lazy var dispatchQueue: DispatchQueue = {
-        let queueLabel = "TuringSafeDictionary<\(Key.self), \(Value.self)>.DispatchQueue.\(UUID().uuidString)"
-        return DispatchQueue(label: queueLabel, attributes: .concurrent)
-    }()
+    private let dispatchQueue: DispatchQueue
     private var dictionary: DictionaryType = [:]
     public var startIndex: Index {
-        var result: Index!
-        dispatchQueue.sync {
-            result = dictionary.startIndex
+        return dispatchQueue.sync(flags: .barrier) {
+            dictionary.startIndex
         }
-        return result
     }
     public var endIndex: DictionaryType.Index {
-        var result: Index!
-        dispatchQueue.sync {
-            result = dictionary.endIndex
+        return dispatchQueue.sync(flags: .barrier) {
+            dictionary.endIndex
         }
-        return result
     }
     public subscript(position: Index) -> Iterator.Element {
-        var result: Iterator.Element!
-        dispatchQueue.sync {
-            result = dictionary[position]
+        return dispatchQueue.sync(flags: .barrier) {
+            dictionary[position]
         }
-        return result
     }
     public subscript(bounds: Range<Index>) -> SubSequence {
-        var result: SubSequence!
-        dispatchQueue.sync {
-            result = dictionary[bounds]
+        return dispatchQueue.sync(flags: .barrier) {
+            dictionary[bounds]
         }
-        return result
     }
     public var indices: Indices {
-        var result: Indices!
-        dispatchQueue.sync {
-            result = dictionary.indices
+        return dispatchQueue.sync(flags: .barrier) {
+            dictionary.indices
         }
-        return result
     }
     public subscript(key: Key) -> Value? {
         get {
-            var result: Value?
-            dispatchQueue.sync {
-                result = dictionary[key]
+            return dispatchQueue.sync(flags: .barrier) {
+                dictionary[key]
             }
-            return result
         }
          set {
-            dispatchQueue.async(flags: .barrier) {
-                self.dictionary[key] = newValue
+            dispatchQueue.async(flags: .barrier) { [weak self] in
+                self?.dictionary[key] = newValue
             }
         }
     }
     public func index(after index: Index) -> Index {
-        var result: Index!
-        dispatchQueue.sync {
-            result = dictionary.index(after: index)
+       return dispatchQueue.sync(flags: .barrier) {
+            dictionary.index(after: index)
         }
-        return result
     }
 
     public func makeIterator() -> DictionaryIterator<Key, Value> {
-        var result: DictionaryIterator<Key, Value>!
-        dispatchQueue.sync {
-            result = dictionary.makeIterator()
+        return dispatchQueue.sync(flags: .barrier) {
+            dictionary.makeIterator()
         }
-        return result
     }
 
     public func removeValue(forKey key: Key) {
-        dispatchQueue.async(flags: .barrier) {
-            self.dictionary.removeValue(forKey: key)
+        dispatchQueue.async(flags: .barrier) { [weak self] in
+            self?.dictionary.removeValue(forKey: key)
         }
     }
 
     public func removeAll() {
-        dispatchQueue.async(flags: .barrier) {
-            self.dictionary.removeAll()
+        dispatchQueue.async(flags: .barrier) { [weak self] in
+            self?.dictionary.removeAll()
         }
     }
 
     // MARK: - Constructors
 
-    public init(dictionaryLiteral elements: (Key, Value)...) {
+    public init(isConcurrent: Bool) {
+        let queueLabel = "TuringSafeDictionary<\(Key.self), \(Value.self)>.DispatchQueue.\(UUID().uuidString)"
+        dispatchQueue = isConcurrent ? DispatchQueue(label: queueLabel, attributes: .concurrent) : DispatchQueue(label: queueLabel)
+    }
+
+    public convenience init() {
+        self.init(isConcurrent: true)
+    }
+
+    public convenience init(dictionaryLiteral elements: (Key, Value)...) {
+        self.init(isConcurrent: true)
         elements.forEach({ dictionary[$0.0] = $0.1 })
     }
 

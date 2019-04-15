@@ -20,7 +20,7 @@ public final class TuringSafeArray<Value: Any>: Collection, ExpressibleByArrayLi
 
     // MARK: - Properties
 
-    public let dispatchQueue: DispatchQueue
+    let dispatchQueue: DispatchQueue
     var array: ArrayType = []
 
     // MARK: - Constructors
