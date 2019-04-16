@@ -21,8 +21,8 @@ public final class TuringSafeValue<T> {
             }
         }
         set {
-            dispatchQueue.async(flags: .barrier) { [weak self] in
-                self?.safeValue = newValue
+            dispatchQueue.async(flags: .barrier) { // [weak self] in
+                self.safeValue = newValue
             }
         }
     }

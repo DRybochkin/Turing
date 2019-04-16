@@ -20,7 +20,6 @@ final class TestTuringSafeArrayAsyncSpec: QuickSpec {
 
     override func spec() {
         describe("these will success") {
-
             it("can do async manipulating") {
                 do {
                     var iterations = 1000
@@ -38,7 +37,7 @@ final class TestTuringSafeArrayAsyncSpec: QuickSpec {
                         _ = self.strongSafeArray.makeIterator()
                         let _: TuringSafeArray<Int> = self.strongSafeArray.compactMap({ $0 })
 
-                        DispatchQueue.global().sync {
+                        DispatchQueue.global().async(flags: .barrier) {
                             iterations -= 1
                             guard iterations <= 0 else {
                                 return

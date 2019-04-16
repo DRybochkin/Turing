@@ -19,68 +19,8 @@ public final class TuringSafeDictionary<Key: Hashable, Value: Any>: Collection, 
 
     // MARK: - Properties
 
-    private let dispatchQueue: DispatchQueue
-    private var dictionary: DictionaryType = [:]
-    public var startIndex: Index {
-        return dispatchQueue.sync(flags: .barrier) {
-            dictionary.startIndex
-        }
-    }
-    public var endIndex: DictionaryType.Index {
-        return dispatchQueue.sync(flags: .barrier) {
-            dictionary.endIndex
-        }
-    }
-    public subscript(position: Index) -> Iterator.Element {
-        return dispatchQueue.sync(flags: .barrier) {
-            dictionary[position]
-        }
-    }
-    public subscript(bounds: Range<Index>) -> SubSequence {
-        return dispatchQueue.sync(flags: .barrier) {
-            dictionary[bounds]
-        }
-    }
-    public var indices: Indices {
-        return dispatchQueue.sync(flags: .barrier) {
-            dictionary.indices
-        }
-    }
-    public subscript(key: Key) -> Value? {
-        get {
-            return dispatchQueue.sync(flags: .barrier) {
-                dictionary[key]
-            }
-        }
-         set {
-            dispatchQueue.async(flags: .barrier) { [weak self] in
-                self?.dictionary[key] = newValue
-            }
-        }
-    }
-    public func index(after index: Index) -> Index {
-       return dispatchQueue.sync(flags: .barrier) {
-            dictionary.index(after: index)
-        }
-    }
-
-    public func makeIterator() -> DictionaryIterator<Key, Value> {
-        return dispatchQueue.sync(flags: .barrier) {
-            dictionary.makeIterator()
-        }
-    }
-
-    public func removeValue(forKey key: Key) {
-        dispatchQueue.async(flags: .barrier) { [weak self] in
-            self?.dictionary.removeValue(forKey: key)
-        }
-    }
-
-    public func removeAll() {
-        dispatchQueue.async(flags: .barrier) { [weak self] in
-            self?.dictionary.removeAll()
-        }
-    }
+    let dispatchQueue: DispatchQueue
+    var dictionary: DictionaryType = [:]
 
     // MARK: - Constructors
 
@@ -93,9 +33,44 @@ public final class TuringSafeDictionary<Key: Hashable, Value: Any>: Collection, 
         self.init(isConcurrent: true)
     }
 
+    public convenience init(dictionary elements: DictionaryType) {
+        self.init()
+        self.dictionary = elements
+    }
+
+    public convenience init(dictionary elements: Slice<DictionaryType>) {
+        self.init()
+        elements.forEach({ dictionary[$0.key] = $0.value })
+    }
+
+    public convenience init(dictionary elements: [Element]) {
+        self.init()
+        elements.forEach({ dictionary[$0.key] = $0.value })
+    }
+
     public convenience init(dictionaryLiteral elements: (Key, Value)...) {
-        self.init(isConcurrent: true)
+        self.init()
         elements.forEach({ dictionary[$0.0] = $0.1 })
+    }
+
+    public convenience init(minimumCapacity: Int) {
+        self.init()
+        dictionary = Dictionary<Key, Value>(minimumCapacity: minimumCapacity)
+    }
+
+    public convenience init<S>(uniqueKeysWithValues keysAndValues: S) where S: Sequence, S.Element == (Key, Value) {
+        self.init()
+        dictionary = Dictionary<Key, Value>(uniqueKeysWithValues: keysAndValues)
+    }
+
+    public convenience init<S>(_ keysAndValues: S, uniquingKeysWith combine: (Value, Value) throws -> Value) rethrows where S: Sequence, S.Element == (Key, Value) {
+        self.init()
+        dictionary = try Dictionary<Key, Value>(keysAndValues, uniquingKeysWith: combine)
+    }
+
+    public convenience init<S>(grouping values: S, by keyForValue: (S.Element) throws -> Key) rethrows where Value == [S.Element], S: Sequence {
+        self.init()
+        dictionary = try Dictionary<Key, Value>(grouping: values, by: keyForValue)
     }
 
     // MARK: - Life cycle

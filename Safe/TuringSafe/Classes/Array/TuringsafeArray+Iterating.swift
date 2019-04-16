@@ -20,8 +20,8 @@ extension TuringSafeArray {
     // MARK: - Functions
 
     public func forEach(_ body: @escaping (Element) throws -> Void) rethrows {
-        dispatchQueue.async(flags: .barrier) { [weak self] in
-            try? self?.array.forEach(body)
+        dispatchQueue.sync(flags: .barrier) {
+            try? array.forEach(body)
         }
     }
 

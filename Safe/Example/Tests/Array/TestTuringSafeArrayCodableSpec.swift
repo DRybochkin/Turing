@@ -1,5 +1,5 @@
 //
-//  TestTuirngSafeArrayCodableSpec.swift
+//  TestTuringSafeArrayCodableSpec.swift
 //  TuringSafe_Tests
 //
 //  Created by Dmitry Rybochkin on 16/04/2019.
@@ -10,7 +10,7 @@ import Quick
 import Nimble
 import TuringSafe
 
-final class TestTuirngSafeArrayCodableSpec: QuickSpec {
+final class TestTuringSafeArrayCodableSpec: QuickSpec {
 
     // MARK: - Life cycle
 
