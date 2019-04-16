@@ -14,10 +14,14 @@ extension TuringSafeArray where Element: Equatable {
     // MARK: - Functions
 
     public static func ==(lhs: TuringSafeArray<Element>, rhs: TuringSafeArray<Element>) -> Bool {
-        return lhs.compactMap({ $0 }) == rhs.compactMap({ $0 })
+        let lhsElements: [Element] = lhs.compactMap({ $0 })
+        let rhsElements: [Element] = rhs.compactMap({ $0 })
+        return lhsElements == rhsElements
     }
 
     public static func !=(lhs: TuringSafeArray<Element>, rhs: TuringSafeArray<Element>) -> Bool {
-        return lhs.compactMap({ $0 }) != rhs.compactMap({ $0 })
+        let lhsElements: [Element] = lhs.compactMap({ $0 })
+        let rhsElements: [Element] = rhs.compactMap({ $0 })
+        return lhsElements != rhsElements
     }
 }

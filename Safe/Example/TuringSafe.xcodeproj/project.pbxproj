@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DD30EE22265EC3100DAA4A1 /* TestTuringSafeArrayInspectingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EE12265EC3100DAA4A1 /* TestTuringSafeArrayInspectingSpec.swift */; };
+		1DD30EE42265EC8300DAA4A1 /* TestTuringSafeArrayAccessingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EE32265EC8300DAA4A1 /* TestTuringSafeArrayAccessingSpec.swift */; };
+		1DD30EE62265ECE700DAA4A1 /* TestTuringSafeArrayInitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EE52265ECE700DAA4A1 /* TestTuringSafeArrayInitSpec.swift */; };
+		1DD30EE82265ED1800DAA4A1 /* TestTuringSafeArrayAsyncSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EE72265ED1800DAA4A1 /* TestTuringSafeArrayAsyncSpec.swift */; };
+		1DD30EEA2265ED4500DAA4A1 /* TestTuringSafeArrayAddingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EE92265ED4500DAA4A1 /* TestTuringSafeArrayAddingSpec.swift */; };
+		1DD30EEC2265ED7100DAA4A1 /* TestTuringSafeArrayCombiningSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EEB2265ED7100DAA4A1 /* TestTuringSafeArrayCombiningSpec.swift */; };
+		1DD30EEE2265EE2D00DAA4A1 /* TestTuringSafeArrayRemovingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EED2265EE2D00DAA4A1 /* TestTuringSafeArrayRemovingSpec.swift */; };
+		1DD30EF02265F04500DAA4A1 /* TestTuringSafeArrayFindingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EEF2265F04500DAA4A1 /* TestTuringSafeArrayFindingSpec.swift */; };
+		1DD30EF22265F45900DAA4A1 /* TestTuringSafeArraySelectingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EF12265F45900DAA4A1 /* TestTuringSafeArraySelectingSpec.swift */; };
+		1DD30EF42265FA8A00DAA4A1 /* TestTuringSafeArrayExcludingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EF32265FA8A00DAA4A1 /* TestTuringSafeArrayExcludingSpec.swift */; };
+		1DD30EF62265FC0400DAA4A1 /* TestTuringSafeArrayTransformingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EF52265FC0400DAA4A1 /* TestTuringSafeArrayTransformingSpec.swift */; };
+		1DD30EF82265FFAE00DAA4A1 /* TestTuringsafeArrayIteratingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EF72265FFAE00DAA4A1 /* TestTuringsafeArrayIteratingSpec.swift */; };
+		1DD30EFA226601A000DAA4A1 /* TestTuringSafeArrayReorderingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EF9226601A000DAA4A1 /* TestTuringSafeArrayReorderingSpec.swift */; };
+		1DD30EFC226603EB00DAA4A1 /* TestTuringSafeArrayManipulatingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EFB226603EB00DAA4A1 /* TestTuringSafeArrayManipulatingSpec.swift */; };
+		1DD30EFE2266040900DAA4A1 /* TestTuringSafeArrayComparingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EFD2266040900DAA4A1 /* TestTuringSafeArrayComparingSpec.swift */; };
+		1DD30F00226606BE00DAA4A1 /* TestTuirngSafeArrayCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30EFF226606BE00DAA4A1 /* TestTuirngSafeArrayCodableSpec.swift */; };
+		1DD30F0222660A7900DAA4A1 /* TestTuringSafeArrayHasherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F0122660A7900DAA4A1 /* TestTuringSafeArrayHasherSpec.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7FF996BD5B81900F54B751AC /* Pods_TuringSafe_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC588E72421A2A5B5F3BF94 /* Pods_TuringSafe_Example.framework */; };
 		A1376576B89D2E2E97B30E06 /* Pods_TuringSafe_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A9717358D7289C2E1F8A4D /* Pods_TuringSafe_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +46,23 @@
 /* Begin PBXFileReference section */
 		0191CF92BAD5394AE7EDE0EF /* Pods-TuringSafe_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringSafe_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringSafe_Tests/Pods-TuringSafe_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1DBA01CF2264BC6B006556A4 /* TuringSafe.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringSafe.podspec; path = ../../TuringSafe.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1DD30EE12265EC3100DAA4A1 /* TestTuringSafeArrayInspectingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayInspectingSpec.swift; sourceTree = "<group>"; };
+		1DD30EE32265EC8300DAA4A1 /* TestTuringSafeArrayAccessingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayAccessingSpec.swift; sourceTree = "<group>"; };
+		1DD30EE52265ECE700DAA4A1 /* TestTuringSafeArrayInitSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayInitSpec.swift; sourceTree = "<group>"; };
+		1DD30EE72265ED1800DAA4A1 /* TestTuringSafeArrayAsyncSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayAsyncSpec.swift; sourceTree = "<group>"; };
+		1DD30EE92265ED4500DAA4A1 /* TestTuringSafeArrayAddingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayAddingSpec.swift; sourceTree = "<group>"; };
+		1DD30EEB2265ED7100DAA4A1 /* TestTuringSafeArrayCombiningSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayCombiningSpec.swift; sourceTree = "<group>"; };
+		1DD30EED2265EE2D00DAA4A1 /* TestTuringSafeArrayRemovingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayRemovingSpec.swift; sourceTree = "<group>"; };
+		1DD30EEF2265F04500DAA4A1 /* TestTuringSafeArrayFindingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayFindingSpec.swift; sourceTree = "<group>"; };
+		1DD30EF12265F45900DAA4A1 /* TestTuringSafeArraySelectingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArraySelectingSpec.swift; sourceTree = "<group>"; };
+		1DD30EF32265FA8A00DAA4A1 /* TestTuringSafeArrayExcludingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayExcludingSpec.swift; sourceTree = "<group>"; };
+		1DD30EF52265FC0400DAA4A1 /* TestTuringSafeArrayTransformingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayTransformingSpec.swift; sourceTree = "<group>"; };
+		1DD30EF72265FFAE00DAA4A1 /* TestTuringsafeArrayIteratingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringsafeArrayIteratingSpec.swift; sourceTree = "<group>"; };
+		1DD30EF9226601A000DAA4A1 /* TestTuringSafeArrayReorderingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayReorderingSpec.swift; sourceTree = "<group>"; };
+		1DD30EFB226603EB00DAA4A1 /* TestTuringSafeArrayManipulatingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayManipulatingSpec.swift; sourceTree = "<group>"; };
+		1DD30EFD2266040900DAA4A1 /* TestTuringSafeArrayComparingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayComparingSpec.swift; sourceTree = "<group>"; };
+		1DD30EFF226606BE00DAA4A1 /* TestTuirngSafeArrayCodableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuirngSafeArrayCodableSpec.swift; sourceTree = "<group>"; };
+		1DD30F0122660A7900DAA4A1 /* TestTuringSafeArrayHasherSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeArrayHasherSpec.swift; sourceTree = "<group>"; };
 		4E478FC7263BFFAE36535262 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TuringSafe_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringSafe_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +73,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TuringSafe_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringSafe_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7A1FA40784564DD373E32876 /* Pods-TuringSafe_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringSafe_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringSafe_Example/Pods-TuringSafe_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		81279D82703766DA6511EE47 /* Pods-TuringSafe_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringSafe_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringSafe_Example/Pods-TuringSafe_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9142EFC309BEF2BED1BC4F54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -69,6 +101,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DD30EE02265EBEC00DAA4A1 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				1DD30EE12265EC3100DAA4A1 /* TestTuringSafeArrayInspectingSpec.swift */,
+				1DD30EE32265EC8300DAA4A1 /* TestTuringSafeArrayAccessingSpec.swift */,
+				1DD30EE52265ECE700DAA4A1 /* TestTuringSafeArrayInitSpec.swift */,
+				1DD30EE72265ED1800DAA4A1 /* TestTuringSafeArrayAsyncSpec.swift */,
+				1DD30EE92265ED4500DAA4A1 /* TestTuringSafeArrayAddingSpec.swift */,
+				1DD30EEB2265ED7100DAA4A1 /* TestTuringSafeArrayCombiningSpec.swift */,
+				1DD30EED2265EE2D00DAA4A1 /* TestTuringSafeArrayRemovingSpec.swift */,
+				1DD30EEF2265F04500DAA4A1 /* TestTuringSafeArrayFindingSpec.swift */,
+				1DD30EF12265F45900DAA4A1 /* TestTuringSafeArraySelectingSpec.swift */,
+				1DD30EF32265FA8A00DAA4A1 /* TestTuringSafeArrayExcludingSpec.swift */,
+				1DD30EF52265FC0400DAA4A1 /* TestTuringSafeArrayTransformingSpec.swift */,
+				1DD30EF72265FFAE00DAA4A1 /* TestTuringsafeArrayIteratingSpec.swift */,
+				1DD30EF9226601A000DAA4A1 /* TestTuringSafeArrayReorderingSpec.swift */,
+				1DD30EFB226603EB00DAA4A1 /* TestTuringSafeArrayManipulatingSpec.swift */,
+				1DD30EFD2266040900DAA4A1 /* TestTuringSafeArrayComparingSpec.swift */,
+				1DD30EFF226606BE00DAA4A1 /* TestTuirngSafeArrayCodableSpec.swift */,
+				1DD30F0122660A7900DAA4A1 /* TestTuringSafeArrayHasherSpec.swift */,
+			);
+			name = Array;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +171,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				1DD30EE02265EBEC00DAA4A1 /* Array */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -371,7 +427,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				1DD30EF22265F45900DAA4A1 /* TestTuringSafeArraySelectingSpec.swift in Sources */,
+				1DD30F0222660A7900DAA4A1 /* TestTuringSafeArrayHasherSpec.swift in Sources */,
+				1DD30EE82265ED1800DAA4A1 /* TestTuringSafeArrayAsyncSpec.swift in Sources */,
+				1DD30EEC2265ED7100DAA4A1 /* TestTuringSafeArrayCombiningSpec.swift in Sources */,
+				1DD30EFA226601A000DAA4A1 /* TestTuringSafeArrayReorderingSpec.swift in Sources */,
+				1DD30EFE2266040900DAA4A1 /* TestTuringSafeArrayComparingSpec.swift in Sources */,
+				1DD30EE22265EC3100DAA4A1 /* TestTuringSafeArrayInspectingSpec.swift in Sources */,
+				1DD30EE42265EC8300DAA4A1 /* TestTuringSafeArrayAccessingSpec.swift in Sources */,
+				1DD30EF62265FC0400DAA4A1 /* TestTuringSafeArrayTransformingSpec.swift in Sources */,
+				1DD30EF82265FFAE00DAA4A1 /* TestTuringsafeArrayIteratingSpec.swift in Sources */,
+				1DD30EEA2265ED4500DAA4A1 /* TestTuringSafeArrayAddingSpec.swift in Sources */,
+				1DD30EF42265FA8A00DAA4A1 /* TestTuringSafeArrayExcludingSpec.swift in Sources */,
+				1DD30F00226606BE00DAA4A1 /* TestTuirngSafeArrayCodableSpec.swift in Sources */,
+				1DD30EEE2265EE2D00DAA4A1 /* TestTuringSafeArrayRemovingSpec.swift in Sources */,
+				1DD30EF02265F04500DAA4A1 /* TestTuringSafeArrayFindingSpec.swift in Sources */,
+				1DD30EE62265ECE700DAA4A1 /* TestTuringSafeArrayInitSpec.swift in Sources */,
+				1DD30EFC226603EB00DAA4A1 /* TestTuringSafeArrayManipulatingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

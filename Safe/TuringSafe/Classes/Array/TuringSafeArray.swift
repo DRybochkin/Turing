@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class TuringSafeArray<Value: Any>: Collection, ExpressibleByArrayLiteral {
+public final class TuringSafeArray<Value: Any>: Collection, ExpressibleByArrayLiteral {    
 
     // MARK: - Types
 
@@ -47,11 +47,5 @@ public final class TuringSafeArray<Value: Any>: Collection, ExpressibleByArrayLi
     public convenience init(arrayLiteral elements: (Value)...) {
         self.init()
         elements.forEach({ array.append($0) })
-    }
-
-    // MARK: - Life cycle
-
-    deinit {
-        removeAll()
     }
 }

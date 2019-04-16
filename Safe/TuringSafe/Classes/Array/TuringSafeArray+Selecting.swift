@@ -24,13 +24,13 @@ extension TuringSafeArray {
         }
     }
 
-    public func prefix(through position: Int) -> TuringSafeArray<Element> {
+    public func prefix(through position: Index) -> TuringSafeArray<Element> {
         return dispatchQueue.sync(flags: .barrier) {
             TuringSafeArray(array.prefix(through: position))
         }
     }
 
-    public func prefix(upTo end: Int) -> TuringSafeArray<Element> {
+    public func prefix(upTo end: Index) -> TuringSafeArray<Element> {
         return dispatchQueue.sync(flags: .barrier) {
             TuringSafeArray(array.prefix(upTo: end))
         }
@@ -48,7 +48,7 @@ extension TuringSafeArray {
         }
     }
 
-    public func suffix(from start: Int) -> TuringSafeArray<Element> {
+    public func suffix(from start: Index) -> TuringSafeArray<Element> {
         return dispatchQueue.sync(flags: .barrier) {
             TuringSafeArray(array.suffix(from: start))
         }

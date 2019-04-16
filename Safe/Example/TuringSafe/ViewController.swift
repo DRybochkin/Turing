@@ -29,18 +29,13 @@ private extension ViewController {
 
             DispatchQueue.concurrentPerform(iterations: iterations) { index in
                 let last = array.last ?? 0
-//                array.dispatchQueue.async {
-//                    print("\(iterations)")
-//                }
 
-//                array.removeLast()
-//                array.removeLast(1)
                 array.append(last + 1)
                 array.append(last + 2)
                 array.removeLast(1)
                 array.append(last + 3)
-//                array.removeLast()
                 array.append(last + 10)
+                _ = array.makeIterator()
 
                 DispatchQueue.global().sync {
                     iterations -= 1

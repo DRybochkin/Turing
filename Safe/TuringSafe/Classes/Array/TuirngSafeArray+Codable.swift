@@ -9,11 +9,17 @@ import Foundation
 
 extension TuringSafeArray : Encodable where Element : Encodable {
 
+    // MARK: - Types
+
+    private enum CodingKeys: String, CodingKey {
+        case array
+    }
+
     // MARK: - Functions
 
     public func encode(to encoder: Encoder) throws {
-        dispatchQueue.async(flags: .barrier) { [weak self] in
-            try? self?.array.encode(to: encoder)
+        dispatchQueue.sync(flags: .barrier) {
+            try? array.encode(to: encoder)
         }
     }
 }

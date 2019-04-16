@@ -25,15 +25,16 @@ extension TuringSafeArray {
         }
     }
 
-    public func flatMap<SegmentOfResult>(_ transform: (Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element] where SegmentOfResult: Sequence {
-        return try dispatchQueue.sync(flags: .barrier) {
-            try array.flatMap(transform)
-        }
-    }
-
     public func compactMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult] {
         return try dispatchQueue.sync(flags: .barrier) {
             try array.compactMap(transform)
+        }
+    }
+
+    public func compactMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> TuringSafeArray<ElementOfResult> {
+        return try dispatchQueue.sync(flags: .barrier) {
+            let result: [ElementOfResult] = try array.compactMap(transform)
+            return TuringSafeArray<ElementOfResult>(result)
         }
     }
 

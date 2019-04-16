@@ -15,7 +15,8 @@ extension TuringSafeArray: Hashable where Value : Hashable {
 
     public func hash(into hasher: inout Hasher) {
         dispatchQueue.sync(flags: .barrier) {
-            self.array.forEach({ $0.hash(into: &hasher) })
+            hasher.combine("\(TuringSafeArray.self)\(Value.self)")
+            self.array.hash(into: &hasher)
         }
     }
 }

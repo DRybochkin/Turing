@@ -21,8 +21,11 @@ extension TuringSafeArray {
         return lhs + rhs.map({ $0 })
     }
 
-    public static func +<Other>(lhs: TuringSafeArray<Value>, rhs: Other) -> Array<Value> where Other: Sequence, Value == Other.Element {
-        return lhs.map({ $0 }) + rhs
+    public static func +<Other>(lhs: TuringSafeArray<Value>, rhs: Other) -> TuringSafeArray<Value> where Other: Sequence, Value == Other.Element {
+        let result: TuringSafeArray<Value> = []
+        result.append(contentsOf: lhs)
+        result.append(contentsOf: rhs)
+        return result
     }
 
     public static func +=(lhs: inout Array<Value>, rhs: TuringSafeArray<Value>) {
