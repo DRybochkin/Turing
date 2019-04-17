@@ -20,6 +20,28 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let safeInt = TuringSafeValue<Int>(0)
+        safeInt <- 1
+
+        let safeObj = TuringSafeValue<TestObject>(TestObject(property1: "", property2: 0))
+
+        safeObj <- { $0.property2 = 10 }
+
+        let safeInt2 = §200
+        print(§safeInt2)
+
+        var safeInt1: TuringSafeValue<Int> = §100
+        print(§safeInt1)
+
+        let index = §safeInt
+        print(index)
+
+        safeInt1 += safeInt2
+        safeInt1 -= safeInt1
+
+        print(§safeInt1, §safeInt2)
+        print(safeInt1, safeInt2)
+
         testValue()
     }
 }
@@ -85,7 +107,7 @@ private extension ViewController {
     private final class TestObject: Equatable {
 
         let property1: String
-        let property2: Int
+        var property2: Int
 
         init(property1: String, property2: Int) {
             self.property1 = property1

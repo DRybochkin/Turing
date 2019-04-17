@@ -9,6 +9,10 @@ import Foundation
 
 public final class TuringSafeValue<T> {
 
+    // MARK: - Tipes
+
+    public typealias Cloasure = (T) -> Void
+
     // MARK: - Properties
 
     private var safeValue: T
@@ -21,8 +25,8 @@ public final class TuringSafeValue<T> {
             }
         }
         set {
-            dispatchQueue.async(flags: .barrier) { // [weak self] in
-                self.safeValue = newValue
+            dispatchQueue.async(flags: .barrier) { [weak self] in
+                self?.safeValue = newValue
             }
         }
     }
@@ -34,5 +38,16 @@ public final class TuringSafeValue<T> {
         dispatchQueue = isConcurrent ? DispatchQueue(label: queueLabel, attributes: .concurrent) : DispatchQueue(label: queueLabel)
         safeValue = value
         self.value = value
+    }
+
+    // MARK: - Constructors
+
+    public func cloasure(_ cloasure: @escaping Cloasure) {
+        dispatchQueue.async(flags: .barrier) { [weak self] in
+            guard let self = self else {
+                return
+            }
+            cloasure(self.safeValue)
+        }
     }
 }

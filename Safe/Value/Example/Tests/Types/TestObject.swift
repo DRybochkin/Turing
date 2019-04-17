@@ -13,7 +13,7 @@ final class TestObject: Equatable {
     // MARK: - Properties
 
     let property1: String
-    let property2: Int
+    var property2: Int
 
     // MARK: - Constructors
 
