@@ -18,6 +18,7 @@ extension TuringSafeValue: AdditiveArithmetic where T: AdditiveArithmetic {
     // MARK: - Functions
 
     public static func -= (lhs: inout TuringSafeValue<T>, rhs: TuringSafeValue<T>) {
+        //swiftlint:disable:next shorthand_operator
         lhs.value = lhs.value - rhs.value
     }
 
@@ -26,6 +27,7 @@ extension TuringSafeValue: AdditiveArithmetic where T: AdditiveArithmetic {
     }
 
     public static func += (lhs: inout TuringSafeValue<T>, rhs: TuringSafeValue<T>) {
+        //swiftlint:disable:next shorthand_operator
         lhs.value = lhs.value + rhs.value
     }
 
@@ -33,19 +35,21 @@ extension TuringSafeValue: AdditiveArithmetic where T: AdditiveArithmetic {
         return .init(lhs.value + rhs.value)
     }
 
-    public static func +=(lhs: TuringSafeValue<T>, rhs: T)  {
+    public static func += (lhs: TuringSafeValue<T>, rhs: T) {
+        //swiftlint:disable:next shorthand_operator
         lhs.value = lhs.value + rhs
     }
 
-    public static func -=(lhs: TuringSafeValue<T>, rhs: T)  {
+    public static func -= (lhs: TuringSafeValue<T>, rhs: T) {
+        //swiftlint:disable:next shorthand_operator
         lhs.value = lhs.value - rhs
     }
 
-    public static func +=(lhs: inout T, rhs: TuringSafeValue<T>)  {
+    public static func += (lhs: inout T, rhs: TuringSafeValue<T>) {
         lhs += rhs.value
     }
 
-    public static func -=(lhs: inout T, rhs: TuringSafeValue<T>) {
+    public static func -= (lhs: inout T, rhs: TuringSafeValue<T>) {
         lhs -= rhs.value
     }
 }

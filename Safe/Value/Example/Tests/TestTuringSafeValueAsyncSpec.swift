@@ -28,7 +28,8 @@ final class TestTuringSafeValueAsyncSpec: QuickSpec {
 
                     DispatchQueue.concurrentPerform(iterations: iterations) { index in
                         safeInt.value = index
-                        safeString.value = safeString.value + "\(safeInt.value)"
+                        let tempValue = safeString.value + "\(safeInt.value)"
+                        safeString.value = tempValue
                         switch safeEnum.value {
                         case .test1:
                             safeEnum.value = .test2

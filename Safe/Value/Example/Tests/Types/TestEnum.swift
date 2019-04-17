@@ -15,4 +15,3 @@ enum TestEnum {
     case test1
     case test2
 }
-

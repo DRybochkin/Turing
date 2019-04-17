@@ -14,6 +14,7 @@ final class TestTuringSafeValueArithmeticSpec: QuickSpec {
 
     // MARK: - Life cycle
 
+    //swiftlint:disable:next function_body_length
     override func spec() {
         describe("these will success") {
             it("test var zero: TuringSafeValue") {

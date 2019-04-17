@@ -35,7 +35,11 @@ public final class TuringSafeValue<T> {
 
     public init(_ value: T, isConcurrent: Bool = true) {
         let queueLabel = "TuringSafeValue<\(T.self)>.DispatchQueue.\(UUID().uuidString)"
-        dispatchQueue = isConcurrent ? DispatchQueue(label: queueLabel, attributes: .concurrent) : DispatchQueue(label: queueLabel)
+        if isConcurrent {
+            dispatchQueue = DispatchQueue(label: queueLabel, attributes: .concurrent)
+        } else {
+            dispatchQueue = DispatchQueue(label: queueLabel)
+        }
         safeValue = value
         self.value = value
     }
