@@ -31,6 +31,7 @@ final class TestTuringSafeArrayReorderingSpec: QuickSpec {
                 safeArray.sort(by: { $0 > $1 })
                 expect(safeArray == [5, 3, 2, 1, 1, 1]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func sorted(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> TuringSafeArray<Element>") {
                 let safeArray: TuringSafeArray<Int> = [1, 2, 1, 5, 1, 3]
                 let sorted = safeArray.sorted(by: { $0 > $1 })

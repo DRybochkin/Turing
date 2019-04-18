@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension TuringSafeArray : Encodable where Element : Encodable {
+extension TuringSafeArray: Encodable where Element: Encodable {
 
     // MARK: - Types
 
@@ -24,12 +24,12 @@ extension TuringSafeArray : Encodable where Element : Encodable {
     }
 }
 
-extension TuringSafeArray : Decodable where Element : Decodable {
+extension TuringSafeArray: Decodable where Element: Decodable {
 
     // MARK: - Constructors
 
    public convenience init(from decoder: Decoder) throws {
-        let elements = try Array<Value>(from: decoder)
+    let elements: [Value] = try Array(from: decoder)
         self.init(elements)
     }
 }

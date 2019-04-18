@@ -3,13 +3,13 @@ use_frameworks!
 
 target 'TuringSafeValue_Example' do
   pod 'TuringSafeValue', :path => '../../../'
+  pod 'SwiftLint'
 
   target 'TuringSafeValue_Tests' do
     inherit! :search_paths
 
     pod 'Quick'
     pod 'Nimble'
-    pod 'SwiftLint'
   end
 end
 

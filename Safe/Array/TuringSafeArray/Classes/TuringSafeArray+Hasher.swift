@@ -9,7 +9,7 @@ import Foundation
 
 extension TuringSafeArray where Value: Hashable { }
 
-extension TuringSafeArray: Hashable where Value : Hashable {
+extension TuringSafeArray: Hashable where Value: Hashable {
 
     // MARK: - Functions
 

@@ -25,7 +25,7 @@ extension TuringSafeArray {
         }
     }
 
-    public func makeIterator() -> IndexingIterator<Array<Element>> {
+    public func makeIterator() -> IndexingIterator<[Element]> {
         return dispatchQueue.sync(flags: .barrier) {
             array.makeIterator()
         }

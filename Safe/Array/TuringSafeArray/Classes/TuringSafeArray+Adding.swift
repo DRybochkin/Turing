@@ -29,12 +29,14 @@ extension TuringSafeArray {
         }
     }
 
+    //swiftlint:disable:next line_length
     public func replaceSubrange<C>(_ subrange: Range<Int>, with newElements: C) where Value == C.Element, C: Collection {
         dispatchQueue.async(flags: .barrier) { [weak self] in
             self?.array.replaceSubrange(subrange, with: newElements)
         }
     }
 
+    //swiftlint:disable:next line_length
     public func replaceSubrange<C, R>(_ subrange: R, with newElements: C) where C: Collection, R: RangeExpression, Value == C.Element, Index == R.Bound {
         dispatchQueue.async(flags: .barrier) { [weak self] in
             self?.array.replaceSubrange(subrange, with: newElements)
@@ -47,11 +49,11 @@ extension TuringSafeArray {
         }
     }
 
-    public static func +=(lhs: inout TuringSafeArray<Element>, rhs: Element) {
+    public static func += (lhs: inout TuringSafeArray<Element>, rhs: Element) {
         lhs.append(rhs)
     }
 
-    public static func +=(lhs: inout TuringSafeArray<Element>, rhs: TuringSafeArray<Element>) {
+    public static func += (lhs: inout TuringSafeArray<Element>, rhs: TuringSafeArray<Element>) {
         lhs.append(contentsOf: rhs)
     }
 }

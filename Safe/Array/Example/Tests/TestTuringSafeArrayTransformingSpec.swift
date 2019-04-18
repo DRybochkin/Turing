@@ -24,6 +24,7 @@ final class TestTuringSafeArrayTransformingSpec: QuickSpec {
                 let safeArray: TuringSafeArray<Int> = [1, 2, 1, 5, 1, 3]
                 expect(safeArray.map({ $0 + 10 }) == [11, 12, 11, 15, 11, 13]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func compactMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]") {
                 let safeArray: TuringSafeArray<Int> = [1, 2, 1, 5, 1, 3]
                 let result: [Int] = safeArray.compactMap({ $0 + 10 })
@@ -31,6 +32,7 @@ final class TestTuringSafeArrayTransformingSpec: QuickSpec {
                 let safeResult: [Int] = safeArray.compactMap({ $0 + 10 })
                 expect(safeResult == [11, 12, 11, 15, 11, 13]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func compactMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> TuringSafeArray<ElementOfResult>") {
                 let safeArray: TuringSafeArray<Int> = [1, 2, 1, 5, 1, 3]
                 let result: [Int] = safeArray.compactMap({ $0 + 10 })
@@ -38,10 +40,12 @@ final class TestTuringSafeArrayTransformingSpec: QuickSpec {
                 let safeResult: TuringSafeArray<Int> = safeArray.compactMap({ $0 + 10 })
                 expect(safeResult == [11, 12, 11, 15, 11, 13]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, Element) throws -> Result) rethrows -> Result") {
                 let safeArray: TuringSafeArray<Int> = [1, 2, 1, 5, 1, 3]
                 expect(safeArray.reduce(0, +)) == 13
             }
+            //swiftlint:disable:next line_length
             it("test func reduce<Result>(into initialResult: Result, _ updateAccumulatingResult: (inout Result, Element) throws -> ()) rethrows -> Resultt") {
                 let safeArray: TuringSafeArray<Int> = [1, 2, 1, 5, 1, 3]
                 expect(safeArray.reduce(0, { $0 + $1 })) == 13

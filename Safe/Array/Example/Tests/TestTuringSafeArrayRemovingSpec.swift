@@ -14,6 +14,7 @@ final class TestTuringSafeArrayRemovingSpec: QuickSpec {
 
     // MARK: - Life cycle
 
+    //swiftlint:disable:next function_body_length
     override func spec() {
         describe("these will success") {
             it("test func remove(at index: Index) -> Value?") {
@@ -82,4 +83,3 @@ final class TestTuringSafeArrayRemovingSpec: QuickSpec {
         }
     }
 }
-

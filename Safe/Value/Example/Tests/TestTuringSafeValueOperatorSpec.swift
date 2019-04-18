@@ -1,5 +1,5 @@
 //
-//  TuringSafeValueOperatorSpec.swift
+//  TestTuringSafeValueOperatorSpec.swift
 //  TuringSafeValue_Tests
 //
 //  Created by Dmitry Rybochkin on 17/04/2019.
@@ -10,7 +10,7 @@ import Quick
 import Nimble
 import TuringSafeValue
 
-final class TuringSafeValueOperatorSpec: QuickSpec {
+final class TestTuringSafeValueOperatorSpec: QuickSpec {
 
     // MARK: - Life cycle
 

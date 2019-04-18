@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D26E4212268893200050C54 /* TestTuringSafeValueCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26E4202268893200050C54 /* TestTuringSafeValueCodableSpec.swift */; };
 		1D5593FE22678702002A98A5 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F77226761E500DAA4A1 /* TestObject.swift */; };
 		1D5594042267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5594032267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift */; };
-		1D55940622679639002A98A5 /* TuringSafeValueOperatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D55940522679639002A98A5 /* TuringSafeValueOperatorSpec.swift */; };
+		1D55940622679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D55940522679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift */; };
 		1DD30F5C226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F38226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift */; };
 		1DD30F712267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F702267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift */; };
 		1DD30F74226761A200DAA4A1 /* TestEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F73226761A200DAA4A1 /* TestEnum.swift */; };
@@ -35,8 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D26E4202268893200050C54 /* TestTuringSafeValueCodableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueCodableSpec.swift; sourceTree = "<group>"; };
 		1D5594032267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueArithmeticSpec.swift; sourceTree = "<group>"; };
-		1D55940522679639002A98A5 /* TuringSafeValueOperatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuringSafeValueOperatorSpec.swift; sourceTree = "<group>"; };
+		1D55940522679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueOperatorSpec.swift; sourceTree = "<group>"; };
 		1DD30F38226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueInitSpec.swift; sourceTree = "<group>"; };
 		1DD30F702267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueAsyncSpec.swift; sourceTree = "<group>"; };
 		1DD30F73226761A200DAA4A1 /* TestEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
@@ -141,10 +143,11 @@
 			isa = PBXGroup;
 			children = (
 				1DD30F722267619000DAA4A1 /* Types */,
-				1DD30F38226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift */,
 				1DD30F702267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift */,
 				1D5594032267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift */,
-				1D55940522679639002A98A5 /* TuringSafeValueOperatorSpec.swift */,
+				1D26E4202268893200050C54 /* TestTuringSafeValueCodableSpec.swift */,
+				1DD30F38226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift */,
+				1D55940522679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -438,11 +441,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D55940622679639002A98A5 /* TuringSafeValueOperatorSpec.swift in Sources */,
+				1D55940622679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift in Sources */,
 				1DD30F5C226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift in Sources */,
 				1DD30F74226761A200DAA4A1 /* TestEnum.swift in Sources */,
 				1D5594042267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift in Sources */,
 				1DD30F78226761E500DAA4A1 /* TestObject.swift in Sources */,
+				1D26E4212268893200050C54 /* TestTuringSafeValueCodableSpec.swift in Sources */,
 				1DD30F76226761C300DAA4A1 /* TestStruct.swift in Sources */,
 				1DD30F712267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift in Sources */,
 			);

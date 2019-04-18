@@ -14,6 +14,7 @@ final class TestTuringSafeArrayAddingSpec: QuickSpec {
 
     // MARK: - Life cycle
 
+    //swiftlint:disable:next function_body_length
     override func spec() {
         describe("these will success") {
             it("test func append(_ newElement: Value)") {
@@ -28,18 +29,21 @@ final class TestTuringSafeArrayAddingSpec: QuickSpec {
                 expect(safeArray.count) == 5
                 expect(safeArray == [0, 1, 10, 2, 3]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func insert<S>(contentsOf newElements: S, at index: Index) where S: Collection, Value == S.Element") {
                 let safeArray: TuringSafeArray<Int> = [0, 1, 2, 3]
                 safeArray.insert(contentsOf: [10, 20, 30], at: 3)
                 expect(safeArray.count) == 7
                 expect(safeArray == [0, 1, 2, 10, 20, 30, 3]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func replaceSubrange<C>(_ subrange: Range<Int>, with newElements: C) where Value == C.Element, C: Collection") {
                 let safeArray: TuringSafeArray<Int> = [0, 1, 2, 3, 4, 5, 6]
                 safeArray.replaceSubrange(2..<4, with: [10, 20, 30])
                 expect(safeArray.count) == 8
                 expect(safeArray == [0, 1, 10, 20, 30, 4, 5, 6]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func replaceSubrange<C, R>(_ subrange: R, with newElements: C) where C: Collection, R: RangeExpression, Value == C.Element, Index == R.Bound") {
                 let safeArray: TuringSafeArray<Int> = [0, 1, 2, 3, 4, 5, 6]
                 let range = Range<Int>.init(uncheckedBounds: (2, 4))
@@ -67,4 +71,3 @@ final class TestTuringSafeArrayAddingSpec: QuickSpec {
         }
     }
 }
-

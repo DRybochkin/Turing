@@ -17,22 +17,24 @@ extension TuringSafeArray {
         }
     }
 
-    public static func +<Other>(lhs: Other, rhs: TuringSafeArray<Value>) -> Array<Value> where Other: Sequence, Value == Other.Element {
+    //swiftlint:disable:next line_length
+    public static func + <Other>(lhs: Other, rhs: TuringSafeArray<Value>) -> [Value] where Other: Sequence, Value == Other.Element {
         return lhs + rhs.map({ $0 })
     }
 
-    public static func +<Other>(lhs: TuringSafeArray<Value>, rhs: Other) -> TuringSafeArray<Value> where Other: Sequence, Value == Other.Element {
+    //swiftlint:disable:next line_length
+    public static func + <Other>(lhs: TuringSafeArray<Value>, rhs: Other) -> TuringSafeArray<Value> where Other: Sequence, Value == Other.Element {
         let result: TuringSafeArray<Value> = []
         result.append(contentsOf: lhs)
         result.append(contentsOf: rhs)
         return result
     }
 
-    public static func +=(lhs: inout Array<Value>, rhs: TuringSafeArray<Value>) {
+    public static func += (lhs: inout [Value], rhs: TuringSafeArray<Value>) {
         lhs.append(contentsOf: rhs.map({ $0 }))
     }
 
-    public static func +=(lhs: inout TuringSafeArray<Value>, rhs: Array<Value>) {
+    public static func += (lhs: inout TuringSafeArray<Value>, rhs: [Value]) {
         rhs.forEach({ lhs.append($0) })
     }
 }

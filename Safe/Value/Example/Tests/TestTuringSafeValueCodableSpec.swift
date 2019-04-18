@@ -1,16 +1,16 @@
 //
-//  TestTuringSafeArrayCodableSpec.swift
-//  TuringSafe_Tests
+//  TestTuringSafeValueCodableSpec.swift
+//  TuringSafeValue_Tests
 //
-//  Created by Dmitry Rybochkin on 16/04/2019.
+//  Created by Dmitry Rybochkin on 18/04/2019.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
 import Quick
 import Nimble
-import TuringSafeArray
+import TuringSafeValue
 
-final class TestTuringSafeArrayCodableSpec: QuickSpec {
+final class TestTuringSafeValueCodableSpec: QuickSpec {
 
     // MARK: - Life cycle
 
@@ -22,14 +22,14 @@ final class TestTuringSafeArrayCodableSpec: QuickSpec {
                     expect("data from string") == "fail"
                     return
                 }
-                guard let safeArray = try? JSONDecoder().decode(TuringSafeArray<Int>.self, from: data) else {
+                guard let safeValue = try? JSONDecoder().decode(TuringSafeValue<[Int]>.self, from: data) else {
                     expect("decode from data") == "fail"
                     return
                 }
-                expect(safeArray == [1, 2, 1, 5, 1, 3]) == true
+                expect(§safeValue == [1, 2, 1, 5, 1, 3]) == true
             }
             it("test func encode(to encoder: Encoder) throws") {
-                let safeArray: TuringSafeArray<Int> = [1, 2, 1, 5, 1, 3]
+                let safeArray: TuringSafeValue<[Int]> = §[1, 2, 1, 5, 1, 3]
                 guard let data = try? JSONEncoder().encode(safeArray) else {
                     expect("encode to data") == "fail"
                     return

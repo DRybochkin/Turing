@@ -26,7 +26,7 @@ final class TestTuringSafeArrayAsyncSpec: QuickSpec {
                     self.strongSafeArray = []
 
                     DispatchQueue.concurrentPerform(iterations: iterations) { index in
-                        let last = self.strongSafeArray.last ?? 0
+                        let last = self.strongSafeArray.last ?? index
                         self.strongSafeArray.append(last + 1)
                         self.strongSafeArray.append(last + 2)
                         self.strongSafeArray.removeLast(1)
@@ -55,4 +55,3 @@ final class TestTuringSafeArrayAsyncSpec: QuickSpec {
         }
     }
 }
-

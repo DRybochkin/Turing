@@ -37,6 +37,7 @@ extension TuringSafeArray {
         }
     }
 
+    //swiftlint:disable:next line_length
     public func sorted(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> TuringSafeArray<Element> {
         return try dispatchQueue.sync(flags: .barrier) {
             try TuringSafeArray<Element>(array.sorted(by: areInIncreasingOrder))
@@ -67,7 +68,7 @@ extension TuringSafeArray {
         }
     }
 
-    public func shuffled<T>(using generator: inout T) -> TuringSafeArray<Element> where T : RandomNumberGenerator {
+    public func shuffled<T>(using generator: inout T) -> TuringSafeArray<Element> where T: RandomNumberGenerator {
         return dispatchQueue.sync(flags: .barrier) {
             TuringSafeArray<Element>(array.shuffled(using: &generator))
         }
@@ -85,4 +86,3 @@ extension TuringSafeArray {
         }
     }
 }
-

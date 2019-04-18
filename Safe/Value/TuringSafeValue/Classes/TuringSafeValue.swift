@@ -11,8 +11,8 @@ public final class TuringSafeValue<Value>: TuringSafeValueProtocol {
 
     // MARK: - Properties
 
-    private var safeValue: Value
-    private let dispatchQueue: DispatchQueue
+    var safeValue: Value
+    let dispatchQueue: DispatchQueue
 
     public var value: Value {
         get {

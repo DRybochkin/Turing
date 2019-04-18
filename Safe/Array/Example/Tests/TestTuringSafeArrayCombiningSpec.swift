@@ -22,6 +22,7 @@ final class TestTuringSafeArrayCombiningSpec: QuickSpec {
                 expect(safeArray.count) == 6
                 expect(safeArray == [1, 2, 3, 10, 20, 30]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func +<Other>(lhs: Other, rhs: TuringSafeArray<Value>) -> Array<Value> where Other: Sequence, Value == Other.Element") {
                 let array: [Int] = [10, 20, 30]
                 let safeArray: TuringSafeArray<Int> = [1, 2, 3]
@@ -29,6 +30,7 @@ final class TestTuringSafeArrayCombiningSpec: QuickSpec {
                 expect(newArray.count) == 6
                 expect(newArray == [10, 20, 30, 1, 2, 3]) == true
             }
+            //swiftlint:disable:next line_length
             it("test func +<Other>(lhs: TuringSafeArray<Value>, rhs: Other) -> TuringSafeArray<Value> where Other: Sequence, Value == Other.Element") {
                 let array: [Int] = [10, 20, 30]
                 let safeArray: TuringSafeArray<Int> = [1, 2, 3]
