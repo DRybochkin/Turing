@@ -19,7 +19,7 @@ public func <- <T>(lhs: inout T, rhs: TuringSafeValue<T>) {
 }
 
 public func <- <T>(lhs: TuringSafeValue<T>, rhs: @escaping TuringSafeValue<T>.Cloasure) {
-    lhs.cloasure(rhs)
+    lhs.async(rhs)
 }
 
 // MARK: - Prefix operator

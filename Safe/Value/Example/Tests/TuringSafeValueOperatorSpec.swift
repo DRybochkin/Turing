@@ -42,12 +42,19 @@ final class TuringSafeValueOperatorSpec: QuickSpec {
                 let safeValue = §10
                 expect(§safeValue) == 10
             }
-            it("test func cloasure(_ cloasure: @escaping Cloasure)") {
+            it("test func async(_ cloasure: @escaping (Value) -> Void)") {
                 let safeValue = §TestObject(property1: "", property2: 20)
-                safeValue.cloasure({ $0.property2 += 10 })
+                safeValue.async { $0.property2 += 10 }
                 expect((§safeValue).property2) == 30
-                safeValue.cloasure { $0.property2 += 100 }
+                safeValue.async { $0.property2 += 100 }
                 expect((§safeValue).property2) == 130
+            }
+            it("test func sync<T>(_ cloasure: @escaping (Value) -> T) -> T") {
+                let safeValue = §TestObject(property1: "", property2: 20)
+                let intValue = safeValue.sync { $0.property2 }
+                expect((§safeValue).property2) == intValue
+                let stringValue = safeValue.sync { $0.property1 }
+                expect((§safeValue).property1) == stringValue
             }
         }
     }

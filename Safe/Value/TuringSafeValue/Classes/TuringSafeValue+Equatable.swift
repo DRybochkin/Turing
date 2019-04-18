@@ -7,11 +7,11 @@
 
 import Foundation
 
-extension TuringSafeValue: Equatable where T: Equatable {
+extension TuringSafeValue: Equatable where Value: Equatable {
 
     // MARK: - Functions
 
-    public static func == (lhs: TuringSafeValue<T>, rhs: TuringSafeValue<T>) -> Bool {
+    public static func == (lhs: TuringSafeValue<Value>, rhs: TuringSafeValue<Value>) -> Bool {
         return lhs.value == rhs.value
     }
 }

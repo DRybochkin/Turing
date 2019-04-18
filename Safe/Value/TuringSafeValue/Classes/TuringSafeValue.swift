@@ -7,18 +7,14 @@
 
 import Foundation
 
-public final class TuringSafeValue<T> {
-
-    // MARK: - Tipes
-
-    public typealias Cloasure = (T) -> Void
+public final class TuringSafeValue<Value>: TuringSafeValueProtocol {
 
     // MARK: - Properties
 
-    private var safeValue: T
+    private var safeValue: Value
     private let dispatchQueue: DispatchQueue
 
-    public var value: T {
+    public var value: Value {
         get {
             return dispatchQueue.sync(flags: .barrier) {
                 safeValue
@@ -33,8 +29,8 @@ public final class TuringSafeValue<T> {
 
     // MARK: - Constructors
 
-    public init(_ value: T, isConcurrent: Bool = true) {
-        let queueLabel = "TuringSafeValue<\(T.self)>.DispatchQueue.\(UUID().uuidString)"
+    public init(_ value: Value, isConcurrent: Bool = true) {
+        let queueLabel = "TuringSafeValue<\(Value.self)>.DispatchQueue.\(UUID().uuidString)"
         if isConcurrent {
             dispatchQueue = DispatchQueue(label: queueLabel, attributes: .concurrent)
         } else {
@@ -44,14 +40,21 @@ public final class TuringSafeValue<T> {
         self.value = value
     }
 
-    // MARK: - Constructors
+    // MARK: - Functions
 
-    public func cloasure(_ cloasure: @escaping Cloasure) {
+    public func async(_ cloasure: @escaping (Value) -> Void) {
         dispatchQueue.async(flags: .barrier) { [weak self] in
             guard let self = self else {
                 return
             }
             cloasure(self.safeValue)
+        }
+    }
+
+    @discardableResult
+    public func sync<T>(_ cloasure: @escaping (Value) -> T) -> T {
+        return dispatchQueue.sync(flags: .barrier) {
+            cloasure(safeValue)
         }
     }
 }

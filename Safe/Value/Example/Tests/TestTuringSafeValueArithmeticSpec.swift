@@ -21,7 +21,7 @@ final class TestTuringSafeValueArithmeticSpec: QuickSpec {
                 expect(§TuringSafeValue<Int>.zero) == Int.zero
                 expect(TuringSafeValue<Double>.zero.value) == Double.zero
             }
-            it("test func -= (lhs: inout TuringSafeValue<T>, rhs: TuringSafeValue<T>)") {
+            it("test func -= (lhs: inout TuringSafeValue<Value>, rhs: TuringSafeValue<Value>)") {
                 var safeValue1 = §10
                 var safeValue2 = §6
                 let safeValue3 = §(-4)
@@ -30,12 +30,12 @@ final class TestTuringSafeValueArithmeticSpec: QuickSpec {
                 expect(safeValue1.value) == 4
                 expect(safeValue2.value) == 10
             }
-            it("test func - (lhs: TuringSafeValue<T>, rhs: TuringSafeValue<T>) -> Self") {
+            it("test func - (lhs: TuringSafeValue<Value>, rhs: TuringSafeValue<Value>) -> Self") {
                 let safeValue = §10 - §7
                 expect(safeValue.value) != 4
                 expect(§safeValue) == 3
             }
-            it("test func += (lhs: inout TuringSafeValue<T>, rhs: TuringSafeValue<T>)") {
+            it("test func += (lhs: inout TuringSafeValue<Value>, rhs: TuringSafeValue<Value>)") {
                 var safeValue1 = §10
                 var safeValue2 = §6
                 let safeValue3 = §(-4)
@@ -44,12 +44,12 @@ final class TestTuringSafeValueArithmeticSpec: QuickSpec {
                 expect(safeValue1.value) == 16
                 expect(safeValue2.value) == 2
             }
-            it("test func + (lhs: TuringSafeValue<T>, rhs: TuringSafeValue<T>) -> Self") {
+            it("test func + (lhs: TuringSafeValue<Value>, rhs: TuringSafeValue<Value>) -> Self") {
                 let safeValue = §10 + §7
                 expect(safeValue.value) != 10
                 expect(§safeValue) == 17
             }
-            it("test func +=(lhs: TuringSafeValue<T>, rhs: T)") {
+            it("test func +=(lhs: TuringSafeValue<Value>, rhs: Value)") {
                 let safeValue1 = §10
                 let safeValue2 = §(-4)
                 safeValue1 += 1
@@ -57,7 +57,7 @@ final class TestTuringSafeValueArithmeticSpec: QuickSpec {
                 expect(safeValue1.value) == 11
                 expect(safeValue2.value) == 1
             }
-            it("test func -=(lhs: TuringSafeValue<T>, rhs: T)") {
+            it("test func -=(lhs: TuringSafeValue<Value>, rhs: Value)") {
                 let safeValue1 = §10
                 let safeValue2 = §(-4)
                 safeValue1 -= 1
@@ -65,7 +65,7 @@ final class TestTuringSafeValueArithmeticSpec: QuickSpec {
                 expect(safeValue1.value) == 9
                 expect(safeValue2.value) == -9
             }
-            it("test func +=(lhs: inout T, rhs: TuringSafeValue<T>)") {
+            it("test func +=(lhs: inout Value, rhs: TuringSafeValue<Value>)") {
                 var int1 = 10
                 var int2 = -4
                 int1 += §1
@@ -73,7 +73,7 @@ final class TestTuringSafeValueArithmeticSpec: QuickSpec {
                 expect(int1) == 11
                 expect(int2) == 1
             }
-            it("test func -=(lhs: inout T, rhs: TuringSafeValue<T>)") {
+            it("test func -=(lhs: inout Value, rhs: TuringSafeValue<Value>)") {
                 var int1 = 10
                 var int2 = -4
                 int1 -= §1
