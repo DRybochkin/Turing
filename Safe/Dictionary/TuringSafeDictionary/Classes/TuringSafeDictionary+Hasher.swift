@@ -9,7 +9,7 @@ import Foundation
 
 extension TuringSafeDictionary where Value: Hashable { }
 
-extension TuringSafeDictionary: Hashable where Value : Hashable {
+extension TuringSafeDictionary: Hashable where Value: Hashable {
 
     // MARK: - Functions
 

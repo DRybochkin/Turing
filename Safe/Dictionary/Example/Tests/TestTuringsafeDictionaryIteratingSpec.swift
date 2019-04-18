@@ -46,7 +46,9 @@ final class TestTuringSafeDictionaryIteratingSpec: QuickSpec {
                 let safeDictionary = TuringSafeDictionary<String, Int>(dictionary: testDictionary)
                 let result = safeDictionary.enumerated()
                 result.forEach({ item in
-                    expect(safeDictionary.contains(where: { $0.key == item.element.key && $0.value == item.element.value })) == true
+                    expect(safeDictionary.contains(where: {
+                        $0.key == item.element.key && $0.value == item.element.value
+                    })) == true
                 })
             }
         }

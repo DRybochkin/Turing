@@ -14,6 +14,7 @@ final class TestTuringSafeDictionaryManipulatingSpec: QuickSpec {
 
     // MARK: - Life cycle
 
+    //swiftlint:disable:next function_body_length
     override func spec() {
         describe("these will success") {
             it("test var indices: Indices") {
@@ -47,8 +48,12 @@ final class TestTuringSafeDictionaryManipulatingSpec: QuickSpec {
                 let safeDictionary: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 let index2 = safeDictionary.index(after: safeDictionary.startIndex)
                 let index3 = safeDictionary.index(after: index2)
-                expect(safeDictionary.index(safeDictionary.startIndex, offsetBy: 2, limitedBy: safeDictionary.endIndex)) == index3
-                expect(safeDictionary.index(safeDictionary.startIndex, offsetBy: 2, limitedBy: safeDictionary.startIndex)).to(beNil())
+                expect(safeDictionary.index(safeDictionary.startIndex,
+                                            offsetBy: 2,
+                                            limitedBy: safeDictionary.endIndex)) == index3
+                expect(safeDictionary.index(safeDictionary.startIndex,
+                                            offsetBy: 2,
+                                            limitedBy: safeDictionary.startIndex)).to(beNil())
             }
             it("test func formIndex(after index: inout Index)") {
                 let safeDictionary: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]

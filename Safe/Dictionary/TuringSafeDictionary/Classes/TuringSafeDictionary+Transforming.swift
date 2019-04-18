@@ -25,25 +25,27 @@ extension TuringSafeDictionary {
         }
     }
 
-    public func mapValues<T>(_ transform: (Value) throws -> T) rethrows -> Dictionary<Key, T> {
+    public func mapValues<T>(_ transform: (Value) throws -> T) rethrows -> [Key: T] {
         return try dispatchQueue.sync(flags: .barrier) {
             try dictionary.mapValues(transform)
         }
     }
 
-    public func compactMapValues<T>(_ transform: (Value) throws -> T?) rethrows -> Dictionary<Key, T> {
+    public func compactMapValues<T>(_ transform: (Value) throws -> T?) rethrows -> [Key: T] {
         return try dispatchQueue.sync(flags: .barrier) {
             try dictionary.compactMapValues(transform)
         }
     }
 
+    //swiftlint:disable:next line_length
     public func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, Element) throws -> Result) rethrows -> Result {
         return try dispatchQueue.sync(flags: .barrier) {
             try dictionary.reduce(initialResult, nextPartialResult)
         }
     }
 
-    public func reduce<Result>(into initialResult: Result, _ updateAccumulatingResult: (inout Result, Element) throws -> ()) rethrows -> Result {
+    //swiftlint:disable:next line_length
+    public func reduce<Result>(into initialResult: Result, _ updateAccumulatingResult: (inout Result, Element) throws -> Void) rethrows -> Result {
         return try dispatchQueue.sync(flags: .barrier) {
             try dictionary.reduce(into: initialResult, updateAccumulatingResult)
         }
@@ -55,6 +57,7 @@ extension TuringSafeDictionary {
         }
     }
 
+    //swiftlint:disable:next line_length
     public func compactMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult] {
         return try dispatchQueue.sync(flags: .barrier) {
             try dictionary.compactMap(transform)

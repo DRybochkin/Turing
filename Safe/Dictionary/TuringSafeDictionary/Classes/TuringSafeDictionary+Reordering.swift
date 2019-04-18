@@ -23,6 +23,7 @@ extension TuringSafeDictionary {
         }
     }
 
+    //swiftlint:disable:next line_length
     public func shuffled<T>(using generator: inout T) -> TuringSafeDictionary<Key, Value> where T: RandomNumberGenerator {
         return dispatchQueue.sync(flags: .barrier) {
             TuringSafeDictionary<Key, Value>(dictionary: dictionary.shuffled(using: &generator))
@@ -41,4 +42,3 @@ extension TuringSafeDictionary {
         }
     }
 }
-

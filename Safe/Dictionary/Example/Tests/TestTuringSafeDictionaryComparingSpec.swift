@@ -12,33 +12,37 @@ import TuringSafeDictionary
 
 final class TestTuringSafeDictionaryComparingSpec: QuickSpec {
 
+    // MARK: - Types
+
+    typealias SafeDictionary = TuringSafeDictionary<String, Int>
+
     // MARK: - Life cycle
 
     override func spec() {
         describe("these will success") {
             it("test ==(lhs: TuringSafeDictionary<Key, Value>, rhs: TuringSafeDictionary<Key, Value>) -> Bool") {
-                let safeDictionary1: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let safeDictionary2: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary1: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary2: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 expect(safeDictionary1 == safeDictionary2) == true
-                let safeDictionary3: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2]
+                let safeDictionary3: SafeDictionary = ["1": 1, "2": 2]
                 expect(safeDictionary1 == safeDictionary3) == false
             }
             it("test !=(lhs: TuringSafeDictionary<Key, Value>, rhs: TuringSafeDictionary<Key, Value>) -> Bool") {
-                let safeDictionary1: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let safeDictionary2: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary1: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary2: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 expect(safeDictionary1 != safeDictionary2) == false
-                let safeDictionary3: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2]
+                let safeDictionary3: SafeDictionary = ["1": 1, "2": 2]
                 expect(safeDictionary1 != safeDictionary3) == true
             }
             it("test ==(lhs: TuringSafeDictionary<Key, Value>, rhs: DictionaryType) -> Bool") {
-                let safeDictionary1: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary1: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 let safeDictionary2 = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 expect(safeDictionary1 == safeDictionary2) == true
                 let safeDictionary3 = ["1": 1, "2": 2]
                 expect(safeDictionary1 == safeDictionary3) == false
             }
             it("test !=(lhs: TuringSafeDictionary<Key, Value>, rhs: DictionaryType) -> Bool") {
-                let safeDictionary1: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary1: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 let safeDictionary2 = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 expect(safeDictionary1 != safeDictionary2) == false
                 let safeDictionary3 = ["1": 1, "2": 2]
@@ -46,16 +50,16 @@ final class TestTuringSafeDictionaryComparingSpec: QuickSpec {
             }
             it("test ==(lhs: DictionaryType, rhs: TuringSafeDictionary<Key, Value>) -> Bool") {
                 let safeDictionary1 = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let safeDictionary2: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary2: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 expect(safeDictionary1 == safeDictionary2) == true
                 let safeDictionary3: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2]
                 expect(safeDictionary1 == safeDictionary3) == false
             }
             it("test !=(lhs: DictionaryType, rhs: TuringSafeDictionary<Key, Value>) -> Bool") {
                 let safeDictionary1 = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let safeDictionary2: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary2: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 expect(safeDictionary1 != safeDictionary2) == false
-                let safeDictionary3: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2]
+                let safeDictionary3: SafeDictionary = ["1": 1, "2": 2]
                 expect(safeDictionary1 != safeDictionary3) == true
             }
         }

@@ -11,7 +11,7 @@ public final class TuringSafeDictionary<Key: Hashable, Value: Any>: Collection, 
 
     // MARK: - Types
 
-    public typealias DictionaryType = Dictionary<Key, Value>
+    public typealias DictionaryType = [Key: Value]
     public typealias Indices = DictionaryType.Indices
     public typealias Iterator = DictionaryType.Iterator
     public typealias SubSequence = DictionaryType.SubSequence
@@ -26,7 +26,11 @@ public final class TuringSafeDictionary<Key: Hashable, Value: Any>: Collection, 
 
     public init(isConcurrent: Bool) {
         let queueLabel = "TuringSafeDictionary<\(Key.self), \(Value.self)>.DispatchQueue.\(UUID().uuidString)"
-        dispatchQueue = isConcurrent ? DispatchQueue(label: queueLabel, attributes: .concurrent) : DispatchQueue(label: queueLabel)
+        if isConcurrent {
+            dispatchQueue = DispatchQueue(label: queueLabel, attributes: .concurrent)
+        } else {
+            dispatchQueue = DispatchQueue(label: queueLabel)
+        }
     }
 
     public convenience init() {
@@ -55,22 +59,24 @@ public final class TuringSafeDictionary<Key: Hashable, Value: Any>: Collection, 
 
     public convenience init(minimumCapacity: Int) {
         self.init()
-        dictionary = Dictionary<Key, Value>(minimumCapacity: minimumCapacity)
+        dictionary = Dictionary(minimumCapacity: minimumCapacity)
     }
 
     public convenience init<S>(uniqueKeysWithValues keysAndValues: S) where S: Sequence, S.Element == (Key, Value) {
         self.init()
-        dictionary = Dictionary<Key, Value>(uniqueKeysWithValues: keysAndValues)
+        dictionary = Dictionary(uniqueKeysWithValues: keysAndValues)
     }
 
+    //swiftlint:disable:next line_length
     public convenience init<S>(_ keysAndValues: S, uniquingKeysWith combine: (Value, Value) throws -> Value) rethrows where S: Sequence, S.Element == (Key, Value) {
         self.init()
-        dictionary = try Dictionary<Key, Value>(keysAndValues, uniquingKeysWith: combine)
+        dictionary = try Dictionary(keysAndValues, uniquingKeysWith: combine)
     }
 
+    //swiftlint:disable:next line_length
     public convenience init<S>(grouping values: S, by keyForValue: (S.Element) throws -> Key) rethrows where Value == [S.Element], S: Sequence {
         self.init()
-        dictionary = try Dictionary<Key, Value>(grouping: values, by: keyForValue)
+        dictionary = try Dictionary(grouping: values, by: keyForValue)
     }
 
     // MARK: - Life cycle

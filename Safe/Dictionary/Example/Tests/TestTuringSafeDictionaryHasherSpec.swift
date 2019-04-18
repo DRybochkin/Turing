@@ -17,7 +17,7 @@ final class TestTuringSafeDictionaryHasherSpec: QuickSpec {
     override func spec() {
         describe("these will success") {
             it("test func hash(into hasher: inout Hasher)") {
-                let testDictionary: Dictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let testDictionary: [String: Int] = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 let safeDictionary1 = TuringSafeDictionary<String, Int>(dictionary: testDictionary)
                 let safeDictionary2 = TuringSafeDictionary<String, Int>(dictionary: testDictionary)
                 expect(safeDictionary1.hashValue) == safeDictionary2.hashValue

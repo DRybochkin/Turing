@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'TuringSafeDictionary_Example' do
   pod 'TuringSafeDictionary', :path => '../../../'
+  pod 'SwiftLint'
 
   target 'TuringSafeDictionary_Tests' do
     inherit! :search_paths

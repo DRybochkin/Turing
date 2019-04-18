@@ -12,8 +12,13 @@ import TuringSafeDictionary
 
 final class TestTuringSafeDictionaryInitSpec: QuickSpec {
 
+    // MARK: - Types
+
+    typealias SafeDictionary = TuringSafeDictionary<String, Int>
+
     // MARK: - Life cycle
 
+    //swiftlint:disable:next function_body_length
     override func spec() {
         describe("these will success") {
             it("test init()") {
@@ -30,9 +35,9 @@ final class TestTuringSafeDictionaryInitSpec: QuickSpec {
                 expect(safeDictionary == dictionary) == true
             }
             it("test init(dictionary elements: Slice<DictionaryType>)") {
-                let dictionary: Slice<Dictionary<String,Int>> = ["0": 0, "100": 100, "200": 200].dropFirst()
+                let dictionary: Slice<[String: Int]> = ["0": 0, "100": 100, "200": 200].dropFirst()
                 let safeDictionary = TuringSafeDictionary<String, Int>(dictionary: dictionary)
-                var testDictionary = Dictionary<String, Int>()
+                var testDictionary: [String: Int] = [:]
                 dictionary.forEach({ testDictionary[$0.key] = $0.value })
                 expect(safeDictionary == testDictionary) == true
             }
@@ -51,20 +56,22 @@ final class TestTuringSafeDictionaryInitSpec: QuickSpec {
             }
             it("test init<S>(uniqueKeysWithValues keysAndValues: S) where S: Sequence, S.Element == (Key, Value)") {
                 let array = ["0", "100", "200"]
-                let safeDictionary = TuringSafeDictionary<String, Int>(uniqueKeysWithValues: zip(array, [0, 100, 200]))
-                let testDictionary = Dictionary<String, Int>(uniqueKeysWithValues: zip(array, [0, 100, 200]))
+                let safeDictionary = SafeDictionary(uniqueKeysWithValues: zip(array, [0, 100, 200]))
+                let testDictionary: [String: Int] = Dictionary(uniqueKeysWithValues: zip(array, [0, 100, 200]))
                 expect(safeDictionary == testDictionary) == true
             }
+            //swiftlint:disable:next line_length
             it("test init<S>(_ keysAndValues: S, uniquingKeysWith combine: (Value, Value) throws -> Value) rethrows where S: Sequence, S.Element == (Key, Value)") {
                 let dictionary = [("0", 0), ("100", 100), ("200", 200), ("100", 300)]
-                let safeDictionary = TuringSafeDictionary<String, Int>(dictionary, uniquingKeysWith: { first, second in
+                let safeDictionary = SafeDictionary(dictionary, uniquingKeysWith: { _, second in
                     second
                 })
-                let testDictionary = Dictionary<String, Int>(dictionary, uniquingKeysWith: { first, second in
+                let testDictionary: [String: Int] = Dictionary(dictionary, uniquingKeysWith: { _, second in
                     second
                 })
                 expect(safeDictionary == testDictionary) == true
             }
+            //swiftlint:disable:next line_length
             it("test init<S>(grouping values: S, by keyForValue: (S.Element) throws -> Key) rethrows where Value == [S.Element], S: Sequence") {
                 let array = ["0", "10", "100", "30", "340"]
                 let safeDictionary = TuringSafeDictionary(grouping: array, by: { $0.first! })
@@ -74,4 +81,3 @@ final class TestTuringSafeDictionaryInitSpec: QuickSpec {
         }
     }
 }
-

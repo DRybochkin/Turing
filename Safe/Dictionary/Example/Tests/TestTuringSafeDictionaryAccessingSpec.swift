@@ -12,8 +12,13 @@ import TuringSafeDictionary
 
 final class TestTuringSafeDictionaryAccessingSpec: QuickSpec {
 
+    // MARK: - Types
+
+    typealias SafeDictionary = TuringSafeDictionary<String, Int>
+
     // MARK: - Life cycle
 
+    //swiftlint:disable:next function_body_length
     override func spec() {
         describe("these will success") {
             it("test subscript(key: Key) -> Value?") {
@@ -37,45 +42,59 @@ final class TestTuringSafeDictionaryAccessingSpec: QuickSpec {
                 expect(safeDictionary["7", default: 10]) == 10
             }
             it("test var keys: DictionaryType.Keys") {
-                let safeDictionary: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let testDictionary: Dictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let testDictionary: [String: Int] = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 expect(safeDictionary.keys == testDictionary.keys) == true
             }
             it("test var values: DictionaryType.Values") {
-                let testDictionary: Dictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let safeDictionary = TuringSafeDictionary<String, Int>(dictionary: testDictionary)
+                let testDictionary: [String: Int] = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary = SafeDictionary(dictionary: testDictionary)
                 expect(safeDictionary.values.compactMap({ $0 }) == testDictionary.values.compactMap({ $0 })) == true
             }
             it("test var first: Element?") {
-                let testDictionary: Dictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let safeDictionary = TuringSafeDictionary<String, Int>(dictionary: testDictionary)
+                let testDictionary: [String: Int] = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary = SafeDictionary(dictionary: testDictionary)
                 expect(safeDictionary.first?.key == testDictionary.first?.key) == true
                 expect(safeDictionary.first?.value == testDictionary.first?.value) == true
             }
             it("test func index(forKey key: Key) -> Index?") {
-                let safeDictionary: TuringSafeDictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary: SafeDictionary = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
                 expect(safeDictionary.index(forKey: "3") == safeDictionary.index(forKey: "3")) == true
                 expect(safeDictionary.index(forKey: "3") == safeDictionary.index(forKey: "4")) != true
             }
             it("test subscript(position: Index) -> Iterator.Element") {
-                let testDictionary: Dictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let safeDictionary = TuringSafeDictionary<String, Int>(dictionary: testDictionary)
+                let testDictionary: [String: Int] = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary = SafeDictionary(dictionary: testDictionary)
                 expect(safeDictionary[safeDictionary.startIndex] == testDictionary[testDictionary.startIndex]) == true
-                expect(safeDictionary[safeDictionary.startIndex] == testDictionary[testDictionary.index(testDictionary.startIndex, offsetBy: 2)]) == false
+                let safeValue = safeDictionary[safeDictionary.startIndex]
+                let testValue = testDictionary[testDictionary.index(testDictionary.startIndex, offsetBy: 2)]
+                expect(safeValue == testValue) == false
             }
             it("test subscript(bounds: Range<Index>) -> SubSequence") {
-                let testDictionary: Dictionary<String, Int> = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
-                let safeDictionary = TuringSafeDictionary<String, Int>(dictionary: testDictionary)
-                guard let safeStartIndex = safeDictionary.index(forKey: "2"), let safeEndIndex = safeDictionary.index(forKey: "5") else {
-                    expect(1) == 0
+                let testDictionary: [String: Int] = ["1": 1, "2": 2, "3": 1, "4": 5, "5": 1, "6": 3]
+                let safeDictionary = SafeDictionary(dictionary: testDictionary)
+                guard let safeStartIndex = safeDictionary.index(forKey: "2") else {
+                    expect("safe start index") == "fail"
                     return
                 }
-                guard let testStartIndex = testDictionary.index(forKey: "2"), let testEndIndex = testDictionary.index(forKey: "5") else {
-                    expect(1) == 0
+                guard let safeEndIndex = safeDictionary.index(forKey: "5") else {
+                    expect("safe end index") == "fail"
                     return
                 }
-                let newSliceSafeDictionary = safeDictionary[min(safeStartIndex, safeEndIndex)..<max(safeStartIndex, safeEndIndex)]
-                let newSliceTestDictionary = testDictionary[min(testStartIndex, testEndIndex)..<max(testStartIndex, testEndIndex)]
+                guard let testStartIndex = testDictionary.index(forKey: "2") else {
+                    expect("test start index") == "fail"
+                    return
+                }
+                guard let testEndIndex = testDictionary.index(forKey: "5") else {
+                    expect("test end index") == "fail"
+                    return
+                }
+                let minSafeIndex = min(safeStartIndex, safeEndIndex)
+                let maxSafeIndex = max(safeStartIndex, safeEndIndex)
+                let minTestIndex = min(testStartIndex, testEndIndex)
+                let maxTestIndex = max(testStartIndex, testEndIndex)
+                let newSliceSafeDictionary = safeDictionary[minSafeIndex..<maxSafeIndex]
+                let newSliceTestDictionary = testDictionary[minTestIndex..<maxTestIndex]
                 let newSafeDictionary = TuringSafeDictionary(dictionary: newSliceSafeDictionary)
                 var newTestDictionary: [String: Int] = [:]
                 newSliceTestDictionary.forEach({ newTestDictionary[$0.key] = $0.value })
@@ -92,4 +111,3 @@ final class TestTuringSafeDictionaryAccessingSpec: QuickSpec {
         }
     }
 }
-
