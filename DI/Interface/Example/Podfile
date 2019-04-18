@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'TuringDIInterface_Example' do
   pod 'TuringDIInterface', :path => '../../../'
+  pod 'SwiftLint'
 end

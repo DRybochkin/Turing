@@ -1,16 +1,23 @@
 PODS:
+  - SwiftLint (0.31.0)
   - TuringDIInterface (0.1.0)
 
 DEPENDENCIES:
+  - SwiftLint
   - TuringDIInterface (from `../../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   TuringDIInterface:
     :path: "../../../"
 
 SPEC CHECKSUMS:
-  TuringDIInterface: f9ee6b05c79407c71263f368e4c035951bdaed95
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  TuringDIInterface: 4e26c0a534e951ccd74a623c0d393bf3c36c240d
 
-PODFILE CHECKSUM: 22b1633017ee1ec8312ccf8240d2d69c1564201f
+PODFILE CHECKSUM: f2a7dd81c5c8386ed5adcb1533f2ce404475b8e6
 
 COCOAPODS: 1.5.3

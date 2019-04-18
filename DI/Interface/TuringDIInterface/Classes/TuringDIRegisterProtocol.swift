@@ -26,11 +26,21 @@ public protocol TuringDIRegisterProtocol {
     func register<T, P1, P2>(_ protocolType: T.Type, factory: @escaping FabricTwoParameters<T, P1, P2>)
     func register<T, P1, P2, P3>(_ protocolType: T.Type, factory: @escaping FabricThreeParameters<T, P1, P2, P3>)
 
-    func register<T>(_ protocolType: T.Type, factory: @escaping Fabric<T>, completion: @escaping FabricCompletion<T>)
-    func register<T>(_ protocolType: T.Type, factory: @escaping FabricZero<T>, completion: @escaping FabricCompletion<T>)
-    func register<T, P1>(_ protocolType: T.Type, factory: @escaping FabricOneParameter<T, P1>, completion: @escaping FabricCompletion<T>)
-    func register<T, P1, P2>(_ protocolType: T.Type, factory: @escaping FabricTwoParameters<T, P1, P2>, completion: @escaping FabricCompletion<T>)
-    func register<T, P1, P2, P3>(_ protocolType: T.Type, factory: @escaping FabricThreeParameters<T, P1, P2, P3>, completion: @escaping FabricCompletion<T>)
+    func register<T>(_ protocolType: T.Type,
+                     factory: @escaping Fabric<T>,
+                     completion: @escaping FabricCompletion<T>)
+    func register<T>(_ protocolType: T.Type,
+                     factory: @escaping FabricZero<T>,
+                     completion: @escaping FabricCompletion<T>)
+    func register<T, P1>(_ protocolType: T.Type,
+                         factory: @escaping FabricOneParameter<T, P1>,
+                         completion: @escaping FabricCompletion<T>)
+    func register<T, P1, P2>(_ protocolType: T.Type,
+                             factory: @escaping FabricTwoParameters<T, P1, P2>,
+                             completion: @escaping FabricCompletion<T>)
+    func register<T, P1, P2, P3>(_ protocolType: T.Type,
+                                 factory: @escaping FabricThreeParameters<T, P1, P2, P3>,
+                                 completion: @escaping FabricCompletion<T>)
 
     func unregister(_ protocolType: Any.Type)
     func unregisterAll()
