@@ -20,15 +20,26 @@ public struct TuringError<ErrorCode: TuringEnumErrorCodeProtocol>: TuringErrorPr
 
     // MARK: - Constructors
 
+    public init(code: ErrorCode, underlying: TuringErrorProtocol, userInfo: Info? = nil) {
+        self.code = code
+        self.underlying = underlying
+        self.userInfo = userInfo
+    }
+
     public init(code: ErrorCode, underlying: TuringErrorProtocol? = nil, userInfo: Info? = nil) {
         self.code = code
         self.underlying = underlying
         self.userInfo = userInfo
     }
 
-    public init(code: ErrorCode, underlying: NSError, userInfo: Info? = nil) {
-        self.init(code: code,
-                  underlying: NSErrorWrapper(error: underlying),
-                  userInfo: userInfo)
+    public init(code: ErrorCode, underlying: Error, userInfo: Info? = nil) {
+        switch underlying {
+        case let error as TuringErrorProtocol:
+            self.init(code: code, underlying: error, userInfo: userInfo)
+        case let error as NSError:
+            self.init(code: code, underlying: NSErrorWrapper(error: error), userInfo: userInfo)
+        default:
+            self.init(code: code, underlying: nil, userInfo: userInfo)
+        }
     }
 }

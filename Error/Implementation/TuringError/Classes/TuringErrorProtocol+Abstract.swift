@@ -52,7 +52,10 @@ private extension TuringErrorProtocol {
         var newPaths = paths
         let item = self
         newPaths.append(item)
-        guard !paths.contains(where: { $0.domain == item.domain && $0.code.rawValue == item.code.rawValue }), let underlying = self.underlying else {
+        guard !paths.contains(where: { $0.domain == item.domain && $0.code.rawValue == item.code.rawValue }) else {
+            return newPaths
+        }
+        guard let underlying = self.underlying else {
             return newPaths
         }
         return underlying.fullPath(paths: newPaths)

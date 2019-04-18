@@ -18,16 +18,16 @@ final class ViewController: UIViewController {
 
         let baseError = TuringError<ErrorCode>(code: .error2)
         let error = TuringError<ErrorCode>(code: .error404, underlying: baseError)
-        print(error.path)
-        print(error.description)
+        print("TuringError=>", error.path)
+        print("TuringError=>", error.description)
 
         let error1 = TuringError<ErrorCode>(code: .error1)
-        print(error1.path)
-        print(error1.description)
+        print("TuringError=>", error1.path)
+        print("TuringError=>", error1.description)
 
         let nsError = TuringError<ErrorCode>(code: .error2, underlying: NSError(domain: "NetworkError", code: 409, userInfo: nil))
-        print(nsError.path)
-        print(nsError.description)
+        print("TuringError=>", nsError.path)
+        print("TuringError=>", nsError.description)
 
         guard let url = URL(string: "https://www.turing.ru") else {
             return
@@ -39,8 +39,8 @@ final class ViewController: UIViewController {
                 return
             }
             let nsError = TuringError<ErrorCode>(code: .error2, underlying: error)
-            print(nsError.path)
-            print(nsError.description)
+            print("TuringError=>", nsError.path)
+            print("TuringError=>", nsError.description)
         })
 
         task.resume()
