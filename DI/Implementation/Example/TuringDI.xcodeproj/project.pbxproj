@@ -177,6 +177,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				BFCE95E2C2DC89B3A9628E0E /* [CP] Embed Pods Frameworks */,
+				1D3FC05A2268A63B009A8280 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -196,6 +197,7 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				40655D9C4F388201178F4E1E /* [CP] Embed Pods Frameworks */,
+				1D3FC05B2268A64C009A8280 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -271,6 +273,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D3FC05A2268A63B009A8280 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../TuringDI\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		1D3FC05B2268A64C009A8280 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../Example/Tests\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
 		40655D9C4F388201178F4E1E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,6 +386,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TuringDI/TuringDI.framework",
 				"${BUILT_PRODUCTS_DIR}/TuringDIInterface/TuringDIInterface.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringSafeValue/TuringSafeValue.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -357,6 +394,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringDI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringDIInterface.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringSafeValue.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

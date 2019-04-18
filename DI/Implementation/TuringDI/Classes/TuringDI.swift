@@ -8,6 +8,7 @@
 
 import Foundation
 import TuringDIInterface
+import TuringSafeValue
 
 public class TuringDI: TuringDIProtocol {
 
@@ -19,8 +20,8 @@ public class TuringDI: TuringDIProtocol {
 
     // MARK: - Properties
 
-    var items: TuringSafeDictionary<String, TuringDI.Item> = [:]
-    var depth: TuringSafeValue<Int> = TuringSafeValue<Int>(0)
+    var items: TuringSafeValue<[String: TuringDI.Item]> = §[:]
+    var depth: TuringSafeValue<Int> = §0
     var maxRecursiveDepth = Constants.maxRecursiveDepth
     public static var `default`: TuringDIProtocol = TuringDI(maxDepth: Constants.maxRecursiveDepth)
 
@@ -36,4 +37,3 @@ public class TuringDI: TuringDIProtocol {
         return types.compactMap({ "\($0)" }).joined(separator: "-")
     }
 }
-

@@ -1,33 +1,43 @@
 PODS:
   - Nimble (8.0.1)
   - Quick (2.0.0)
+  - SwiftLint (0.31.0)
   - TuringDI (0.1.0):
     - TuringDIInterface (= 0.1.0)
+    - TuringSafeValue (= 0.1.0)
   - TuringDIInterface (0.1.0)
+  - TuringSafeValue (0.1.0)
 
 DEPENDENCIES:
   - Nimble
   - Quick
+  - SwiftLint
   - TuringDI (from `../../../`)
   - TuringDIInterface (from `../../../`)
+  - TuringSafeValue (from `../../../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nimble
     - Quick
+    - SwiftLint
 
 EXTERNAL SOURCES:
   TuringDI:
     :path: "../../../"
   TuringDIInterface:
     :path: "../../../"
+  TuringSafeValue:
+    :path: "../../../"
 
 SPEC CHECKSUMS:
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
-  TuringDI: 057dd4993a6cb2233b8082749ac350a8a95b7791
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  TuringDI: d4ffb9a79ea66b4fc35b24d82e8eb0384826997c
   TuringDIInterface: 4e26c0a534e951ccd74a623c0d393bf3c36c240d
+  TuringSafeValue: a19f9035b89254c417a4615c2d6e22726b5f1473
 
-PODFILE CHECKSUM: 531ffb36767a64a8667c8bfab7337613fa5fdf6c
+PODFILE CHECKSUM: 7f092aec4c412830d4faf0a79f4367061a7301c9
 
 COCOAPODS: 1.5.3

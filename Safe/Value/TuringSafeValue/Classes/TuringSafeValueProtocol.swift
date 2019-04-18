@@ -13,8 +13,8 @@ public protocol TuringSafeValueProtocol {
 
     associatedtype Value
 
-    typealias Cloasure = (Value) -> Void
-    typealias CloasureWithReturn = (Value) -> Value
+    typealias Cloasure = (inout Value) -> Void
+    typealias CloasureWithReturn = (inout Value) -> Value
 
     // MARK: - Properties
 

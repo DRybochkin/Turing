@@ -42,19 +42,19 @@ public final class TuringSafeValue<Value>: TuringSafeValueProtocol {
 
     // MARK: - Functions
 
-    public func async(_ cloasure: @escaping (Value) -> Void) {
+    public func async(_ cloasure: @escaping (inout Value) -> Void) {
         dispatchQueue.async(flags: .barrier) { [weak self] in
             guard let self = self else {
                 return
             }
-            cloasure(self.safeValue)
+            cloasure(&self.safeValue)
         }
     }
 
     @discardableResult
-    public func sync<T>(_ cloasure: @escaping (Value) -> T) -> T {
+    public func sync<T>(_ cloasure: @escaping (inout Value) -> T) -> T {
         return dispatchQueue.sync(flags: .barrier) {
-            cloasure(safeValue)
+            cloasure(&safeValue)
         }
     }
 }

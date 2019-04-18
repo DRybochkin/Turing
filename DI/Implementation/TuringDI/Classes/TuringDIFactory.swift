@@ -20,4 +20,3 @@ extension TuringDI {
         case three(Any)
     }
 }
-

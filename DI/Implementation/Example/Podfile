@@ -1,10 +1,11 @@
 platform :ios, '9.3'
-platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringDI_Example' do
+    pod 'TuringSafeValue', :path => '../../../'
     pod 'TuringDIInterface', :path => '../../../'
     pod 'TuringDI', :path => '../../../'
+    pod 'SwiftLint'
 
     target 'TuringDI_Tests' do
         inherit! :search_paths

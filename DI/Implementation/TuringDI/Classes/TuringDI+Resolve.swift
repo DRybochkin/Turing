@@ -7,6 +7,7 @@
 
 import Foundation
 import TuringDIInterface
+import TuringSafeValue
 
 extension TuringDI: TuringDIResolveProtocol {
 
@@ -60,7 +61,10 @@ extension TuringDI: TuringDIResolveProtocol {
         return resolve(T.self)
     }
 
-    public func resolveSingletone<T, P1, P2, P3>(_ protocolType: T.Type, parameter1: P1, parameter2: P2, parameter3: P3) -> T? {
+    public func resolveSingletone<T, P1, P2, P3>(_ protocolType: T.Type,
+                                                 parameter1: P1,
+                                                 parameter2: P2,
+                                                 parameter3: P3) -> T? {
         return resolve(protocolType,
                        parameter1: parameter1,
                        parameter2: parameter2,
@@ -114,11 +118,11 @@ private extension TuringDI {
     // MARK: - Private functions
 
     private func incrementDepth() {
-        depth.value = depth.value + 1
+        depth += 1
     }
 
     private func decrementDepth() {
-        depth.value = depth.value - 1
+        depth -= 1
     }
 
     private func canContinue() -> Bool {
@@ -133,7 +137,7 @@ private extension TuringDI {
             return nil
         }
         incrementDepth()
-        var assembly: T? = nil
+        var assembly: T?
         switch item.factory {
         case let .zero(factory as FabricZero<T>):
             assembly = factory(self)
@@ -163,7 +167,7 @@ private extension TuringDI {
             return nil
         }
         incrementDepth()
-        var assembly: T? = nil
+        var assembly: T?
         if case let .one(factory as FabricOneParameter<T, P>) = item.factory {
             assembly = factory(self, parameter)
         }
@@ -186,7 +190,7 @@ private extension TuringDI {
             return nil
         }
         incrementDepth()
-        var assembly: T? = nil
+        var assembly: T?
         if case let .two(factory as FabricTwoParameters<T, P1, P2>) = item.factory {
             assembly = factory(self, parameter1, parameter2)
         }
@@ -201,7 +205,11 @@ private extension TuringDI {
         return assembly
     }
 
-    private func resolve<T, P1, P2, P3>(item: Item, parameter1: P1, parameter2: P2, parameter3: P3, scope: Scope) -> T? {
+    private func resolve<T, P1, P2, P3>(item: Item,
+                                        parameter1: P1,
+                                        parameter2: P2,
+                                        parameter3: P3,
+                                        scope: Scope) -> T? {
         if case .singleton = scope, let assembly = item.assembly as? T {
             return assembly
         }
@@ -209,7 +217,7 @@ private extension TuringDI {
             return nil
         }
         incrementDepth()
-        var assembly: T? = nil
+        var assembly: T?
         if case let .three(factory as FabricThreeParameters<T, P1, P2, P3>) = item.factory {
             assembly = factory(self, parameter1, parameter2, parameter3)
         }
@@ -224,9 +232,13 @@ private extension TuringDI {
         return assembly
     }
 
-    private func resolve<T, P1, P2, P3>(_ protocolType: T.Type, parameter1: P1, parameter2: P2, parameter3: P3, scope: Scope) -> T? {
+    private func resolve<T, P1, P2, P3>(_ protocolType: T.Type,
+                                        parameter1: P1,
+                                        parameter2: P2,
+                                        parameter3: P3,
+                                        scope: Scope) -> T? {
         let key = hashKey(types: [protocolType, P1.self, P2.self, P3.self])
-        guard let item: Item = items[key] else {
+        guard let item = items.sync({ $0[key] }) else {
             return nil
         }
         return resolve(item: item,
@@ -237,7 +249,7 @@ private extension TuringDI {
 
     private func resolve<T, P>(_ protocolType: T.Type, parameter: P, scope: Scope) -> T? {
         let key = hashKey(types: [protocolType, P.self])
-        guard let item: Item = items[key] else {
+        guard let item = items.sync({ $0[key] }) else {
             return nil
         }
 
@@ -246,7 +258,7 @@ private extension TuringDI {
 
     private func resolve<T, P1, P2>(_ protocolType: T.Type, parameter1: P1, parameter2: P2, scope: Scope) -> T? {
         let key = hashKey(types: [protocolType, P1.self, P2.self])
-        guard let item: Item = items[key] else {
+        guard let item = items.sync({ $0[key] }) else {
             return nil
         }
         return resolve(item: item, parameter1: parameter1, parameter2: parameter2, scope: scope)
@@ -254,7 +266,7 @@ private extension TuringDI {
 
     private func resolve<T>(_ protocolType: T.Type, scope: Scope) -> T? {
         let key = hashKey(types: [protocolType])
-        guard let item: Item = items[key] else {
+        guard let item = items.sync({ $0[key] }) else {
             return nil
         }
 
