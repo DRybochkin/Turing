@@ -1,16 +1,23 @@
 PODS:
+  - SwiftLint (0.31.0)
   - TuringErrorInterface (0.1.0)
 
 DEPENDENCIES:
+  - SwiftLint
   - TuringErrorInterface (from `../../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   TuringErrorInterface:
     :path: "../../../"
 
 SPEC CHECKSUMS:
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   TuringErrorInterface: 0a7761317340dd67a15262eb20accbdd1931a49b
 
-PODFILE CHECKSUM: 6cf286244118bdcb4e9dfe0414696212ed60abc5
+PODFILE CHECKSUM: c78128733ae930462afa5328ddb1540a1eaaacf2
 
 COCOAPODS: 1.5.3
