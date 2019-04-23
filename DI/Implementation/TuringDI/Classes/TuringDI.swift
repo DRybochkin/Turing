@@ -37,3 +37,13 @@ public class TuringDI: TuringDIProtocol {
         return types.compactMap({ "\($0)" }).joined(separator: "-")
     }
 }
+
+extension TuringDI {
+
+    // MARK: - Types
+
+    enum Scope: TuringDIScopeProtocol {
+        case new
+        case singleton
+    }
+}

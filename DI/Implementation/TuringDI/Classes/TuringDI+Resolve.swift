@@ -113,6 +113,99 @@ extension TuringDI: TuringDIResolveProtocol {
     }
 }
 
+extension TuringDI {
+
+    // MARK: - Internal functions
+
+    //swiftlint:disable:next function_body_length
+    func resolve<T, P1, P2, P3>(_ protocolType: T.Type,
+                                parameter1: P1,
+                                parameter2: P2,
+                                parameter3: P3,
+                                scope: Scope) -> T? {
+        if let item = getItem(types: [protocolType, P1.self, P2.self, P3.self]) {
+            return resolve(item: item,
+                           parameter1: parameter1,
+                           parameter2: parameter2,
+                           parameter3: parameter3,
+                           scope: scope)
+        } else if let item = getItem(types: [protocolType, P1?.self, P2.self, P3.self]) {
+            return resolve(item: item,
+                           parameter1: parameter1 as P1?,
+                           parameter2: parameter2,
+                           parameter3: parameter3,
+                           scope: scope)
+        } else if let item = getItem(types: [protocolType, P1.self, P2?.self, P3.self]) {
+            return resolve(item: item,
+                           parameter1: parameter1,
+                           parameter2: parameter2 as P2?,
+                           parameter3: parameter3,
+                           scope: scope)
+        } else if let item = getItem(types: [protocolType, P1.self, P2.self, P3?.self]) {
+            return resolve(item: item,
+                           parameter1: parameter1,
+                           parameter2: parameter2,
+                           parameter3: parameter3 as P3?,
+                           scope: scope)
+        } else if let item = getItem(types: [protocolType, P1?.self, P2?.self, P3.self]) {
+            return resolve(item: item,
+                           parameter1: parameter1 as P1?,
+                           parameter2: parameter2 as P2?,
+                           parameter3: parameter3,
+                           scope: scope)
+        } else if let item = getItem(types: [protocolType, P1?.self, P2.self, P3?.self]) {
+            return resolve(item: item,
+                           parameter1: parameter1 as P1?,
+                           parameter2: parameter2,
+                           parameter3: parameter3 as P3?,
+                           scope: scope)
+        } else if let item = getItem(types: [protocolType, P1.self, P2?.self, P3?.self]) {
+            return resolve(item: item,
+                           parameter1: parameter1,
+                           parameter2: parameter2 as P2?,
+                           parameter3: parameter3 as P3?,
+                           scope: scope)
+        } else if let item = getItem(types: [protocolType, P1?.self, P2?.self, P3?.self]) {
+            return resolve(item: item,
+                           parameter1: parameter1 as P1?,
+                           parameter2: parameter2 as P2?,
+                           parameter3: parameter3 as P3?,
+                           scope: scope)
+        } else {
+            return resolveAnyItem(protocolType,
+                                  parameter1: parameter1,
+                                  parameter2: parameter2,
+                                  parameter3: parameter3,
+                                  scope: scope)
+        }
+    }
+
+    func resolve<T, P1, P2>(_ protocolType: T.Type, parameter1: P1, parameter2: P2, scope: Scope) -> T? {
+        if let item = getItem(types: [protocolType, P1.self, P2.self]) {
+            return resolve(item: item, parameter1: parameter1, parameter2: parameter2, scope: scope)
+        } else if let item = getItem(types: [protocolType, P1?.self, P2.self]) {
+            return resolve(item: item, parameter1: parameter1 as P1?, parameter2: parameter2, scope: scope)
+        } else if let item = getItem(types: [protocolType, P1.self, P2?.self]) {
+            return resolve(item: item, parameter1: parameter1, parameter2: parameter2 as P2?, scope: scope)
+        } else if let item = getItem(types: [protocolType, P1?.self, P2?.self]) {
+            return resolve(item: item, parameter1: parameter1 as P1?, parameter2: parameter2 as P2?, scope: scope)
+        } else {
+            return resolveAnyItem(protocolType, parameter1: parameter1, parameter2: parameter2, scope: scope)
+        }
+    }
+
+    func resolve<T, P>(_ protocolType: T.Type, parameter: P, scope: Scope) -> T? {
+        if let item = getItem(types: [protocolType, P.self]) {
+            return resolve(item: item, parameter: parameter, scope: scope)
+        } else if let item = getItem(types: [protocolType, P?.self]) {
+            return resolve(item: item, parameter: parameter as P?, scope: scope)
+        } else {
+            return resolveAnyItem(protocolType, parameter: parameter, scope: scope)
+        }
+    }
+
+}
+
 private extension TuringDI {
 
     // MARK: - Private functions
@@ -194,7 +287,6 @@ private extension TuringDI {
         if case let .two(factory as FabricTwoParameters<T, P1, P2>) = item.factory {
             assembly = factory(self, parameter1, parameter2)
         }
-
         if case .singleton = scope {
             item.assembly = assembly
         }
@@ -221,7 +313,6 @@ private extension TuringDI {
         if case let .three(factory as FabricThreeParameters<T, P1, P2, P3>) = item.factory {
             assembly = factory(self, parameter1, parameter2, parameter3)
         }
-
         if case .singleton = scope {
            item.assembly = assembly
         }
@@ -232,54 +323,16 @@ private extension TuringDI {
         return assembly
     }
 
-    private func resolve<T, P1, P2, P3>(_ protocolType: T.Type,
-                                        parameter1: P1,
-                                        parameter2: P2,
-                                        parameter3: P3,
-                                        scope: Scope) -> T? {
-        let key = hashKey(types: [protocolType, P1.self, P2.self, P3.self])
-        guard let item = items.sync({ $0[key] }) else {
-            return nil
-        }
-        return resolve(item: item,
-                       parameter1: parameter1,
-                       parameter2: parameter2,
-                       parameter3: parameter3, scope: scope)
-    }
-
-    private func resolve<T, P>(_ protocolType: T.Type, parameter: P, scope: Scope) -> T? {
-        let key = hashKey(types: [protocolType, P.self])
-        guard let item = items.sync({ $0[key] }) else {
-            return nil
-        }
-
-        return resolve(item: item, parameter: parameter, scope: scope)
-    }
-
-    private func resolve<T, P1, P2>(_ protocolType: T.Type, parameter1: P1, parameter2: P2, scope: Scope) -> T? {
-        let key = hashKey(types: [protocolType, P1.self, P2.self])
-        guard let item = items.sync({ $0[key] }) else {
-            return nil
-        }
-        return resolve(item: item, parameter1: parameter1, parameter2: parameter2, scope: scope)
-    }
-
     private func resolve<T>(_ protocolType: T.Type, scope: Scope) -> T? {
-        let key = hashKey(types: [protocolType])
-        guard let item = items.sync({ $0[key] }) else {
+        guard let item = getItem(types: [protocolType]) else {
             return nil
         }
 
         return resolve(item: item, scope: scope)
     }
-}
 
-private extension TuringDI {
-
-    // MARK: - Types
-
-    private enum Scope: TuringDIScopeProtocol {
-        case new
-        case singleton
+    private func getItem(types: [Any.Type]) -> Item? {
+        let key = hashKey(types: types)
+        return items.sync({ $0[key] })
     }
 }

@@ -14,7 +14,7 @@ protocol ChildProtocol: class {
 
 final class ChildClass: ChildProtocol {
 
-    // MARK; - Properties
+    // MARK: - Properties
 
     weak var parent: ParentProtocol?
 
@@ -22,7 +22,6 @@ final class ChildClass: ChildProtocol {
 
     init() {
         parent = nil
-        print("zzzz ChildProtocol")
     }
 
     convenience init(parent: ParentProtocol?) {

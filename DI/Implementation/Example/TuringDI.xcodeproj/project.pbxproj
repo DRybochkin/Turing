@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D019752226DAE3B00CC395D /* TestTuringDIOneParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D019751226DAE3B00CC395D /* TestTuringDIOneParametersSpec.swift */; };
+		1D019756226DDFF700CC395D /* TestTuringDITwoParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D019755226DDFF700CC395D /* TestTuringDITwoParametersSpec.swift */; };
+		1D019758226DE14300CC395D /* TestTuringDIThreeParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D019757226DE14300CC395D /* TestTuringDIThreeParametersSpec.swift */; };
+		1D0ABC38226F487600377E44 /* TestTuringDIParentChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ABC37226F487600377E44 /* TestTuringDIParentChildSpec.swift */; };
+		1D3FC05D2268AC91009A8280 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA01C5226320D6006556A4 /* ParentClass.swift */; };
+		1D3FC05E2268AC91009A8280 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA01C72263210D006556A4 /* ChildClass.swift */; };
 		1DBA01C6226320D6006556A4 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA01C5226320D6006556A4 /* ParentClass.swift */; };
 		1DBA01C82263210D006556A4 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA01C72263210D006556A4 /* ChildClass.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -14,7 +20,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* TestTuringDIZeroParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* TestTuringDIZeroParametersSpec.swift */; };
 		8AE44FD406AB87A6D6FE925B /* Pods_TuringDI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FC45A86DF1EF8B4E442D93 /* Pods_TuringDI_Tests.framework */; };
 		AB571E31D717278AE6959EDF /* Pods_TuringDI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EC91670E64F10ABB8000B1 /* Pods_TuringDI_Example.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D019751226DAE3B00CC395D /* TestTuringDIOneParametersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringDIOneParametersSpec.swift; sourceTree = "<group>"; };
+		1D019755226DDFF700CC395D /* TestTuringDITwoParametersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringDITwoParametersSpec.swift; sourceTree = "<group>"; };
+		1D019757226DE14300CC395D /* TestTuringDIThreeParametersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringDIThreeParametersSpec.swift; sourceTree = "<group>"; };
+		1D0ABC37226F487600377E44 /* TestTuringDIParentChildSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringDIParentChildSpec.swift; sourceTree = "<group>"; };
 		1DBA01C5226320D6006556A4 /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
 		1DBA01C72263210D006556A4 /* ChildClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildClass.swift; sourceTree = "<group>"; };
 		1DCD96FB226093F60061E8BC /* TuringDI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringDI.podspec; path = ../../../TuringDI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -42,7 +52,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TuringDI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringDI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* TestTuringDIZeroParametersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringDIZeroParametersSpec.swift; sourceTree = "<group>"; };
 		624AC8F3B36B1A36CE64FA75 /* Pods-TuringDI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		74EC91670E64F10ABB8000B1 /* Pods_TuringDI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringDI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D6834BF2C249C82BB15FF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -73,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D3FC05C2268AC83009A8280 /* TestTypes */ = {
+			isa = PBXGroup;
+			children = (
+				1DBA01C5226320D6006556A4 /* ParentClass.swift */,
+				1DBA01C72263210D006556A4 /* ChildClass.swift */,
+			);
+			name = TestTypes;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +122,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				1DBA01C5226320D6006556A4 /* ParentClass.swift */,
-				1DBA01C72263210D006556A4 /* ChildClass.swift */,
 			);
 			name = "Example for TuringDI";
 			path = TuringDI;
@@ -121,8 +138,13 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				1D3FC05C2268AC83009A8280 /* TestTypes */,
+				607FACEB1AFB9204008FA782 /* TestTuringDIZeroParametersSpec.swift */,
+				1D019751226DAE3B00CC395D /* TestTuringDIOneParametersSpec.swift */,
+				1D019755226DDFF700CC395D /* TestTuringDITwoParametersSpec.swift */,
+				1D019757226DE14300CC395D /* TestTuringDIThreeParametersSpec.swift */,
+				1D0ABC37226F487600377E44 /* TestTuringDIParentChildSpec.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -234,10 +256,9 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TuringDI" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -419,7 +440,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				1D3FC05D2268AC91009A8280 /* ParentClass.swift in Sources */,
+				1D019756226DDFF700CC395D /* TestTuringDITwoParametersSpec.swift in Sources */,
+				1D0ABC38226F487600377E44 /* TestTuringDIParentChildSpec.swift in Sources */,
+				1D019752226DAE3B00CC395D /* TestTuringDIOneParametersSpec.swift in Sources */,
+				1D3FC05E2268AC91009A8280 /* ChildClass.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* TestTuringDIZeroParametersSpec.swift in Sources */,
+				1D019758226DE14300CC395D /* TestTuringDIThreeParametersSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

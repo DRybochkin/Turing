@@ -112,6 +112,7 @@ private extension TuringDI {
         let key = hashKey(types: parameters)
         items.async({
             $0[key] = Item(protocolType: protocolType,
+                           types: parametersTypes,
                            factory: factory,
                            completion: completion)
         })
@@ -121,6 +122,7 @@ private extension TuringDI {
         let key = hashKey(types: [protocolType])
         items.async({
             $0[key] = Item(protocolType: protocolType,
+                           types: [],
                            factory: factory,
                            completion: completion)
         })
