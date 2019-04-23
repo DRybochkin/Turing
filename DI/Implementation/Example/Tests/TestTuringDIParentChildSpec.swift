@@ -19,6 +19,7 @@ final class TestTuringDIParentChildSpec: QuickSpec {
             parentWithChild()
             circularParentWithChild()
             circularParentWithChildAndCompletion()
+            optionalStrong()
         }
     }
 }
@@ -74,4 +75,13 @@ private extension TestTuringDIParentChildSpec {
             expect(parent?.property1?.parent != nil) == true
         }
     }
+    private func optionalStrong() {
+        it("test register/resolve optional/strong") {
+            let diContainer = TuringDI(maxDepth: 10)
+            diContainer.register(ChildProtocol.self, factory: { ChildClass(parent: $1) })
+            let child = diContainer.resolve(ChildProtocol.self, parameter: ParentClass() as ParentProtocol)
+            expect(child != nil) == true
+        }
+    }
+
 }
