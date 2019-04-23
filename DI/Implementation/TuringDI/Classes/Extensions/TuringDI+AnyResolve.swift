@@ -18,6 +18,7 @@ extension TuringDI {
                                        parameter3: P3,
                                        scope: Scope) -> T? {
         guard let item = getAnyItem(types: [protocolType, P1.self, P2.self, P3.self]) else {
+            resolutionError(protocolType, types: [P1.self, P2.self, P3.self], scope: scope)
             return nil
         }
         if item.isAnyType(in: 0), item.isAnyType(in: 1), item.isAnyType(in: 2) {
@@ -63,6 +64,7 @@ extension TuringDI {
                            parameter3: parameter3 as Any,
                            scope: scope)
         }
+        checkResolution(item: item, assembly: nil, scope: scope)
         return nil
     }
 
@@ -71,6 +73,7 @@ extension TuringDI {
                                    parameter2: P2,
                                    scope: Scope) -> T? {
         guard let item = getAnyItem(types: [protocolType, P1.self, P2.self]) else {
+            resolutionError(protocolType, types: [P1.self, P2.self], scope: scope)
             return nil
         }
         if item.isAnyType(in: 0), item.isAnyType(in: 1) {
@@ -89,11 +92,13 @@ extension TuringDI {
                            parameter2: parameter2 as Any,
                            scope: scope)
         }
+        checkResolution(item: item, assembly: nil, scope: scope)
         return nil
     }
 
     func resolveAnyItem<T, P1>(_ protocolType: T.Type, parameter: P1, scope: Scope) -> T? {
         guard let item = getAnyItem(types: [protocolType, P1.self]) else {
+            resolutionError(protocolType, types: [P1.self], scope: scope)
             return nil
         }
         if item.isAnyType(in: 0) {
@@ -101,6 +106,7 @@ extension TuringDI {
                            parameter: parameter as Any,
                            scope: scope)
         }
+        checkResolution(item: item, assembly: nil, scope: scope)
         return nil
     }
 }

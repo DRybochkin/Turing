@@ -16,10 +16,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let diContainer = TuringDI(maxDepth: 10)
-        diContainer.register(ChildProtocol.self, factory: { ChildClass() })
+
+        diContainer.register(ChildProtocol.self, factory: { ChildClass(di: $0) })
         diContainer.register(ParentProtocol.self, factory: {
             ParentClass(property2: $1, property3: $2, property4: $3)
         })
+        let _ = diContainer.resolve(ParentProtocol.self,
+                                    parameter1: 10,
+                                    parameter2: 11,
+                                    parameter3: nil as ParentProtocol?)
         let child1: ChildProtocol? = diContainer.resolve()
         guard let parent1: ParentProtocol = diContainer.resolve(parameter1: 10,
                                                                 parameter2: "11",

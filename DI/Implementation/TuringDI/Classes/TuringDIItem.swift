@@ -41,3 +41,13 @@ extension TuringDI {
         }
     }
 }
+
+extension TuringDI.Item: CustomStringConvertible {
+
+    // MARK: - CustomStringConvertible functions
+
+    var description: String {
+        let parameters: [String] = types.enumerated().compactMap({ "parameter\($0): \($1)" })
+        return "func factory(\(parameters.joined(separator: ", "))) -> \(protocolType)"
+    }
+}

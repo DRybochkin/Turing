@@ -203,7 +203,6 @@ extension TuringDI {
             return resolveAnyItem(protocolType, parameter: parameter, scope: scope)
         }
     }
-
 }
 
 private extension TuringDI {
@@ -227,6 +226,7 @@ private extension TuringDI {
             return assembly
         }
         guard canContinue() else {
+            requrciveError(item: item, scope: scope)
             return nil
         }
         incrementDepth()
@@ -249,6 +249,7 @@ private extension TuringDI {
             completion(self, assembly)
         }
         decrementDepth()
+        checkResolution(item: item, assembly: assembly, scope: scope)
         return assembly
     }
 
@@ -257,6 +258,7 @@ private extension TuringDI {
             return assembly
         }
         guard canContinue() else {
+            requrciveError(item: item, scope: scope)
             return nil
         }
         incrementDepth()
@@ -272,6 +274,7 @@ private extension TuringDI {
             completion(self, assembly)
         }
         decrementDepth()
+        checkResolution(item: item, assembly: assembly, scope: scope)
         return assembly
     }
 
@@ -280,6 +283,7 @@ private extension TuringDI {
             return assembly
         }
         guard canContinue() else {
+            requrciveError(item: item, scope: scope)
             return nil
         }
         incrementDepth()
@@ -294,6 +298,7 @@ private extension TuringDI {
             completion(self, assembly)
         }
         decrementDepth()
+        checkResolution(item: item, assembly: assembly, scope: scope)
         return assembly
     }
 
@@ -306,6 +311,7 @@ private extension TuringDI {
             return assembly
         }
         guard canContinue() else {
+            requrciveError(item: item, scope: scope)
             return nil
         }
         incrementDepth()
@@ -320,11 +326,13 @@ private extension TuringDI {
             completion(self, assembly)
         }
         decrementDepth()
+        checkResolution(item: item, assembly: assembly, scope: scope)
         return assembly
     }
 
     private func resolve<T>(_ protocolType: T.Type, scope: Scope) -> T? {
         guard let item = getItem(types: [protocolType]) else {
+            resolutionError(protocolType, types: [], scope: scope)
             return nil
         }
 

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import TuringDIInterface
 
 protocol ChildProtocol: class {
     var parent: ParentProtocol? { get set }
@@ -21,6 +22,11 @@ final class ChildClass: ChildProtocol {
     // MARK: - Constructors
 
     init() {
+        parent = nil
+    }
+
+    init(di diContainer: TuringDIResolveProtocol) {
+        _ = diContainer.resolve(ChildProtocol.self)
         parent = nil
     }
 
