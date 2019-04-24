@@ -26,24 +26,21 @@ class ViewController: UIViewController {
                                     parameter2: 11,
                                     parameter3: nil as ParentProtocol?)
         let child1: ChildProtocol? = diContainer.resolve()
-        guard let parent1: ParentProtocol = diContainer.resolve(parameter1: 10,
+        let parent1: ParentProtocol = diContainer.resolveUnwrap(parameter1: 10,
                                                                 parameter2: "11",
-                                                                parameter3: child1) else {
-            return
-        }
-        guard let parent2 = diContainer.resolve(ParentProtocol.self,
+                                                                parameter3: child1)
+        let parent2 = diContainer.resolveUnwrap(ParentProtocol.self,
                                                 parameter1: 10,
                                                 parameter2: "11",
-                                                parameter3: child1) else {
-            return
-        }
+                                                parameter3: child1)
         guard let equalParent1 = parent1 as? ParentClass else {
             return
         }
         guard let equalParent2 = parent2 as? ParentClass else {
             return
         }
-        print(equalParent1, equalParent2)
+        print(equalParent1 == equalParent2)
+        print(equalParent1 === equalParent2)
     }
 }
 
