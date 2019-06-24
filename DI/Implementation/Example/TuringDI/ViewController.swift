@@ -3,7 +3,7 @@
 //  TuringDI
 //
 //  Created by drybochkin on 04/12/2019.
-//  Copyright (c) 2019 drybochkin. All rights reserved.
+//  Copyright (c) 2019 Dmitry Rybochkin. All rights reserved.
 //
 
 import TuringDIInterface
@@ -15,7 +15,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let diContainer = TuringDI(maxDepth: 10)
+        let diContainer = DIContainer(maxRecursiveDepth: 10)
+
+        diContainer.register(RecurciveAProtocol.self, factory: { RecurciveA(diContainer: $0) })
+        diContainer.register(RecurciveBProtocol.self, factory: { RecurciveB(diContainer: $0) })
+
+        let recursiveA: RecurciveAProtocol? = diContainer.resolveSingletone()
+        print(recursiveA != nil)
+
 
         diContainer.register(ChildProtocol.self, factory: { ChildClass(di: $0) })
         diContainer.register(ParentProtocol.self, factory: {
@@ -26,13 +33,13 @@ class ViewController: UIViewController {
                                     parameter2: 11,
                                     parameter3: nil as ParentProtocol?)
         let child1: ChildProtocol? = diContainer.resolve()
-        let parent1: ParentProtocol = diContainer.resolveUnwrap(parameter1: 10,
-                                                                parameter2: "11",
-                                                                parameter3: child1)
-        let parent2 = diContainer.resolveUnwrap(ParentProtocol.self,
-                                                parameter1: 10,
-                                                parameter2: "11",
-                                                parameter3: child1)
+        let parent1: ParentProtocol! = diContainer.resolve(parameter1: 10,
+                                                           parameter2: "11",
+                                                           parameter3: child1)
+        let parent2 = diContainer.resolve(ParentProtocol.self,
+                                          parameter1: 10,
+                                          parameter2: "11",
+                                          parameter3: child1)
         guard let equalParent1 = parent1 as? ParentClass else {
             return
         }
@@ -44,4 +51,4 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: TuringDISupportable { }
+extension ViewController: DISupportable { }

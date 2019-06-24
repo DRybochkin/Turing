@@ -3,7 +3,7 @@
 //  TuringDI_Example
 //
 //  Created by Dmitry Rybochkin on 14/04/2019.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Copyright (c) 2019 Dmitry Rybochkin. All rights reserved.
 //
 
 import Foundation
@@ -25,7 +25,7 @@ final class ChildClass: ChildProtocol {
         parent = nil
     }
 
-    init(di diContainer: TuringDIResolveProtocol) {
+    init(di diContainer: DIResolveProtocol) {
         _ = diContainer.resolve(ChildProtocol.self)
         parent = nil
     }

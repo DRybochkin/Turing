@@ -1,9 +1,9 @@
 //
 //  TestObject.swift
-//  TuringSafe_Tests
+//  TuringSafeValue_Tests
 //
 //  Created by Dmitry Rybochkin on 17/04/2019.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Copyright © 2019 Dmitry Rybochkin. All rights reserved.
 //
 
 import Foundation

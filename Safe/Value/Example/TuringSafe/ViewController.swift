@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  TuringSafe
+//  TuringSafeValue
 //
 //  Created by drybochkin on 04/15/2019.
-//  Copyright (c) 2019 drybochkin. All rights reserved.
+//  Copyright (c) 2019 Dmitry Rybochkin. All rights reserved.
 //
 
 import TuringSafeValue
@@ -11,26 +11,26 @@ import UIKit
 
 final class ViewController: UIViewController {
 
-    let safeInt: TuringSafeValue<Int> = TuringSafeValue(0)
-    let safeString: TuringSafeValue<String> = TuringSafeValue("")
-    private let safeEnum: TuringSafeValue<TestEnum> = TuringSafeValue(.test1)
-    private let safeStruct: TuringSafeValue<TestStruct> = TuringSafeValue(.init(property1: "", property2: 0))
-    private let safeObject: TuringSafeValue<TestObject> = TuringSafeValue(.init(property1: "", property2: 0))
+    let safeInt: SafeValue<Int> = SafeValue(0)
+    let safeString: SafeValue<String> = SafeValue("")
+    private let safeEnum: SafeValue<TestEnum> = SafeValue(.test1)
+    private let safeStruct: SafeValue<TestStruct> = SafeValue(.init(property1: "", property2: 0))
+    private let safeObject: SafeValue<TestObject> = SafeValue(.init(property1: "", property2: 0))
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let safeInt = TuringSafeValue<Int>(0)
+        let safeInt = SafeValue<Int>(0)
         safeInt <- 1
 
-        let safeObj = TuringSafeValue<TestObject>(TestObject(property1: "", property2: 0))
+        let safeObj = SafeValue<TestObject>(TestObject(property1: "", property2: 0))
 
         safeObj <- { $0.property2 = 10 }
 
         let safeInt2 = §200
         print(§safeInt2)
 
-        var safeInt1: TuringSafeValue<Int> = §100
+        var safeInt1: SafeValue<Int> = §100
         print(§safeInt1)
 
         let index = §safeInt

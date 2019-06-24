@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/drybochkin/ISV/Turing/Safe/Value/Example/TuringSafeValue.xcodeproj">
+      location = "group:TuringSafeValue.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:TuringSafeValue.xcodeproj">
    </FileRef>
 </Workspace>

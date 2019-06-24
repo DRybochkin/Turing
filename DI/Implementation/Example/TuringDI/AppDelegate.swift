@@ -3,7 +3,7 @@
 //  TuringDI
 //
 //  Created by drybochkin on 04/12/2019.
-//  Copyright (c) 2019 drybochkin. All rights reserved.
+//  Copyright (c) 2019 Dmitry Rybochkin. All rights reserved.
 //
 
 import UIKit

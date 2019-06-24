@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D26E4212268893200050C54 /* TestTuringSafeValueCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26E4202268893200050C54 /* TestTuringSafeValueCodableSpec.swift */; };
 		1D5593FE22678702002A98A5 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F77226761E500DAA4A1 /* TestObject.swift */; };
-		1D5594042267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5594032267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift */; };
-		1D55940622679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D55940522679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift */; };
-		1DD30F5C226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F38226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift */; };
-		1DD30F712267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F702267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift */; };
+		1DA3431622C0B3BC0094E325 /* TestSafeValueArithmeticSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3431122C0B3BC0094E325 /* TestSafeValueArithmeticSpec.swift */; };
+		1DA3431722C0B3BC0094E325 /* TestSafeValueCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3431222C0B3BC0094E325 /* TestSafeValueCodableSpec.swift */; };
+		1DA3431822C0B3BC0094E325 /* TestSafeValueInitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3431322C0B3BC0094E325 /* TestSafeValueInitSpec.swift */; };
+		1DA3431922C0B3BC0094E325 /* TestSafeValueAsyncSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3431422C0B3BC0094E325 /* TestSafeValueAsyncSpec.swift */; };
+		1DA3431A22C0B3BC0094E325 /* TestSafeValueOperatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3431522C0B3BC0094E325 /* TestSafeValueOperatorSpec.swift */; };
 		1DD30F74226761A200DAA4A1 /* TestEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F73226761A200DAA4A1 /* TestEnum.swift */; };
 		1DD30F76226761C300DAA4A1 /* TestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F75226761C300DAA4A1 /* TestStruct.swift */; };
 		1DD30F78226761E500DAA4A1 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD30F77226761E500DAA4A1 /* TestObject.swift */; };
@@ -36,11 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D26E4202268893200050C54 /* TestTuringSafeValueCodableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueCodableSpec.swift; sourceTree = "<group>"; };
-		1D5594032267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueArithmeticSpec.swift; sourceTree = "<group>"; };
-		1D55940522679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueOperatorSpec.swift; sourceTree = "<group>"; };
-		1DD30F38226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueInitSpec.swift; sourceTree = "<group>"; };
-		1DD30F702267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringSafeValueAsyncSpec.swift; sourceTree = "<group>"; };
+		1DA3431122C0B3BC0094E325 /* TestSafeValueArithmeticSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSafeValueArithmeticSpec.swift; sourceTree = "<group>"; };
+		1DA3431222C0B3BC0094E325 /* TestSafeValueCodableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSafeValueCodableSpec.swift; sourceTree = "<group>"; };
+		1DA3431322C0B3BC0094E325 /* TestSafeValueInitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSafeValueInitSpec.swift; sourceTree = "<group>"; };
+		1DA3431422C0B3BC0094E325 /* TestSafeValueAsyncSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSafeValueAsyncSpec.swift; sourceTree = "<group>"; };
+		1DA3431522C0B3BC0094E325 /* TestSafeValueOperatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSafeValueOperatorSpec.swift; sourceTree = "<group>"; };
 		1DD30F73226761A200DAA4A1 /* TestEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
 		1DD30F75226761C300DAA4A1 /* TestStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStruct.swift; sourceTree = "<group>"; };
 		1DD30F77226761E500DAA4A1 /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
@@ -142,12 +142,12 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1DA3431122C0B3BC0094E325 /* TestSafeValueArithmeticSpec.swift */,
+				1DA3431422C0B3BC0094E325 /* TestSafeValueAsyncSpec.swift */,
+				1DA3431222C0B3BC0094E325 /* TestSafeValueCodableSpec.swift */,
+				1DA3431322C0B3BC0094E325 /* TestSafeValueInitSpec.swift */,
+				1DA3431522C0B3BC0094E325 /* TestSafeValueOperatorSpec.swift */,
 				1DD30F722267619000DAA4A1 /* Types */,
-				1DD30F702267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift */,
-				1D5594032267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift */,
-				1D26E4202268893200050C54 /* TestTuringSafeValueCodableSpec.swift */,
-				1DD30F38226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift */,
-				1D55940522679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -361,21 +361,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TuringSafeValue_Example/Pods-TuringSafeValue_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TuringSafeValue_Example/Pods-TuringSafeValue_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TuringSafeValue/TuringSafeValue.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringSafeValue.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringSafeValue_Example/Pods-TuringSafeValue_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringSafeValue_Example/Pods-TuringSafeValue_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BF437AAD8D73302D29750DF1 /* [CP] Embed Pods Frameworks */ = {
@@ -383,23 +379,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TuringSafeValue_Tests/Pods-TuringSafeValue_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TuringSafeValue_Tests/Pods-TuringSafeValue_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringSafeValue_Tests/Pods-TuringSafeValue_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringSafeValue_Tests/Pods-TuringSafeValue_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C45B45A221ECDAE6A2473BDE /* [CP] Check Pods Manifest.lock */ = {
@@ -441,14 +433,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D55940622679639002A98A5 /* TestTuringSafeValueOperatorSpec.swift in Sources */,
-				1DD30F5C226638DC00DAA4A1 /* TestTuringSafeValueInitSpec.swift in Sources */,
+				1DA3431922C0B3BC0094E325 /* TestSafeValueAsyncSpec.swift in Sources */,
 				1DD30F74226761A200DAA4A1 /* TestEnum.swift in Sources */,
-				1D5594042267927B002A98A5 /* TestTuringSafeValueArithmeticSpec.swift in Sources */,
 				1DD30F78226761E500DAA4A1 /* TestObject.swift in Sources */,
-				1D26E4212268893200050C54 /* TestTuringSafeValueCodableSpec.swift in Sources */,
 				1DD30F76226761C300DAA4A1 /* TestStruct.swift in Sources */,
-				1DD30F712267617600DAA4A1 /* TestTuringSafeValueAsyncSpec.swift in Sources */,
+				1DA3431822C0B3BC0094E325 /* TestSafeValueInitSpec.swift in Sources */,
+				1DA3431A22C0B3BC0094E325 /* TestSafeValueOperatorSpec.swift in Sources */,
+				1DA3431622C0B3BC0094E325 /* TestSafeValueArithmeticSpec.swift in Sources */,
+				1DA3431722C0B3BC0094E325 /* TestSafeValueCodableSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
