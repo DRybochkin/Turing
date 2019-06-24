@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  TuringErrorImplementation
+//  TuringError
 //
-//  Created by drybochkin on 04/11/2019.
-//  Copyright (c) 2019 drybochkin. All rights reserved.
+//  Created by Dmitry Rybochkin on 04/11/2019.
+//  Copyright (c) 2019 Dmitry Rybochkin. All rights reserved.
 //
 
 import TuringError
+import TuringErrorInterface
 import UIKit
 
 final class ViewController: UIViewController {
@@ -16,20 +17,26 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let baseError = TuringError<ErrorCode>(code: .error2)
-        let error = TuringError<ErrorCode>(code: .error404, underlying: baseError)
-        print(error.path)
-        print(error.description)
+        let errorUnderlyingWithUserInfo = ViewControllerError.error404.error
+            .underlying(ViewControllerError.error0.error.info(["testKey": 12])).info(["testKey1": 12.13])
+        print(errorUnderlyingWithUserInfo.underlyingUserInfo ?? ["nil": "nil"])
 
-        let error1 = TuringError<ErrorCode>(code: .error1)
-        print(error1.path)
-        print(error1.description)
+        let baseError = ViewControllerError.error0
+        let error = ViewControllerError.error1.error.underlying(baseError.error)
+        print("TuringError=>", error.path)
+        print("TuringError=>", error.description)
 
-        let nsError = TuringError<ErrorCode>(code: .error2, underlying: NSError(domain: "NetworkError", code: 409, userInfo: nil))
-        print(nsError.path)
-        print(nsError.description)
+        let error1 = ViewControllerError.error1.error
+        print("TuringError=>", error1.path)
+        print("TuringError=>", error1.description)
 
-        guard let url = URL(string: "https://www.turing.ru") else {
+        let nsError = ViewControllerError.error2.error.underlying(NSError(domain: "NetworkError",
+                                                                    code: 409,
+                                                                    userInfo: nil))
+        print("TuringError=>", nsError.path)
+        print("TuringError=>", nsError.description)
+
+        guard let url = URL(string: "http://turing.ru") else {
             return
         }
         let request = URLRequest(url: url)
@@ -38,20 +45,22 @@ final class ViewController: UIViewController {
             guard let error = error else {
                 return
             }
-            let nsError = TuringError<ErrorCode>(code: .error2, underlying: error)
-            print(nsError.path)
-            print(nsError.description)
+            let nsError = ViewControllerError.error2.error.underlying(error)
+            print("TuringError=>", nsError.path)
+            print("TuringError=>", nsError.description)
+            print("TuringError=>", nsError.debugDescription)
         })
 
         task.resume()
     }
 }
 
-// MARK: - Errors
 
 private extension ViewController {
 
-    private enum ErrorCode: Int, TuringEnumErrorCodeProtocol {
+    // MARK: - Types
+
+    private enum ViewControllerError: Int, ErrorCodeProtocol, ErrorConvertible {
 
         // MARK: - Cases
 
@@ -60,11 +69,9 @@ private extension ViewController {
         case error2
         case error404 = 404
 
-        var domain: String {
-            return "ViewController"
-        }
-        var domainCode: String {
-            return "TVC"
-        }
+        // MARK: - Properties
+
+        static var domain: String = "ViewController"
+        static var domainCode: String = "TVC"
     }
 }

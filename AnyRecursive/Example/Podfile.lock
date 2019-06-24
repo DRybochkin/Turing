@@ -1,0 +1,31 @@
+PODS:
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
+  - SwiftLint (0.33.0)
+  - TuringAnyRecursive (0.1.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - SwiftLint
+  - TuringAnyRecursive (from `../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  TuringAnyRecursive:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
+  TuringAnyRecursive: 66aacfbbbe540d0530eb8d9d052a6f1fd1f59304
+
+PODFILE CHECKSUM: 78ee1704a12e7f7d39234775960721717ad3b769
+
+COCOAPODS: 1.7.1
