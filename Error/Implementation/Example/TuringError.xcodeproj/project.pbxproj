@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		03883AA6874009CF67FFC3D2 /* Pods_TuringError_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504442F5A5A5A2371237A302 /* Pods_TuringError_Tests.framework */; };
-		1DCDECB8225FA07500929EA3 /* TestErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCDECB6225FA07500929EA3 /* TestErrorCode.swift */; };
+		1DA3432622C0B8680094E325 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3432422C0B8680094E325 /* TestError.swift */; };
+		1DA3432722C0B8680094E325 /* TestErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3432522C0B8680094E325 /* TestErrorSpec.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* TestTuringErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* TestTuringErrorSpec.swift */; };
 		735010A7B69742CB2EFE205D /* Pods_TuringError_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073F506BBFA1498D5B21B698 /* Pods_TuringError_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +32,9 @@
 		073F506BBFA1498D5B21B698 /* Pods_TuringError_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringError_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5B3A9CF19D4D8A925A13B5 /* Pods-TuringError_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringError_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringError_Tests/Pods-TuringError_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1BF69CAFD9537DA81039E8EF /* Pods-TuringError_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringError_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringError_Example/Pods-TuringError_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1DA3432422C0B8680094E325 /* TestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		1DA3432522C0B8680094E325 /* TestErrorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestErrorSpec.swift; sourceTree = "<group>"; };
 		1DCDECB2225F9DF300929EA3 /* TuringError.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringError.podspec; path = ../../../TuringError.podspec; sourceTree = "<group>"; };
-		1DCDECB6225FA07500929EA3 /* TestErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestErrorCode.swift; sourceTree = "<group>"; };
 		48FB21141031061DD7C7294A /* Pods-TuringError_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringError_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringError_Example/Pods-TuringError_Example.release.xcconfig"; sourceTree = "<group>"; };
 		504442F5A5A5A2371237A302 /* Pods_TuringError_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringError_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* TuringError_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringError_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +46,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TuringError_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringError_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* TestTuringErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTuringErrorSpec.swift; sourceTree = "<group>"; };
 		82732AF60CE0811846F44CA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AE0C213773BAF8E46BAD0618 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D2CF9DC262F039CF6519DBDE /* Pods-TuringError_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringError_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringError_Tests/Pods-TuringError_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1DCDECB6225FA07500929EA3 /* TestErrorCode.swift */,
-				607FACEB1AFB9204008FA782 /* TestTuringErrorSpec.swift */,
+				1DA3432422C0B8680094E325 /* TestError.swift */,
+				1DA3432522C0B8680094E325 /* TestErrorSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -224,7 +224,7 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 7S572U2C68;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -319,23 +319,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TuringError_Example/Pods-TuringError_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TuringError_Example/Pods-TuringError_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TuringError/TuringError.framework",
 				"${BUILT_PRODUCTS_DIR}/TuringErrorInterface/TuringErrorInterface.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringError.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorInterface.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringError_Example/Pods-TuringError_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringError_Example/Pods-TuringError_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1D26E4252268950800050C54 /* ShellScript */ = {
@@ -377,23 +373,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TuringError_Tests/Pods-TuringError_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TuringError_Tests/Pods-TuringError_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringError_Tests/Pods-TuringError_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringError_Tests/Pods-TuringError_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -412,8 +404,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* TestTuringErrorSpec.swift in Sources */,
-				1DCDECB8225FA07500929EA3 /* TestErrorCode.swift in Sources */,
+				1DA3432622C0B8680094E325 /* TestError.swift in Sources */,
+				1DA3432722C0B8680094E325 /* TestErrorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2CF9DC262F039CF6519DBDE /* Pods-TuringError_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7S572U2C68;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -603,6 +596,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringError_Example.app/TuringError_Example";
@@ -613,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0C5B3A9CF19D4D8A925A13B5 /* Pods-TuringError_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7S572U2C68;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
