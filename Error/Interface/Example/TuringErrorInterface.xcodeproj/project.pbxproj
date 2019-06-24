@@ -124,6 +124,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				9753FEFB916E359A33911956 /* [CP] Embed Pods Frameworks */,
+				1D26E4242268945C00050C54 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -184,7 +185,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9753FEFB916E359A33911956 /* [CP] Embed Pods Frameworks */ = {
+		1D26E4242268945C00050C54 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,18 +193,31 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../TuringErrorInterface\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		9753FEFB916E359A33911956 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TuringErrorInterface/TuringErrorInterface.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorInterface.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE16089168715D02A5B8A6B0 /* [CP] Check Pods Manifest.lock */ = {

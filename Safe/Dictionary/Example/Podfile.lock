@@ -1,0 +1,31 @@
+PODS:
+  - Nimble (8.0.1)
+  - Quick (2.0.0)
+  - SwiftLint (0.31.0)
+  - TuringSafeDictionary (0.1.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - SwiftLint
+  - TuringSafeDictionary (from `../../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  TuringSafeDictionary:
+    :path: "../../../"
+
+SPEC CHECKSUMS:
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  TuringSafeDictionary: 7ec0555947769d63419156992a817586f79b006d
+
+PODFILE CHECKSUM: c094bc7c71ed4e94201ea8d6219d8d7119e33a78
+
+COCOAPODS: 1.5.3
