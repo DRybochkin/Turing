@@ -14,6 +14,10 @@ import TuringHttpServiceInterface
 
 final class TestHttpServiceAsyncSpec: QuickSpec {
 
+    // MARK: - Types
+
+    typealias RAR = Result<AnyRecursive, Error>
+
     // MARK: - Lifecycle
 
     override func spec() {
@@ -33,7 +37,8 @@ private extension TestHttpServiceAsyncSpec {
             waitUntil(timeout: 3.0, action: { done in
                 let httpService: HttpServiceProtocol = HttpService(checkCredential: false)
                 let request = StackExchangeRequest()
-                let dataRequest: HttpDataRequestProtocol? = httpService.send(request: request, completion: { (result: Result<AnyRecursive, Error>) in
+                let dataRequest: HttpDataRequestProtocol?
+                dataRequest = httpService.send(request: request, completion: { (result: RAR) in
                     switch result {
                     case .failure:
                         expect(false) == true
@@ -44,7 +49,6 @@ private extension TestHttpServiceAsyncSpec {
                 })
                 expect(dataRequest).notTo(beNil())
             })
-
         }
     }
 
@@ -53,7 +57,8 @@ private extension TestHttpServiceAsyncSpec {
             waitUntil(timeout: 1.0, action: { done in
                 let httpService: HttpServiceProtocol = HttpService(checkCredential: false)
                 let request = StackExchangeRequest()
-                let dataRequest: HttpDataRequestProtocol? = httpService.send(request: request, completion: { (result: Result<AnyRecursive, Error>) in
+                let dataRequest: HttpDataRequestProtocol?
+                dataRequest = httpService.send(request: request, completion: { (result: RAR) in
                     switch result {
                     case .failure(let error):
                         expect(error.path) == "HS0-NSE-999"

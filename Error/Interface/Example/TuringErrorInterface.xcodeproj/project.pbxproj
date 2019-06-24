@@ -207,21 +207,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TuringErrorInterface/TuringErrorInterface.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorInterface.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringErrorInterface_Example/Pods-TuringErrorInterface_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE16089168715D02A5B8A6B0 /* [CP] Check Pods Manifest.lock */ = {

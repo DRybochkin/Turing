@@ -22,7 +22,7 @@ pod 'TuringHttpServiceInterface'
 
 ## Author
 
-drybochkin, drybochkin@Turing.ru
+drybochkin, drybochkin@gmail.com
 
 ## License
 

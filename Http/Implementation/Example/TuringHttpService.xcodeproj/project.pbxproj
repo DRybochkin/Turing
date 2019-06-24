@@ -203,6 +203,7 @@
 				465486F84EBAC2DAD8ECB86C3A19F862 /* Frameworks */,
 				01A5C45F33A07B9A89F039BBBE026C74 /* Resources */,
 				6BBAE3C695798EA95EB1962D8C65457D /* [CP] Embed Pods Frameworks */,
+				1D9A6B3522C0E33200E66F97 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -292,6 +293,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../TuringHttpService\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		1D9A6B3522C0E33200E66F97 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../Example/Tests\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		6BBAE3C695798EA95EB1962D8C65457D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
