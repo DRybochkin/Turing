@@ -1,0 +1,60 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
+  - SwiftLint (0.33.0)
+  - TuringAnyRecursive (0.1.0)
+  - TuringError (0.1.0):
+    - TuringErrorInterface (= 0.1.0)
+  - TuringErrorInterface (0.1.0)
+  - TuringHttpService (0.1.0):
+    - Alamofire
+    - TuringError (~> 0.1.0)
+    - TuringErrorInterface (~> 0.1.0)
+    - TuringHttpServiceInterface (= 0.1.0)
+  - TuringHttpServiceInterface (0.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Nimble
+  - Quick
+  - SwiftLint
+  - TuringAnyRecursive (from `../../../`)
+  - TuringError (from `../../../`)
+  - TuringErrorInterface (from `../../../`)
+  - TuringHttpService (from `../../../`)
+  - TuringHttpServiceInterface (from `../../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Nimble
+    - Quick
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  TuringAnyRecursive:
+    :path: "../../../"
+  TuringError:
+    :path: "../../../"
+  TuringErrorInterface:
+    :path: "../../../"
+  TuringHttpService:
+    :path: "../../../"
+  TuringHttpServiceInterface:
+    :path: "../../../"
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
+  TuringAnyRecursive: 66aacfbbbe540d0530eb8d9d052a6f1fd1f59304
+  TuringError: d28855253e333c5494d9538e03afee106dbc553a
+  TuringErrorInterface: 99389b15c419cc518ed7f272efecc25c9afb0db2
+  TuringHttpService: 24574ba1bea35d38298af098b55ac6732993970d
+  TuringHttpServiceInterface: b664ff0d9b86b6ca6481a679c063152d58c34a0f
+
+PODFILE CHECKSUM: 733983dfdbe77c4e70aaae567a79ad82f8412b16
+
+COCOAPODS: 1.7.1

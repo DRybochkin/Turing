@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D7E919E9A1BD0FB375544AFB69A29ED /* StackExchangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD788B0806A0CE4AE1AA56284331C8E /* StackExchangeRequest.swift */; };
+		146E9C30781A756BC96ED10AF5CBC501 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80469407E20EEF9F8C97891E045D504C /* Images.xcassets */; };
+		231F06D248ADDDE75CB1B4FF8CD9B88E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB44F4EDFCD8860C2FAFA37B8D3A62 /* ViewController.swift */; };
+		26DB350C4B88744C8505CF38C35F5FCC /* Pods_TuringHttpService_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7994B549AC4A837C40424E1DD5461008 /* Pods_TuringHttpService_Example.framework */; };
+		503C37F2E846772C426D1413F33226DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD49F1C1F857697CDAC3D13710D888A6 /* LaunchScreen.xib */; };
+		827B5FEF9CD3C0CF74C9D1979DC7DD5C /* StackExchangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD788B0806A0CE4AE1AA56284331C8E /* StackExchangeRequest.swift */; };
+		C3E4C3ED1F4B9854489262E302ADFC57 /* TestHttpServiceAsyncSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FC965344DA43A7805E164946F13ADC /* TestHttpServiceAsyncSpec.swift */; };
+		E2C1BB206A9A67A8FE703DDCA3B891A4 /* Pods_TuringHttpService_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1647F5A32582C04F9BB4134E1DE138D1 /* Pods_TuringHttpService_Tests.framework */; };
+		F15F226D5E4F33D83F5B9E0337B59537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738F753920A3C2D795F56DBFCDC3A5E5 /* Main.storyboard */; };
+		FF65DE0EBF160F94F25D42D057624AD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399389EE250F4C193D4BAD925BD0B19 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DE5A4D1E00FE8BE4F3FE4900B8DE51B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 130806CE326E69A8DBFCB6813E94D91C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39F05A96B01C226B23ED02A82564D711;
+			remoteInfo = TuringHttpService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1647F5A32582C04F9BB4134E1DE138D1 /* Pods_TuringHttpService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringHttpService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		256F162FFA1BC9D45061EEF3137F650A /* Pods-TuringHttpService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringHttpService_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TuringHttpService_Tests/Pods-TuringHttpService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		336F60AFBE61714C051C20C351EAEEC8 /* TuringHttpService.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringHttpService.podspec; path = ../../../TuringHttpService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		476A90F35F305E47BD8B0891325660BA /* TuringHttpService_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringHttpService_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74A855CCB07FCBE937850645E6DE18C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7994B549AC4A837C40424E1DD5461008 /* Pods_TuringHttpService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringHttpService_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABB44F4EDFCD8860C2FAFA37B8D3A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B2D1F46368B0A7608BE011FA31CCFA3 /* Pods-TuringHttpService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringHttpService_Example.release.xcconfig"; path = "Target Support Files/Pods-TuringHttpService_Example/Pods-TuringHttpService_Example.release.xcconfig"; sourceTree = "<group>"; };
+		80469407E20EEF9F8C97891E045D504C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CA569CCDC8EE39E4D0928D8F59CE5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D4E0F34774B0224D1D1B1188D83BD53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		92FE6598445EFC2FBD5618AD4693AD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		938B79D4A694CB90F1C48C400D051045 /* TuringHttpService_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringHttpService_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FC965344DA43A7805E164946F13ADC /* TestHttpServiceAsyncSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHttpServiceAsyncSpec.swift; sourceTree = "<group>"; };
+		B83099651CF1DD71E739580B023589C7 /* Pods-TuringHttpService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringHttpService_Tests.release.xcconfig"; path = "Target Support Files/Pods-TuringHttpService_Tests/Pods-TuringHttpService_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E4DE981CD6C36C23894889F25B054832 /* Pods-TuringHttpService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringHttpService_Example.debug.xcconfig"; path = "Target Support Files/Pods-TuringHttpService_Example/Pods-TuringHttpService_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EF7CB99F279953F20827DF63499F2AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EFD788B0806A0CE4AE1AA56284331C8E /* StackExchangeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackExchangeRequest.swift; sourceTree = "<group>"; };
+		F399389EE250F4C193D4BAD925BD0B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FECAEF758DF11BA02A80369257A30F1A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		465486F84EBAC2DAD8ECB86C3A19F862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C1BB206A9A67A8FE703DDCA3B891A4 /* Pods_TuringHttpService_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D9B4E318CC1884FCB246F761ECBC7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26DB350C4B88744C8505CF38C35F5FCC /* Pods_TuringHttpService_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49962FE904BC3A13BA7C7FF6A2FC3BC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7994B549AC4A837C40424E1DD5461008 /* Pods_TuringHttpService_Example.framework */,
+				1647F5A32582C04F9BB4134E1DE138D1 /* Pods_TuringHttpService_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68178DA86183C3849F045E2F840A7D0D = {
+			isa = PBXGroup;
+			children = (
+				D399A1F8CDDE7399BC0A0498D5773A3B /* Example for TuringHttpService */,
+				49962FE904BC3A13BA7C7FF6A2FC3BC7 /* Frameworks */,
+				F128943BCBBE09417D24CC32B1873DA7 /* Pods */,
+				FC867B128059752C57A502B3EB31B3BA /* Podspec Metadata */,
+				E9EDA3169013E4B41BF9AC8A2E59A60D /* Products */,
+				8D8F3DD0E629115C25CB84DC7B8D98DF /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		8554E53EF2F3C0DFABBE955F93679492 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EFD788B0806A0CE4AE1AA56284331C8E /* StackExchangeRequest.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		860A2D6396492DC484E6F562CE4482AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CA569CCDC8EE39E4D0928D8F59CE5E4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D8F3DD0E629115C25CB84DC7B8D98DF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8554E53EF2F3C0DFABBE955F93679492 /* Classes */,
+				860A2D6396492DC484E6F562CE4482AE /* Supporting Files */,
+				A3FC965344DA43A7805E164946F13ADC /* TestHttpServiceAsyncSpec.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D2EB1489EBFB794EF34C26FCB5A85906 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74A855CCB07FCBE937850645E6DE18C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D399A1F8CDDE7399BC0A0498D5773A3B /* Example for TuringHttpService */ = {
+			isa = PBXGroup;
+			children = (
+				D2EB1489EBFB794EF34C26FCB5A85906 /* Supporting Files */,
+				F399389EE250F4C193D4BAD925BD0B19 /* AppDelegate.swift */,
+				80469407E20EEF9F8C97891E045D504C /* Images.xcassets */,
+				CD49F1C1F857697CDAC3D13710D888A6 /* LaunchScreen.xib */,
+				738F753920A3C2D795F56DBFCDC3A5E5 /* Main.storyboard */,
+				7ABB44F4EDFCD8860C2FAFA37B8D3A62 /* ViewController.swift */,
+			);
+			name = "Example for TuringHttpService";
+			path = TuringHttpService;
+			sourceTree = "<group>";
+		};
+		E9EDA3169013E4B41BF9AC8A2E59A60D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				476A90F35F305E47BD8B0891325660BA /* TuringHttpService_Example.app */,
+				938B79D4A694CB90F1C48C400D051045 /* TuringHttpService_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F128943BCBBE09417D24CC32B1873DA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4DE981CD6C36C23894889F25B054832 /* Pods-TuringHttpService_Example.debug.xcconfig */,
+				7B2D1F46368B0A7608BE011FA31CCFA3 /* Pods-TuringHttpService_Example.release.xcconfig */,
+				256F162FFA1BC9D45061EEF3137F650A /* Pods-TuringHttpService_Tests.debug.xcconfig */,
+				B83099651CF1DD71E739580B023589C7 /* Pods-TuringHttpService_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC867B128059752C57A502B3EB31B3BA /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				FECAEF758DF11BA02A80369257A30F1A /* LICENSE */,
+				336F60AFBE61714C051C20C351EAEEC8 /* TuringHttpService.podspec */,
+				8D4E0F34774B0224D1D1B1188D83BD53 /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39F05A96B01C226B23ED02A82564D711 /* TuringHttpService_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826BD8268A242B8023071D9A80A7822E /* Build configuration list for PBXNativeTarget "TuringHttpService_Example" */;
+			buildPhases = (
+				9700EE084891FAB3700546C44D918B4F /* [CP] Check Pods Manifest.lock */,
+				9AB950577B6E074B701CA8B08D31DD8A /* Sources */,
+				69D9B4E318CC1884FCB246F761ECBC7B /* Frameworks */,
+				4415C512E63EF98EDB80F17EE9DAEAF9 /* Resources */,
+				E4EC857B7B512D9895C4935142F04558 /* [CP] Embed Pods Frameworks */,
+				01C75DCE2773BF097DABA7CF89D9E77C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuringHttpService_Example;
+			productName = TuringHttpService;
+			productReference = 476A90F35F305E47BD8B0891325660BA /* TuringHttpService_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CAA42AA8A5959F0C481391E681D5660 /* TuringHttpService_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A76437A93337872F8DCC04CB13C8FE /* Build configuration list for PBXNativeTarget "TuringHttpService_Tests" */;
+			buildPhases = (
+				BBB1FEA6CA63FC47CE8381B625FD013A /* [CP] Check Pods Manifest.lock */,
+				C2BD16FE77BCD6A9DD5DD3680B34FF9B /* Sources */,
+				465486F84EBAC2DAD8ECB86C3A19F862 /* Frameworks */,
+				01A5C45F33A07B9A89F039BBBE026C74 /* Resources */,
+				6BBAE3C695798EA95EB1962D8C65457D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A37BB4BFBE945746E0F9E1B503F561 /* PBXTargetDependency */,
+			);
+			name = TuringHttpService_Tests;
+			productName = Tests;
+			productReference = 938B79D4A694CB90F1C48C400D051045 /* TuringHttpService_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		130806CE326E69A8DBFCB6813E94D91C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					39F05A96B01C226B23ED02A82564D711 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Y7SK47KWKN;
+						LastSwiftMigration = 1020;
+					};
+					7CAA42AA8A5959F0C481391E681D5660 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 39F05A96B01C226B23ED02A82564D711;
+					};
+				};
+			};
+			buildConfigurationList = 37887C5DF51D7957424394EFE5F29ABF /* Build configuration list for PBXProject "TuringHttpService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68178DA86183C3849F045E2F840A7D0D;
+			productRefGroup = E9EDA3169013E4B41BF9AC8A2E59A60D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39F05A96B01C226B23ED02A82564D711 /* TuringHttpService_Example */,
+				7CAA42AA8A5959F0C481391E681D5660 /* TuringHttpService_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01A5C45F33A07B9A89F039BBBE026C74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4415C512E63EF98EDB80F17EE9DAEAF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				146E9C30781A756BC96ED10AF5CBC501 /* Images.xcassets in Resources */,
+				503C37F2E846772C426D1413F33226DF /* LaunchScreen.xib in Resources */,
+				F15F226D5E4F33D83F5B9E0337B59537 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01C75DCE2773BF097DABA7CF89D9E77C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../TuringHttpService\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		6BBAE3C695798EA95EB1962D8C65457D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuringHttpService_Tests/Pods-TuringHttpService_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringHttpService_Tests/Pods-TuringHttpService_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9700EE084891FAB3700546C44D918B4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuringHttpService_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB1FEA6CA63FC47CE8381B625FD013A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuringHttpService_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4EC857B7B512D9895C4935142F04558 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuringHttpService_Example/Pods-TuringHttpService_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringAnyRecursive/TuringAnyRecursive.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringError/TuringError.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringErrorInterface/TuringErrorInterface.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringHttpService/TuringHttpService.framework",
+				"${BUILT_PRODUCTS_DIR}/TuringHttpServiceInterface/TuringHttpServiceInterface.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringAnyRecursive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringError.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringErrorInterface.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringHttpService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringHttpServiceInterface.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringHttpService_Example/Pods-TuringHttpService_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AB950577B6E074B701CA8B08D31DD8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF65DE0EBF160F94F25D42D057624AD2 /* AppDelegate.swift in Sources */,
+				827B5FEF9CD3C0CF74C9D1979DC7DD5C /* StackExchangeRequest.swift in Sources */,
+				231F06D248ADDDE75CB1B4FF8CD9B88E /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BD16FE77BCD6A9DD5DD3680B34FF9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7E919E9A1BD0FB375544AFB69A29ED /* StackExchangeRequest.swift in Sources */,
+				C3E4C3ED1F4B9854489262E302ADFC57 /* TestHttpServiceAsyncSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13A37BB4BFBE945746E0F9E1B503F561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39F05A96B01C226B23ED02A82564D711 /* TuringHttpService_Example */;
+			targetProxy = 3DE5A4D1E00FE8BE4F3FE4900B8DE51B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		738F753920A3C2D795F56DBFCDC3A5E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92FE6598445EFC2FBD5618AD4693AD4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD49F1C1F857697CDAC3D13710D888A6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7CB99F279953F20827DF63499F2AEC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04EB191E9796F093193AF505957FB000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45BB26723360948E3ABF3933D3463AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2D1F46368B0A7608BE011FA31CCFA3 /* Pods-TuringHttpService_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y7SK47KWKN;
+				INFOPLIST_FILE = TuringHttpService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D64F69B6D8C5793BD8BCCB5FE8DEFD53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B83099651CF1DD71E739580B023589C7 /* Pods-TuringHttpService_Tests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringHttpService_Example.app/TuringHttpService_Example";
+			};
+			name = Release;
+		};
+		DB25CA1C837ECB36909B559E4B8E8D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DE981CD6C36C23894889F25B054832 /* Pods-TuringHttpService_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y7SK47KWKN;
+				INFOPLIST_FILE = TuringHttpService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E8F944632D6A018A551D965BF1DABA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256F162FFA1BC9D45061EEF3137F650A /* Pods-TuringHttpService_Tests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringHttpService_Example.app/TuringHttpService_Example";
+			};
+			name = Debug;
+		};
+		F02F87055A695CA98EAB2193EF0FF924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37887C5DF51D7957424394EFE5F29ABF /* Build configuration list for PBXProject "TuringHttpService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EB191E9796F093193AF505957FB000 /* Debug */,
+				F02F87055A695CA98EAB2193EF0FF924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826BD8268A242B8023071D9A80A7822E /* Build configuration list for PBXNativeTarget "TuringHttpService_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB25CA1C837ECB36909B559E4B8E8D9D /* Debug */,
+				45BB26723360948E3ABF3933D3463AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A76437A93337872F8DCC04CB13C8FE /* Build configuration list for PBXNativeTarget "TuringHttpService_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F944632D6A018A551D965BF1DABA54 /* Debug */,
+				D64F69B6D8C5793BD8BCCB5FE8DEFD53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 130806CE326E69A8DBFCB6813E94D91C /* Project object */;
+}

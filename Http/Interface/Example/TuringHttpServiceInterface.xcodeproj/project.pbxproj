@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B6E4F2BE32250FBDFB730F8A9997F17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12E1278D492242F4BD5C3AADC09A35 /* AppDelegate.swift */; };
+		7051F9B61408B2B5C0B6FCB0D713EA24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C89B037A8FE6B9BC0CFCBB4149360C /* Images.xcassets */; };
+		8C2812DBAECD5B3033998EB3F43476BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F0AA90E3E976F377C9E311D2AC06D /* ViewController.swift */; };
+		AD5F5D1F15F5A3A6F98CAC37CCF35793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4AB5545F218BB677B717B05597CC8 /* Main.storyboard */; };
+		D8B27969A31408CFB91EAFB83D6881D0 /* Pods_TuringHttpServiceInterface_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46E1C2ABF96060E99CF0608FD4150D2 /* Pods_TuringHttpServiceInterface_Example.framework */; };
+		E9E9768DCA992ACB04972C38D5C87694 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB35630FA3F0175F55971D6841142FAF /* LaunchScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CA7C2814A10853778600F969CECB1C3 /* Pods-TuringHttpServiceInterface_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringHttpServiceInterface_Example.debug.xcconfig"; path = "Target Support Files/Pods-TuringHttpServiceInterface_Example/Pods-TuringHttpServiceInterface_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1D77AB2D86845EFF2DD5F86A5894BD59 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		272F0AA90E3E976F377C9E311D2AC06D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47C89B037A8FE6B9BC0CFCBB4149360C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607E4683E000CD42763971A083A2A621 /* TuringHttpServiceInterface_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringHttpServiceInterface_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D85A33B6D5D861DB53032CFA6086539 /* Pods-TuringHttpServiceInterface_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringHttpServiceInterface_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TuringHttpServiceInterface_Tests/Pods-TuringHttpServiceInterface_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E12E1278D492242F4BD5C3AADC09A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E61AECABECA021A92C86C9FF4980162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		960F135BF8B78F661D7CA4DF9D9F6966 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B6CB54D3D0C4577953ECAEA45C18BFED /* Pods-TuringHttpServiceInterface_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringHttpServiceInterface_Example.release.xcconfig"; path = "Target Support Files/Pods-TuringHttpServiceInterface_Example/Pods-TuringHttpServiceInterface_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B828D47C31BBBA444D30F1E625BC3EED /* Pods-TuringHttpServiceInterface_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringHttpServiceInterface_Tests.release.xcconfig"; path = "Target Support Files/Pods-TuringHttpServiceInterface_Tests/Pods-TuringHttpServiceInterface_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D182736A483C3766AA1111F3F9B45E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D403C4542B4B508B4D5D132C8257D4B2 /* TuringHttpServiceInterface.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringHttpServiceInterface.podspec; path = ../../../TuringHttpServiceInterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D46E1C2ABF96060E99CF0608FD4150D2 /* Pods_TuringHttpServiceInterface_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringHttpServiceInterface_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A3ACD023BDED36E33D14BFC74EC9DD /* Pods_TuringHttpServiceInterface_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringHttpServiceInterface_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6374615E17DAF0D0C330C4312F275B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66D15487FE2E1F520AEACFB498DB65FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B27969A31408CFB91EAFB83D6881D0 /* Pods_TuringHttpServiceInterface_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BFFA121BDFD3717FE167D25BDE13610 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				1D77AB2D86845EFF2DD5F86A5894BD59 /* LICENSE */,
+				D403C4542B4B508B4D5D132C8257D4B2 /* TuringHttpServiceInterface.podspec */,
+				960F135BF8B78F661D7CA4DF9D9F6966 /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		2ACF3641716BDC31C80EC7E8AD1FD9B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607E4683E000CD42763971A083A2A621 /* TuringHttpServiceInterface_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		516AB37119B7D4A46FCC4E83D33FDB4A = {
+			isa = PBXGroup;
+			children = (
+				862224618EEEA1CA806DFF4C219BE098 /* Example for TuringHttpServiceInterface */,
+				8973146BF1D1E4E5E171CD13E87318C9 /* Frameworks */,
+				746EE2EF8B5687BDF311964C0C4EC46F /* Pods */,
+				1BFFA121BDFD3717FE167D25BDE13610 /* Podspec Metadata */,
+				2ACF3641716BDC31C80EC7E8AD1FD9B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		746EE2EF8B5687BDF311964C0C4EC46F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CA7C2814A10853778600F969CECB1C3 /* Pods-TuringHttpServiceInterface_Example.debug.xcconfig */,
+				B6CB54D3D0C4577953ECAEA45C18BFED /* Pods-TuringHttpServiceInterface_Example.release.xcconfig */,
+				8D85A33B6D5D861DB53032CFA6086539 /* Pods-TuringHttpServiceInterface_Tests.debug.xcconfig */,
+				B828D47C31BBBA444D30F1E625BC3EED /* Pods-TuringHttpServiceInterface_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		862224618EEEA1CA806DFF4C219BE098 /* Example for TuringHttpServiceInterface */ = {
+			isa = PBXGroup;
+			children = (
+				D8A99DA7C034700ACDBCD4B9D4111D47 /* Supporting Files */,
+				8E12E1278D492242F4BD5C3AADC09A35 /* AppDelegate.swift */,
+				47C89B037A8FE6B9BC0CFCBB4149360C /* Images.xcassets */,
+				DB35630FA3F0175F55971D6841142FAF /* LaunchScreen.xib */,
+				AFC4AB5545F218BB677B717B05597CC8 /* Main.storyboard */,
+				272F0AA90E3E976F377C9E311D2AC06D /* ViewController.swift */,
+			);
+			name = "Example for TuringHttpServiceInterface";
+			path = TuringHttpServiceInterface;
+			sourceTree = "<group>";
+		};
+		8973146BF1D1E4E5E171CD13E87318C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D46E1C2ABF96060E99CF0608FD4150D2 /* Pods_TuringHttpServiceInterface_Example.framework */,
+				D9A3ACD023BDED36E33D14BFC74EC9DD /* Pods_TuringHttpServiceInterface_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8A99DA7C034700ACDBCD4B9D4111D47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6374615E17DAF0D0C330C4312F275B4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		285073EC43463B2E40B5EFD2034D78D0 /* TuringHttpServiceInterface_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E3E28DB95C0D657331BC6B0CBF9B5D /* Build configuration list for PBXNativeTarget "TuringHttpServiceInterface_Example" */;
+			buildPhases = (
+				2037AF00C58C63F4A54CC1037A31678F /* [CP] Check Pods Manifest.lock */,
+				117F89A2F35AF14AF43369FB15647E80 /* Sources */,
+				66D15487FE2E1F520AEACFB498DB65FE /* Frameworks */,
+				FB10E7F3B3C2A0CB613D1B21292867F8 /* Resources */,
+				BB159621ACCE7790F4D86A7F3BCDBD3B /* [CP] Embed Pods Frameworks */,
+				596EAF8C24F44695291C7AB38C779CA6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuringHttpServiceInterface_Example;
+			productName = TuringHttpServiceInterface;
+			productReference = 607E4683E000CD42763971A083A2A621 /* TuringHttpServiceInterface_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72014C89454B7A7D31F23EB787D4F868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					285073EC43463B2E40B5EFD2034D78D0 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Y7SK47KWKN;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = DBED36F3A558C9D82E7651ED9CCF209E /* Build configuration list for PBXProject "TuringHttpServiceInterface" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 516AB37119B7D4A46FCC4E83D33FDB4A;
+			productRefGroup = 2ACF3641716BDC31C80EC7E8AD1FD9B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				285073EC43463B2E40B5EFD2034D78D0 /* TuringHttpServiceInterface_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB10E7F3B3C2A0CB613D1B21292867F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7051F9B61408B2B5C0B6FCB0D713EA24 /* Images.xcassets in Resources */,
+				E9E9768DCA992ACB04972C38D5C87694 /* LaunchScreen.xib in Resources */,
+				AD5F5D1F15F5A3A6F98CAC37CCF35793 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2037AF00C58C63F4A54CC1037A31678F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuringHttpServiceInterface_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		596EAF8C24F44695291C7AB38C779CA6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../TuringHttpServiceInterface\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		BB159621ACCE7790F4D86A7F3BCDBD3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuringHttpServiceInterface_Example/Pods-TuringHttpServiceInterface_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TuringHttpServiceInterface/TuringHttpServiceInterface.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuringHttpServiceInterface.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringHttpServiceInterface_Example/Pods-TuringHttpServiceInterface_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		117F89A2F35AF14AF43369FB15647E80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6E4F2BE32250FBDFB730F8A9997F17 /* AppDelegate.swift in Sources */,
+				8C2812DBAECD5B3033998EB3F43476BB /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFC4AB5545F218BB677B717B05597CC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E61AECABECA021A92C86C9FF4980162 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB35630FA3F0175F55971D6841142FAF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D182736A483C3766AA1111F3F9B45E8A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E52A2E058157E9971B6FD2BE56092E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6CB54D3D0C4577953ECAEA45C18BFED /* Pods-TuringHttpServiceInterface_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y7SK47KWKN;
+				INFOPLIST_FILE = TuringHttpServiceInterface/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2F676513742644DFE65412C6F0364681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA7C2814A10853778600F969CECB1C3 /* Pods-TuringHttpServiceInterface_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y7SK47KWKN;
+				INFOPLIST_FILE = TuringHttpServiceInterface/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7AACFAD0910ED989308450C702BA282F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0C2F82FB0313044FFF16F3824797AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46E3E28DB95C0D657331BC6B0CBF9B5D /* Build configuration list for PBXNativeTarget "TuringHttpServiceInterface_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F676513742644DFE65412C6F0364681 /* Debug */,
+				00E52A2E058157E9971B6FD2BE56092E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBED36F3A558C9D82E7651ED9CCF209E /* Build configuration list for PBXProject "TuringHttpServiceInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AACFAD0910ED989308450C702BA282F /* Debug */,
+				E0C2F82FB0313044FFF16F3824797AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72014C89454B7A7D31F23EB787D4F868 /* Project object */;
+}
