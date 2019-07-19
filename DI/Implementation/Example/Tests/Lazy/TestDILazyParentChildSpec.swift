@@ -1,5 +1,5 @@
 //
-//  TestDIParentChildSpec.swift
+//  TestDILazyParentChildSpec.swift
 //  TuringDI_Tests
 //
 //  Created by Dmitry Rybochkin on 23/04/2019.
@@ -11,7 +11,7 @@ import Nimble
 import TuringDI
 import TuringDIInterface
 
-final class TestDIParentChildSpec: QuickSpec {
+final class TestDILazyParentChildSpec: QuickSpec {
 
     // MARK: - Life cycle
 
@@ -25,7 +25,7 @@ final class TestDIParentChildSpec: QuickSpec {
     }
 }
 
-private extension TestDIParentChildSpec {
+private extension TestDILazyParentChildSpec {
 
     // MARK: - Private functions
 
@@ -36,9 +36,12 @@ private extension TestDIParentChildSpec {
             diContainer.register(ParentProtocol.self, factory: {
                 ParentClass(property1: $0.resolve())
             })
-            let parent: ParentProtocol? = diContainer.resolve()
-            expect(parent).toNot(beNil())
-            expect(parent?.property1).toNot(beNil())
+            let lazyParent: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self)
+            expect(lazyParent).notTo(beNil())
+            let parent = lazyParent?.instance
+
+            expect(parent).notTo(beNil())
+            expect(parent?.property1).notTo(beNil())
             expect(parent?.property1?.parent).to(beNil())
         }
     }
@@ -52,11 +55,14 @@ private extension TestDIParentChildSpec {
                 parent?.property1 = $0.resolve(parameter: parent)
                 return parent
             })
-            let parent: ParentProtocol? = diContainer.resolve()
+            let lazyParent: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self)
+            expect(lazyParent).notTo(beNil())
+            let parent = lazyParent?.instance
+
             expect(parent === parent?.property1?.parent) == true
-            expect(parent).toNot(beNil())
-            expect(parent?.property1).toNot(beNil())
-            expect(parent?.property1?.parent).toNot(beNil())
+            expect(parent).notTo(beNil())
+            expect(parent?.property1).notTo(beNil())
+            expect(parent?.property1?.parent).notTo(beNil())
         }
     }
 
@@ -69,20 +75,25 @@ private extension TestDIParentChildSpec {
             }, completion: {
                 $1?.property1 = $0.resolve(parameter: $1)
             })
-            let parent: ParentProtocol? = diContainer.resolve()
+            let lazyParent: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self)
+            expect(lazyParent).notTo(beNil())
+            let parent = lazyParent?.instance
+
             expect(parent === parent?.property1?.parent) == true
-            expect(parent).toNot(beNil())
-            expect(parent?.property1).toNot(beNil())
-            expect(parent?.property1?.parent).toNot(beNil())
+            expect(parent).notTo(beNil())
+            expect(parent?.property1).notTo(beNil())
+            expect(parent?.property1?.parent).notTo(beNil())
         }
     }
     private func optionalStrong() {
         it("test register/resolve optional/strong") {
             let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass(parent: $1) })
-            let child = diContainer.resolve(ChildProtocol.self, parameter: ParentClass() as ParentProtocol)
-            expect(child).toNot(beNil())
+            let lazyChild: DILazy<ChildProtocol>? = diContainer.lazyResolve(ChildProtocol.self,
+                                                                            parameter1: ParentClass() as ParentProtocol)
+            expect(lazyChild).notTo(beNil())
+            let child = lazyChild?.instance
+            expect(child).notTo(beNil())
         }
     }
-
 }
