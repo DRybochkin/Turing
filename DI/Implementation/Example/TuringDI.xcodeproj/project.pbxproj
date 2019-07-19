@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		035A02947DC60AC1635615BD8B2E288C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E2713BA4101CFCC319595937A3999F /* ViewController.swift */; };
+		03B8277B50D3C8080BF1EE4898004C17 /* TestDILazyRecursiveSingletonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D0A7616D31D5764FCB33EAB8355A5 /* TestDILazyRecursiveSingletonSpec.swift */; };
 		0AE1C73CEB07996254E7B6A657528784 /* TestDIZeroParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B9F6848EA48966053018E66F33CADF /* TestDIZeroParametersSpec.swift */; };
-		1DDB88E922E1B2C400B9B288 /* TestDILazyOneParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB88E322E1B2C400B9B288 /* TestDILazyOneParametersSpec.swift */; };
-		1DDB88EA22E1B2C400B9B288 /* TestDILazyRecursiveSingletonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB88E422E1B2C400B9B288 /* TestDILazyRecursiveSingletonSpec.swift */; };
-		1DDB88EB22E1B2C400B9B288 /* TestDILazyParentChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB88E522E1B2C400B9B288 /* TestDILazyParentChildSpec.swift */; };
-		1DDB88EC22E1B2C400B9B288 /* TestDILazyTwoParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB88E622E1B2C400B9B288 /* TestDILazyTwoParametersSpec.swift */; };
-		1DDB88ED22E1B2C400B9B288 /* TestDILazyZeroParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB88E722E1B2C400B9B288 /* TestDILazyZeroParametersSpec.swift */; };
-		1DDB88EE22E1B2C400B9B288 /* TestDILazyThreeParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB88E822E1B2C400B9B288 /* TestDILazyThreeParametersSpec.swift */; };
+		30D2862E5BFCE40EA500A4184953B42C /* TestDILazyZeroParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C29506C3AAD5051A1736EFD262FC3B /* TestDILazyZeroParametersSpec.swift */; };
 		31C07C3FF66BE6E65421F8908DF2865D /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */; };
 		3D66C77170DFC3C87D341B1ECBFC07A1 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */; };
 		4328285FED25C62C20E35224405A03EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A22724B256A82F45204F3CABBE6B5D /* Images.xcassets */; };
@@ -24,14 +20,18 @@
 		5EDA9D810E214A7019F0089C732E17DD /* TestDITwoParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E5C92AB940935D3704BA29150BE87 /* TestDITwoParametersSpec.swift */; };
 		6A3AF27DBA2958E51CD34E8417C2F0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8529EA8D4C39C42023173A378729C50 /* AppDelegate.swift */; };
 		7D224AFBF0633E5CD38C344A58F6FC24 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */; };
+		8C757C905BC23CE1F9F3F9D43A592195 /* TestDILazyOneParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF726EBBCF58C55C33906B5D509FE5 /* TestDILazyOneParametersSpec.swift */; };
 		910949FBF50748981BFBCA224161C5DE /* RecursiveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */; };
 		A0CD6CC62E6E4DAAB2663A8F72E424D2 /* TestDIParentChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDA36987BA5658A7FCE08445A1989BA /* TestDIParentChildSpec.swift */; };
 		B3FC13CA82B838D6F2E5B07D1522597F /* RecursiveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */; };
 		B9670589C4DEDE62F44A2E59FC2111E6 /* TestDIThreeParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2BC257D7463AC234541B8B064D3ED /* TestDIThreeParametersSpec.swift */; };
 		BDF21B280C3A187B1D66220995721EB9 /* Pods_TuringDI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FF5B54AE23B7B69E1D98F9746F6B84 /* Pods_TuringDI_Example.framework */; };
+		BE35641124AFFEC6DBD52D6B4298D720 /* TestDILazyParentChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF6799D1781BE074A765DF3F4D08CB /* TestDILazyParentChildSpec.swift */; };
+		C6D432982ADCBE56F432745CBE49D781 /* TestDILazyThreeParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C07645DFB0D78EF631C9BECA83F77D /* TestDILazyThreeParametersSpec.swift */; };
 		CDEFEBF726C390FC2639483B67B100D5 /* TestDIOneParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0DB858E1A2F74F81E9BBA44D44EDD /* TestDIOneParametersSpec.swift */; };
 		E5B9F49174EA7D9F7C282873DA40A3DC /* TestDIRecursiveSingletonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B33E64187ED8A957E333D77AFEA5D /* TestDIRecursiveSingletonSpec.swift */; };
 		EB9CA7FDF4E4236BA5F100E90E330932 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */; };
+		F2CF11C918785E4B30AA7FD6087AAD06 /* TestDILazyTwoParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470BA75919581C3E40974E297A0B55D /* TestDILazyTwoParametersSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +46,11 @@
 
 /* Begin PBXFileReference section */
 		04552D6518D2672A4FE566516E173538 /* Pods-TuringDI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		04EF6799D1781BE074A765DF3F4D08CB /* TestDILazyParentChildSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyParentChildSpec.swift; sourceTree = "<group>"; };
+		0C9D0A7616D31D5764FCB33EAB8355A5 /* TestDILazyRecursiveSingletonSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyRecursiveSingletonSpec.swift; sourceTree = "<group>"; };
 		102CF91115CF45FE8AECCD7F08B68D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		114CB0882164A69FB31BE70B1F93ECF5 /* Pods-TuringDI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Example.release.xcconfig"; path = "Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1DDB88E322E1B2C400B9B288 /* TestDILazyOneParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyOneParametersSpec.swift; sourceTree = "<group>"; };
-		1DDB88E422E1B2C400B9B288 /* TestDILazyRecursiveSingletonSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyRecursiveSingletonSpec.swift; sourceTree = "<group>"; };
-		1DDB88E522E1B2C400B9B288 /* TestDILazyParentChildSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyParentChildSpec.swift; sourceTree = "<group>"; };
-		1DDB88E622E1B2C400B9B288 /* TestDILazyTwoParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyTwoParametersSpec.swift; sourceTree = "<group>"; };
-		1DDB88E722E1B2C400B9B288 /* TestDILazyZeroParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyZeroParametersSpec.swift; sourceTree = "<group>"; };
-		1DDB88E822E1B2C400B9B288 /* TestDILazyThreeParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyThreeParametersSpec.swift; sourceTree = "<group>"; };
+		1470BA75919581C3E40974E297A0B55D /* TestDILazyTwoParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyTwoParametersSpec.swift; sourceTree = "<group>"; };
 		275E136DFAE238A39AFDE05F9E4619A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2F3B33E64187ED8A957E333D77AFEA5D /* TestDIRecursiveSingletonSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIRecursiveSingletonSpec.swift; sourceTree = "<group>"; };
 		4A67633324D915F748F94FE5F572C7F0 /* Pods-TuringDI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Tests.release.xcconfig"; path = "Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,12 +63,15 @@
 		8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
 		88E2713BA4101CFCC319595937A3999F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A13101030091EE7CC8D3A40455783636 /* TuringDI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringDI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BF726EBBCF58C55C33906B5D509FE5 /* TestDILazyOneParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyOneParametersSpec.swift; sourceTree = "<group>"; };
 		A455021BE67021DC9BBFA305862419EB /* TuringDI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringDI.podspec; path = ../../../TuringDI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B13584F29BE04FEA068ECA5BC5F1134D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA6C82F514545D84B8AB64ED0B5E024E /* Pods_TuringDI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringDI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C07645DFB0D78EF631C9BECA83F77D /* TestDILazyThreeParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyThreeParametersSpec.swift; sourceTree = "<group>"; };
 		D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveClass.swift; sourceTree = "<group>"; };
 		D79C4CB52E996072390EA6E38BC848F2 /* Pods-TuringDI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Example.debug.xcconfig"; path = "Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DA9BB5F9B9B96D408BDCFEF89D2EE2AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E0C29506C3AAD5051A1736EFD262FC3B /* TestDILazyZeroParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyZeroParametersSpec.swift; sourceTree = "<group>"; };
 		E65E5C92AB940935D3704BA29150BE87 /* TestDITwoParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDITwoParametersSpec.swift; sourceTree = "<group>"; };
 		E8529EA8D4C39C42023173A378729C50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE01B0385B002005144FAFFB69EB140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DDB88E122E1B24800B9B288 /* TestTypes */ = {
+		933739607D5BDB707DB50F4795406BAA /* TestTypes */ = {
 			isa = PBXGroup;
 			children = (
 				F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */,
@@ -110,15 +110,15 @@
 			path = TestTypes;
 			sourceTree = "<group>";
 		};
-		1DDB88E222E1B26600B9B288 /* Lazy */ = {
+		42E966D0DD8EF10AB5BE2FD795564A76 /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
-				1DDB88E322E1B2C400B9B288 /* TestDILazyOneParametersSpec.swift */,
-				1DDB88E522E1B2C400B9B288 /* TestDILazyParentChildSpec.swift */,
-				1DDB88E422E1B2C400B9B288 /* TestDILazyRecursiveSingletonSpec.swift */,
-				1DDB88E822E1B2C400B9B288 /* TestDILazyThreeParametersSpec.swift */,
-				1DDB88E622E1B2C400B9B288 /* TestDILazyTwoParametersSpec.swift */,
-				1DDB88E722E1B2C400B9B288 /* TestDILazyZeroParametersSpec.swift */,
+				A1BF726EBBCF58C55C33906B5D509FE5 /* TestDILazyOneParametersSpec.swift */,
+				04EF6799D1781BE074A765DF3F4D08CB /* TestDILazyParentChildSpec.swift */,
+				0C9D0A7616D31D5764FCB33EAB8355A5 /* TestDILazyRecursiveSingletonSpec.swift */,
+				C4C07645DFB0D78EF631C9BECA83F77D /* TestDILazyThreeParametersSpec.swift */,
+				1470BA75919581C3E40974E297A0B55D /* TestDILazyTwoParametersSpec.swift */,
+				E0C29506C3AAD5051A1736EFD262FC3B /* TestDILazyZeroParametersSpec.swift */,
 			);
 			path = Lazy;
 			sourceTree = "<group>";
@@ -199,9 +199,9 @@
 		EEABA045273A1F24CC078F8EE625E905 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1DDB88E222E1B26600B9B288 /* Lazy */,
-				1DDB88E122E1B24800B9B288 /* TestTypes */,
+				42E966D0DD8EF10AB5BE2FD795564A76 /* Lazy */,
 				A262919E7CF66D4A31FFC90EAF30B89B /* Supporting Files */,
+				933739607D5BDB707DB50F4795406BAA /* TestTypes */,
 				ECF0DB858E1A2F74F81E9BBA44D44EDD /* TestDIOneParametersSpec.swift */,
 				5FDA36987BA5658A7FCE08445A1989BA /* TestDIParentChildSpec.swift */,
 				2F3B33E64187ED8A957E333D77AFEA5D /* TestDIRecursiveSingletonSpec.swift */,
@@ -467,17 +467,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D224AFBF0633E5CD38C344A58F6FC24 /* ChildClass.swift in Sources */,
-				1DDB88ED22E1B2C400B9B288 /* TestDILazyZeroParametersSpec.swift in Sources */,
-				1DDB88EA22E1B2C400B9B288 /* TestDILazyRecursiveSingletonSpec.swift in Sources */,
 				31C07C3FF66BE6E65421F8908DF2865D /* ParentClass.swift in Sources */,
-				1DDB88E922E1B2C400B9B288 /* TestDILazyOneParametersSpec.swift in Sources */,
-				1DDB88EB22E1B2C400B9B288 /* TestDILazyParentChildSpec.swift in Sources */,
 				B3FC13CA82B838D6F2E5B07D1522597F /* RecursiveClass.swift in Sources */,
+				8C757C905BC23CE1F9F3F9D43A592195 /* TestDILazyOneParametersSpec.swift in Sources */,
+				BE35641124AFFEC6DBD52D6B4298D720 /* TestDILazyParentChildSpec.swift in Sources */,
+				03B8277B50D3C8080BF1EE4898004C17 /* TestDILazyRecursiveSingletonSpec.swift in Sources */,
+				C6D432982ADCBE56F432745CBE49D781 /* TestDILazyThreeParametersSpec.swift in Sources */,
+				F2CF11C918785E4B30AA7FD6087AAD06 /* TestDILazyTwoParametersSpec.swift in Sources */,
+				30D2862E5BFCE40EA500A4184953B42C /* TestDILazyZeroParametersSpec.swift in Sources */,
 				CDEFEBF726C390FC2639483B67B100D5 /* TestDIOneParametersSpec.swift in Sources */,
-				1DDB88EC22E1B2C400B9B288 /* TestDILazyTwoParametersSpec.swift in Sources */,
 				A0CD6CC62E6E4DAAB2663A8F72E424D2 /* TestDIParentChildSpec.swift in Sources */,
 				E5B9F49174EA7D9F7C282873DA40A3DC /* TestDIRecursiveSingletonSpec.swift in Sources */,
-				1DDB88EE22E1B2C400B9B288 /* TestDILazyThreeParametersSpec.swift in Sources */,
 				B9670589C4DEDE62F44A2E59FC2111E6 /* TestDIThreeParametersSpec.swift in Sources */,
 				5EDA9D810E214A7019F0089C732E17DD /* TestDITwoParametersSpec.swift in Sources */,
 				0AE1C73CEB07996254E7B6A657528784 /* TestDIZeroParametersSpec.swift in Sources */,
