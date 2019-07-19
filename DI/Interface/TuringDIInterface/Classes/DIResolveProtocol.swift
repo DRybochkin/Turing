@@ -31,4 +31,8 @@ public protocol DIResolveProtocol {
     func resolveSingletone<T, P1, P2>(parameter1: P1, parameter2: P2) -> T?
     func resolveSingletone<T, P>(parameter: P) -> T?
     func resolveSingletone<T>() -> T?
-}
+
+    func lazyResolve<T, P: DILazyProtocol>(_ protocolType: T.Type) -> P?
+    func lazyResolve<T, P: DILazyProtocol, P1>(_ protocolType: T.Type, parameter1: P1) -> P?
+    func lazyResolve<T, P: DILazyProtocol, P1, P2>(_ protocolType: T.Type, parameter1: P1, parameter2: P2) -> P?
+    func lazyResolve<T, P: DILazyProtocol, P1, P2, P3>(_ protocolType: T.Type, parameter1: P1, parameter2: P2, parameter3: P3) -> P?}

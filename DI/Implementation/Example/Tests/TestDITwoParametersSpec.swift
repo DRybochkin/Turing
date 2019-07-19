@@ -9,6 +9,7 @@
 import Quick
 import Nimble
 import TuringDI
+import TuringDIInterface
 
 final class TestDITwoParametersSpec: QuickSpec {
 
@@ -30,10 +31,11 @@ private extension TestDITwoParametersSpec {
 
     private func optionalParameter() {
         it("test register/resolve two optional parameters") {
-            let diContainer = DIContainer(maxRecursiveDepth: 10)
+            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass() })
             diContainer.register(ParentProtocol.self, factory: { ParentClass(property1: $1, property2: $2) })
             let child1: ChildProtocol? = diContainer.resolve()
+            expect(child1).toNot(beNil())
             guard let parent1: ParentProtocol = diContainer.resolve(parameter1: child1, parameter2: 10) else {
                 expect("resolve parent") == "fail"
                 return
@@ -58,7 +60,7 @@ private extension TestDITwoParametersSpec {
 
     private func unwrappedParameter() {
         it("test register/resolve two unwrapped parameters") {
-            let diContainer = DIContainer(maxRecursiveDepth: 10)
+            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass() })
             diContainer.register(ParentProtocol.self, factory: { ParentClass(property1: $1, property2: $2) })
             guard let child1: ChildProtocol = diContainer.resolve() else {
@@ -89,16 +91,19 @@ private extension TestDITwoParametersSpec {
 
     private func singletoneOptionalParameter() {
         it("test register/resolve singletone two optional parameters ") {
-            let diContainer = DIContainer(maxRecursiveDepth: 10)
+            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass() })
             diContainer.register(ParentProtocol.self, factory: { ParentClass(property1: $1, property2: $2) })
-            let child1: ChildProtocol? = diContainer.resolve()
+            let child1: ChildProtocol? = diContainer.resolveSingletone()
+            expect(child1).toNot(beNil())
+            let child2: ChildProtocol? = diContainer.resolveSingletone()
+            expect(child2).toNot(beNil())
             guard let parent1: ParentProtocol = diContainer.resolveSingletone(parameter1: child1, parameter2: 10) else {
                 expect("resolve") == "fail"
                 return
             }
             guard let parent2 = diContainer.resolveSingletone(ParentProtocol.self,
-                                                              parameter1: child1,
+                                                              parameter1: child2,
                                                               parameter2: 10) else {
                 expect("resolve") == "fail"
                 return
@@ -119,10 +124,14 @@ private extension TestDITwoParametersSpec {
 
     private func singletoneUnwrappedParameter() {
         it("test register/resolve singletone two parameters") {
-            let diContainer = DIContainer(maxRecursiveDepth: 10)
+            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass() })
             diContainer.register(ParentProtocol.self, factory: { ParentClass(property1: $1, property2: $2) })
-            guard let child1: ChildProtocol = diContainer.resolve() else {
+            guard let child1: ChildProtocol = diContainer.resolveSingletone() else {
+                expect("resolve child") == "fail"
+                return
+            }
+            guard let child2: ChildProtocol = diContainer.resolveSingletone() else {
                 expect("resolve child") == "fail"
                 return
             }
@@ -132,7 +141,7 @@ private extension TestDITwoParametersSpec {
                 return
             }
             guard let parent2 = diContainer.resolveSingletone(ParentProtocol.self,
-                                                              parameter1: child1,
+                                                              parameter1: child2,
                                                               parameter2: 10) else {
                 expect("resolve") == "fail"
                 return

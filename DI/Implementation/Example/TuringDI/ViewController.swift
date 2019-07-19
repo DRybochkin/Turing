@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let diContainer = DIContainer(maxRecursiveDepth: 10)
+
+        let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
 
         diContainer.register(RecurciveAProtocol.self, factory: { RecurciveA(diContainer: $0) })
         diContainer.register(RecurciveBProtocol.self, factory: { RecurciveB(diContainer: $0) })
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         let recursiveA: RecurciveAProtocol? = diContainer.resolveSingletone()
         print(recursiveA != nil)
 
+        diContainer.register(ParentProtocol.self, factory: { ParentClass() })
 
         diContainer.register(ChildProtocol.self, factory: { ChildClass(di: $0) })
         diContainer.register(ParentProtocol.self, factory: {
@@ -48,6 +50,23 @@ class ViewController: UIViewController {
         }
         print(equalParent1 == equalParent2)
         print(equalParent1 === equalParent2)
+
+        let lazyParent: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self)
+        let parentObject = lazyParent?.instance
+        print("zzzz => 1 => " + String(describing: parentObject))
+
+        let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self,
+                                                                           parameter1: 10,
+                                                                           parameter2: "11",
+                                                                           parameter3: child1)
+        let parentObject2 = lazyParent2?.instance
+        print("zzzz => 2 => " + String(describing: parentObject2))
+
+        let lazyParent11 = diContainer.lazyResolve(ParentProtocol.self)
+        let parentObject11 = lazyParent11.instance
+        print("zzzz => 3 => " + String(describing: parentObject11))
+
+
     }
 }
 

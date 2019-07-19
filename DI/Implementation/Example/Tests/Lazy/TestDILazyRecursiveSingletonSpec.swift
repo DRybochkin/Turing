@@ -1,5 +1,5 @@
 //
-//  TestDIRecursiveSingletonSpec.swift
+//  TestDILazyRecursiveSingletonSpec.swift
 //  TuringDI_Example
 //
 //  Created by Dmitry Rybochkin on 05/06/2019.
@@ -11,7 +11,7 @@ import Nimble
 import TuringDI
 import TuringDIInterface
 
-final class TestDIRecursiveSingletonSpec: QuickSpec {
+final class TestDILazyRecursiveSingletonSpec: QuickSpec {
 
     // MARK: - Life cycle
 
@@ -23,7 +23,7 @@ final class TestDIRecursiveSingletonSpec: QuickSpec {
     }
 }
 
-private extension TestDIRecursiveSingletonSpec {
+private extension TestDILazyRecursiveSingletonSpec {
 
     // MARK: - Private functions
 
@@ -32,7 +32,9 @@ private extension TestDIRecursiveSingletonSpec {
             let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(RecurciveAProtocol.self, factory: { RecurciveA(di: $0) })
             diContainer.register(RecurciveBProtocol.self, factory: { RecurciveB(di: $0) })
-            let recurciveA: RecurciveAProtocol? = diContainer.resolveSingletone()
+            let lazyRecurciveA: DILazy<RecurciveAProtocol>? = diContainer.lazyResolveSingletone(RecurciveAProtocol.self)
+            expect(lazyRecurciveA).notTo(beNil())
+            let recurciveA: RecurciveAProtocol? = lazyRecurciveA?.instance
             expect(recurciveA).to(beNil())
         }
     }
@@ -42,8 +44,10 @@ private extension TestDIRecursiveSingletonSpec {
             let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(RecurciveAProtocol.self, factory: { RecurciveA(diContainer: $0) })
             diContainer.register(RecurciveBProtocol.self, factory: { RecurciveB(diContainer: $0) })
-            let recurciveA: RecurciveAProtocol? = diContainer.resolveSingletone()
-            expect(recurciveA).toNot(beNil())
+            let lazyRecurciveA: DILazy<RecurciveAProtocol>? = diContainer.lazyResolveSingletone(RecurciveAProtocol.self)
+            expect(lazyRecurciveA).notTo(beNil())
+            let recurciveA: RecurciveAProtocol? = lazyRecurciveA?.instance
+            expect(recurciveA).notTo(beNil())
         }
     }
 }
