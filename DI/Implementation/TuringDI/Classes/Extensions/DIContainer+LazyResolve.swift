@@ -42,26 +42,33 @@ extension DIContainer {
     }
 
     public func lazyResolveSingletone<T, P: DILazyProtocol>(_ protocolType: T.Type) -> P? {
-        return DILazy<T>(T.self, di: self, factory: { $0?.resolveSingletone() }) as? P
+        let lazy: DILazy<T> = lazyResolveSingletone(T.self)
+        return lazy as? P
     }
 
     public func lazyResolveSingletone<T, P: DILazyProtocol, P1>(_ protocolType: T.Type, parameter1: P1) -> P? {
-        return DILazy<T>(T.self, di: self, factory: { $0?.resolveSingletone(parameter: parameter1) }) as? P
+        let lazy: DILazy<T> = lazyResolveSingletone(T.self,
+                                                    parameter1: parameter1)
+        return lazy as? P
     }
 
     public func lazyResolveSingletone<T, P: DILazyProtocol, P1, P2>(_ protocolType: T.Type,
                                                                     parameter1: P1,
                                                                     parameter2: P2) -> P? {
-        return DILazy<T>(T.self, di: self, factory: { $0?.resolveSingletone(parameter1: parameter1,
-                                                                            parameter2: parameter2) }) as? P
+        let lazy: DILazy<T> = lazyResolveSingletone(T.self,
+                                                    parameter1: parameter1,
+                                                    parameter2: parameter2)
+        return lazy as? P
     }
 
     public func lazyResolveSingletone<T, P: DILazyProtocol, P1, P2, P3>(_ protocolType: T.Type,
                                                                         parameter1: P1,
                                                                         parameter2: P2,
                                                                         parameter3: P3) -> P? {
-        return DILazy<T>(T.self, di: self, factory: { $0?.resolveSingletone(parameter1: parameter1,
-                                                                            parameter2: parameter2,
-                                                                            parameter3: parameter3) }) as? P
+        let lazy: DILazy<T> = lazyResolveSingletone(T.self,
+                                                    parameter1: parameter1,
+                                                    parameter2: parameter2,
+                                                    parameter3: parameter3)
+        return lazy as? P
     }
 }
