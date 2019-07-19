@@ -9,6 +9,7 @@
 import Quick
 import Nimble
 import TuringDI
+import TuringDIInterface
 
 final class TestDIThreeParametersSpec: QuickSpec {
 
@@ -30,12 +31,13 @@ private extension TestDIThreeParametersSpec {
 
     private func optionalParameter() {
         it("test register/resolve three optional parameters") {
-            let diContainer = DIContainer(maxRecursiveDepth: 10)
+            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass() })
             diContainer.register(ParentProtocol.self, factory: {
                 ParentClass(property2: $1, property3: $2, property4: $3)
             })
             let child1: ChildProtocol? = diContainer.resolve()
+            expect(child1).toNot(beNil())
             guard let parent1: ParentProtocol = diContainer.resolve(parameter1: 10,
                                                                     parameter2: "11",
                                                                     parameter3: child1) else {
@@ -65,7 +67,7 @@ private extension TestDIThreeParametersSpec {
 
     private func unwrappedParameter() {
         it("test register/resolve three unwrapped parameters") {
-            let diContainer = DIContainer(maxRecursiveDepth: 10)
+            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass() })
             diContainer.register(ParentProtocol.self, factory: {
                 ParentClass(property2: $1, property3: $2, property4: $3)
@@ -103,12 +105,15 @@ private extension TestDIThreeParametersSpec {
 
     private func singletoneOptionalParameter() {
         it("test register/resolve singletone three optional parameters ") {
-            let diContainer = DIContainer(maxRecursiveDepth: 10)
+            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass() })
             diContainer.register(ParentProtocol.self, factory: {
                 ParentClass(property2: $1, property3: $2, property4: $3)
             })
-            let child1: ChildProtocol? = diContainer.resolve()
+            let child1: ChildProtocol? = diContainer.resolveSingletone()
+            expect(child1).toNot(beNil())
+            let child2: ChildProtocol? = diContainer.resolveSingletone()
+            expect(child2).toNot(beNil())
             guard let parent1: ParentProtocol = diContainer.resolveSingletone(parameter1: 10,
                                                                               parameter2: "11",
                                                                               parameter3: child1) else {
@@ -118,7 +123,7 @@ private extension TestDIThreeParametersSpec {
             guard let parent2 = diContainer.resolveSingletone(ParentProtocol.self,
                                                               parameter1: 10,
                                                               parameter2: "11",
-                                                              parameter3: child1) else {
+                                                              parameter3: child2) else {
                 expect("resolve") == "fail"
                 return
             }
@@ -138,12 +143,16 @@ private extension TestDIThreeParametersSpec {
 
     private func singletoneUnwrappedParameter() {
         it("test register/resolve singletone three parameters") {
-            let diContainer = DIContainer(maxRecursiveDepth: 10)
+            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass() })
             diContainer.register(ParentProtocol.self, factory: {
                 ParentClass(property2: $1, property3: $2, property4: $3)
             })
-            guard let child1: ChildProtocol = diContainer.resolve() else {
+            guard let child1: ChildProtocol = diContainer.resolveSingletone() else {
+                expect("resolve child") == "fail"
+                return
+            }
+            guard let child2: ChildProtocol = diContainer.resolveSingletone() else {
                 expect("resolve child") == "fail"
                 return
             }
@@ -156,9 +165,9 @@ private extension TestDIThreeParametersSpec {
             guard let parent2 = diContainer.resolveSingletone(ParentProtocol.self,
                                                               parameter1: 10,
                                                               parameter2: "11",
-                                                              parameter3: child1) else {
-                                                                expect("resolve") == "fail"
-                                                                return
+                                                              parameter3: child2) else {
+                expect("resolve") == "fail"
+                return
             }
             expect(parent1.property1 === parent2.property1) == true
             expect(parent1 === parent2) == true

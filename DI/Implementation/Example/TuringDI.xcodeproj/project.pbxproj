@@ -7,206 +7,232 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3FC05D2268AC91009A8280 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA01C5226320D6006556A4 /* ParentClass.swift */; };
-		1D3FC05E2268AC91009A8280 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA01C72263210D006556A4 /* ChildClass.swift */; };
-		1D912D0F22C0AD6E00010675 /* TestDIOneParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D912D0722C0AD5F00010675 /* TestDIOneParametersSpec.swift */; };
-		1D912D1022C0AD6E00010675 /* TestDIParentChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D912D0122C0AD5F00010675 /* TestDIParentChildSpec.swift */; };
-		1D912D1122C0AD6E00010675 /* TestDIRecursiveSingletonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D912D0622C0AD5F00010675 /* TestDIRecursiveSingletonSpec.swift */; };
-		1D912D1222C0AD6E00010675 /* TestDIThreeParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D912D0222C0AD5F00010675 /* TestDIThreeParametersSpec.swift */; };
-		1D912D1322C0AD6E00010675 /* TestDITwoParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D912D0522C0AD5F00010675 /* TestDITwoParametersSpec.swift */; };
-		1D912D1422C0AD6E00010675 /* TestDIZeroParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D912D0422C0AD5F00010675 /* TestDIZeroParametersSpec.swift */; };
-		1D912D1522C0AD7500010675 /* RecursiveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D912D0322C0AD5F00010675 /* RecursiveClass.swift */; };
-		1DA3431B22C0B5E80094E325 /* RecursiveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D912D0322C0AD5F00010675 /* RecursiveClass.swift */; };
-		1DA3431C22C0B5F40094E325 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA01C5226320D6006556A4 /* ParentClass.swift */; };
-		1DA3431D22C0B5F40094E325 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA01C72263210D006556A4 /* ChildClass.swift */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		8D46CECA02BBF7E0EA00C0E5 /* Pods_TuringDI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7224E987F023FBA5110DF0 /* Pods_TuringDI_Example.framework */; };
-		D7105CA5BB9C211C9897BC94 /* Pods_TuringDI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1768BF14427D292B56F8E6 /* Pods_TuringDI_Tests.framework */; };
+		035A02947DC60AC1635615BD8B2E288C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E2713BA4101CFCC319595937A3999F /* ViewController.swift */; };
+		03B8277B50D3C8080BF1EE4898004C17 /* TestDILazyRecursiveSingletonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D0A7616D31D5764FCB33EAB8355A5 /* TestDILazyRecursiveSingletonSpec.swift */; };
+		0AE1C73CEB07996254E7B6A657528784 /* TestDIZeroParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B9F6848EA48966053018E66F33CADF /* TestDIZeroParametersSpec.swift */; };
+		30D2862E5BFCE40EA500A4184953B42C /* TestDILazyZeroParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C29506C3AAD5051A1736EFD262FC3B /* TestDILazyZeroParametersSpec.swift */; };
+		31C07C3FF66BE6E65421F8908DF2865D /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */; };
+		3D66C77170DFC3C87D341B1ECBFC07A1 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */; };
+		4328285FED25C62C20E35224405A03EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A22724B256A82F45204F3CABBE6B5D /* Images.xcassets */; };
+		46BEE6CB787367AD8626DDC646635659 /* Pods_TuringDI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6C82F514545D84B8AB64ED0B5E024E /* Pods_TuringDI_Tests.framework */; };
+		585525B8DFCED2CD9BA67CAD439593A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67581191EDB84E0304C8BC2BA372D631 /* LaunchScreen.xib */; };
+		5AB1B3F4AE0498DFDE6E08FC3043F35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328BA1414D6B22FE5D9E72B729F2E8AA /* Main.storyboard */; };
+		5EDA9D810E214A7019F0089C732E17DD /* TestDITwoParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E5C92AB940935D3704BA29150BE87 /* TestDITwoParametersSpec.swift */; };
+		6A3AF27DBA2958E51CD34E8417C2F0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8529EA8D4C39C42023173A378729C50 /* AppDelegate.swift */; };
+		7D224AFBF0633E5CD38C344A58F6FC24 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */; };
+		8C757C905BC23CE1F9F3F9D43A592195 /* TestDILazyOneParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF726EBBCF58C55C33906B5D509FE5 /* TestDILazyOneParametersSpec.swift */; };
+		910949FBF50748981BFBCA224161C5DE /* RecursiveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */; };
+		A0CD6CC62E6E4DAAB2663A8F72E424D2 /* TestDIParentChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDA36987BA5658A7FCE08445A1989BA /* TestDIParentChildSpec.swift */; };
+		B3FC13CA82B838D6F2E5B07D1522597F /* RecursiveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */; };
+		B9670589C4DEDE62F44A2E59FC2111E6 /* TestDIThreeParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2BC257D7463AC234541B8B064D3ED /* TestDIThreeParametersSpec.swift */; };
+		BDF21B280C3A187B1D66220995721EB9 /* Pods_TuringDI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FF5B54AE23B7B69E1D98F9746F6B84 /* Pods_TuringDI_Example.framework */; };
+		BE35641124AFFEC6DBD52D6B4298D720 /* TestDILazyParentChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF6799D1781BE074A765DF3F4D08CB /* TestDILazyParentChildSpec.swift */; };
+		C6D432982ADCBE56F432745CBE49D781 /* TestDILazyThreeParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C07645DFB0D78EF631C9BECA83F77D /* TestDILazyThreeParametersSpec.swift */; };
+		CDEFEBF726C390FC2639483B67B100D5 /* TestDIOneParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0DB858E1A2F74F81E9BBA44D44EDD /* TestDIOneParametersSpec.swift */; };
+		E5B9F49174EA7D9F7C282873DA40A3DC /* TestDIRecursiveSingletonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B33E64187ED8A957E333D77AFEA5D /* TestDIRecursiveSingletonSpec.swift */; };
+		EB9CA7FDF4E4236BA5F100E90E330932 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */; };
+		F2CF11C918785E4B30AA7FD6087AAD06 /* TestDILazyTwoParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470BA75919581C3E40974E297A0B55D /* TestDILazyTwoParametersSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+		8B8A0D898BDC1CFC78A9DABCB46179D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			containerPortal = 3BE4E65879B2F2ABBE3D25485C12B6A2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteGlobalIDString = 1D8FB9C7F08244619A860CD9E7CA63C3;
 			remoteInfo = TuringDI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		123D73D987633E1FC650849C /* Pods-TuringDI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Tests.release.xcconfig"; path = "Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1B1E133639E8A72DBECAF001 /* Pods-TuringDI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1D912D0122C0AD5F00010675 /* TestDIParentChildSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIParentChildSpec.swift; sourceTree = "<group>"; };
-		1D912D0222C0AD5F00010675 /* TestDIThreeParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIThreeParametersSpec.swift; sourceTree = "<group>"; };
-		1D912D0322C0AD5F00010675 /* RecursiveClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveClass.swift; sourceTree = "<group>"; };
-		1D912D0422C0AD5F00010675 /* TestDIZeroParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIZeroParametersSpec.swift; sourceTree = "<group>"; };
-		1D912D0522C0AD5F00010675 /* TestDITwoParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDITwoParametersSpec.swift; sourceTree = "<group>"; };
-		1D912D0622C0AD5F00010675 /* TestDIRecursiveSingletonSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIRecursiveSingletonSpec.swift; sourceTree = "<group>"; };
-		1D912D0722C0AD5F00010675 /* TestDIOneParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIOneParametersSpec.swift; sourceTree = "<group>"; };
-		1DBA01C5226320D6006556A4 /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
-		1DBA01C72263210D006556A4 /* ChildClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildClass.swift; sourceTree = "<group>"; };
-		1DCD96FB226093F60061E8BC /* TuringDI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringDI.podspec; path = ../../../TuringDI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		607FACD01AFB9204008FA782 /* TuringDI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringDI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* TuringDI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringDI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80D6834BF2C249C82BB15FF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		921DF072D98B4464A066111B /* Pods-TuringDI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Example.release.xcconfig"; path = "Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9A83AC0E09CB5730983D12BA /* Pods-TuringDI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Example.debug.xcconfig"; path = "Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AB1768BF14427D292B56F8E6 /* Pods_TuringDI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringDI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C438138063722081E981C026 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FC7224E987F023FBA5110DF0 /* Pods_TuringDI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringDI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04552D6518D2672A4FE566516E173538 /* Pods-TuringDI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		04EF6799D1781BE074A765DF3F4D08CB /* TestDILazyParentChildSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyParentChildSpec.swift; sourceTree = "<group>"; };
+		0C9D0A7616D31D5764FCB33EAB8355A5 /* TestDILazyRecursiveSingletonSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyRecursiveSingletonSpec.swift; sourceTree = "<group>"; };
+		102CF91115CF45FE8AECCD7F08B68D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		114CB0882164A69FB31BE70B1F93ECF5 /* Pods-TuringDI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Example.release.xcconfig"; path = "Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1470BA75919581C3E40974E297A0B55D /* TestDILazyTwoParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyTwoParametersSpec.swift; sourceTree = "<group>"; };
+		275E136DFAE238A39AFDE05F9E4619A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2F3B33E64187ED8A957E333D77AFEA5D /* TestDIRecursiveSingletonSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIRecursiveSingletonSpec.swift; sourceTree = "<group>"; };
+		4A67633324D915F748F94FE5F572C7F0 /* Pods-TuringDI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Tests.release.xcconfig"; path = "Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		55A22724B256A82F45204F3CABBE6B5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FDA36987BA5658A7FCE08445A1989BA /* TestDIParentChildSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIParentChildSpec.swift; sourceTree = "<group>"; };
+		62FF5B54AE23B7B69E1D98F9746F6B84 /* Pods_TuringDI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringDI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB2BC257D7463AC234541B8B064D3ED /* TestDIThreeParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIThreeParametersSpec.swift; sourceTree = "<group>"; };
+		73D9C54D870BA1ECCD0A3A8EA81972DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B9F6848EA48966053018E66F33CADF /* TestDIZeroParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIZeroParametersSpec.swift; sourceTree = "<group>"; };
+		8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
+		88E2713BA4101CFCC319595937A3999F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A13101030091EE7CC8D3A40455783636 /* TuringDI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringDI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BF726EBBCF58C55C33906B5D509FE5 /* TestDILazyOneParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyOneParametersSpec.swift; sourceTree = "<group>"; };
+		A455021BE67021DC9BBFA305862419EB /* TuringDI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringDI.podspec; path = ../../../TuringDI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B13584F29BE04FEA068ECA5BC5F1134D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA6C82F514545D84B8AB64ED0B5E024E /* Pods_TuringDI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringDI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C07645DFB0D78EF631C9BECA83F77D /* TestDILazyThreeParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyThreeParametersSpec.swift; sourceTree = "<group>"; };
+		D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveClass.swift; sourceTree = "<group>"; };
+		D79C4CB52E996072390EA6E38BC848F2 /* Pods-TuringDI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDI_Example.debug.xcconfig"; path = "Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DA9BB5F9B9B96D408BDCFEF89D2EE2AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E0C29506C3AAD5051A1736EFD262FC3B /* TestDILazyZeroParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDILazyZeroParametersSpec.swift; sourceTree = "<group>"; };
+		E65E5C92AB940935D3704BA29150BE87 /* TestDITwoParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDITwoParametersSpec.swift; sourceTree = "<group>"; };
+		E8529EA8D4C39C42023173A378729C50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAE01B0385B002005144FAFFB69EB140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF0DB858E1A2F74F81E9BBA44D44EDD /* TestDIOneParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIOneParametersSpec.swift; sourceTree = "<group>"; };
+		EFC7A5FC47D71A212E722F984A280648 /* TuringDI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuringDI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+		4668E4A2CF809169D5CAC4538AB894F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D46CECA02BBF7E0EA00C0E5 /* Pods_TuringDI_Example.framework in Frameworks */,
+				46BEE6CB787367AD8626DDC646635659 /* Pods_TuringDI_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		BDC8DB4B8E7EE79AA75818D481916CA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7105CA5BB9C211C9897BC94 /* Pods_TuringDI_Tests.framework in Frameworks */,
+				BDF21B280C3A187B1D66220995721EB9 /* Pods_TuringDI_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D3FC05C2268AC83009A8280 /* TestTypes */ = {
+		933739607D5BDB707DB50F4795406BAA /* TestTypes */ = {
 			isa = PBXGroup;
 			children = (
-				1D912D0322C0AD5F00010675 /* RecursiveClass.swift */,
-				1DBA01C5226320D6006556A4 /* ParentClass.swift */,
-				1DBA01C72263210D006556A4 /* ChildClass.swift */,
+				F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */,
+				8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */,
+				D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */,
 			);
-			name = TestTypes;
+			path = TestTypes;
 			sourceTree = "<group>";
 		};
-		3D035D531E305C6C9EA742E3 /* Frameworks */ = {
+		42E966D0DD8EF10AB5BE2FD795564A76 /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
-				FC7224E987F023FBA5110DF0 /* Pods_TuringDI_Example.framework */,
-				AB1768BF14427D292B56F8E6 /* Pods_TuringDI_Tests.framework */,
+				A1BF726EBBCF58C55C33906B5D509FE5 /* TestDILazyOneParametersSpec.swift */,
+				04EF6799D1781BE074A765DF3F4D08CB /* TestDILazyParentChildSpec.swift */,
+				0C9D0A7616D31D5764FCB33EAB8355A5 /* TestDILazyRecursiveSingletonSpec.swift */,
+				C4C07645DFB0D78EF631C9BECA83F77D /* TestDILazyThreeParametersSpec.swift */,
+				1470BA75919581C3E40974E297A0B55D /* TestDILazyTwoParametersSpec.swift */,
+				E0C29506C3AAD5051A1736EFD262FC3B /* TestDILazyZeroParametersSpec.swift */,
 			);
-			name = Frameworks;
+			path = Lazy;
 			sourceTree = "<group>";
 		};
-		607FACC71AFB9204008FA782 = {
+		2AC905404C7CBA54D4C42174125D61BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for TuringDI */,
-				607FACE81AFB9204008FA782 /* Tests */,
-				607FACD11AFB9204008FA782 /* Products */,
-				A486438C8ED7AE5CBB44C186 /* Pods */,
-				3D035D531E305C6C9EA742E3 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		607FACD11AFB9204008FA782 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD01AFB9204008FA782 /* TuringDI_Example.app */,
-				607FACE51AFB9204008FA782 /* TuringDI_Tests.xctest */,
+				A13101030091EE7CC8D3A40455783636 /* TuringDI_Example.app */,
+				EFC7A5FC47D71A212E722F984A280648 /* TuringDI_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for TuringDI */ = {
+		4FA4B05FFE930850E12520BD98EAD599 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				D79C4CB52E996072390EA6E38BC848F2 /* Pods-TuringDI_Example.debug.xcconfig */,
+				114CB0882164A69FB31BE70B1F93ECF5 /* Pods-TuringDI_Example.release.xcconfig */,
+				04552D6518D2672A4FE566516E173538 /* Pods-TuringDI_Tests.debug.xcconfig */,
+				4A67633324D915F748F94FE5F572C7F0 /* Pods-TuringDI_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		72BFDA3B0560212A463DB118B82E960D /* Example for TuringDI */ = {
+			isa = PBXGroup;
+			children = (
+				EEFC8ED08982266E41A310F8D84B940C /* Supporting Files */,
+				E8529EA8D4C39C42023173A378729C50 /* AppDelegate.swift */,
+				55A22724B256A82F45204F3CABBE6B5D /* Images.xcassets */,
+				67581191EDB84E0304C8BC2BA372D631 /* LaunchScreen.xib */,
+				328BA1414D6B22FE5D9E72B729F2E8AA /* Main.storyboard */,
+				88E2713BA4101CFCC319595937A3999F /* ViewController.swift */,
 			);
 			name = "Example for TuringDI";
 			path = TuringDI;
 			sourceTree = "<group>";
 		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+		A1770B94268C112808EBC637F1F5F832 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				1D912D0722C0AD5F00010675 /* TestDIOneParametersSpec.swift */,
-				1D912D0122C0AD5F00010675 /* TestDIParentChildSpec.swift */,
-				1D912D0622C0AD5F00010675 /* TestDIRecursiveSingletonSpec.swift */,
-				1D912D0222C0AD5F00010675 /* TestDIThreeParametersSpec.swift */,
-				1D912D0522C0AD5F00010675 /* TestDITwoParametersSpec.swift */,
-				1D912D0422C0AD5F00010675 /* TestDIZeroParametersSpec.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-				1D3FC05C2268AC83009A8280 /* TestTypes */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				1DCD96FB226093F60061E8BC /* TuringDI.podspec */,
-				80D6834BF2C249C82BB15FF3 /* README.md */,
-				C438138063722081E981C026 /* LICENSE */,
+				DA9BB5F9B9B96D408BDCFEF89D2EE2AF /* LICENSE */,
+				275E136DFAE238A39AFDE05F9E4619A3 /* README.md */,
+				A455021BE67021DC9BBFA305862419EB /* TuringDI.podspec */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		A486438C8ED7AE5CBB44C186 /* Pods */ = {
+		A262919E7CF66D4A31FFC90EAF30B89B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A83AC0E09CB5730983D12BA /* Pods-TuringDI_Example.debug.xcconfig */,
-				921DF072D98B4464A066111B /* Pods-TuringDI_Example.release.xcconfig */,
-				1B1E133639E8A72DBECAF001 /* Pods-TuringDI_Tests.debug.xcconfig */,
-				123D73D987633E1FC650849C /* Pods-TuringDI_Tests.release.xcconfig */,
+				EAE01B0385B002005144FAFFB69EB140 /* Info.plist */,
 			);
-			path = Pods;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7D776D8D7E8A49E2C9FDB11E333F0A2 = {
+			isa = PBXGroup;
+			children = (
+				72BFDA3B0560212A463DB118B82E960D /* Example for TuringDI */,
+				BC4B868C8FA912E45954AE7E7F770619 /* Frameworks */,
+				4FA4B05FFE930850E12520BD98EAD599 /* Pods */,
+				A1770B94268C112808EBC637F1F5F832 /* Podspec Metadata */,
+				2AC905404C7CBA54D4C42174125D61BA /* Products */,
+				EEABA045273A1F24CC078F8EE625E905 /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		BC4B868C8FA912E45954AE7E7F770619 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62FF5B54AE23B7B69E1D98F9746F6B84 /* Pods_TuringDI_Example.framework */,
+				BA6C82F514545D84B8AB64ED0B5E024E /* Pods_TuringDI_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEABA045273A1F24CC078F8EE625E905 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				42E966D0DD8EF10AB5BE2FD795564A76 /* Lazy */,
+				A262919E7CF66D4A31FFC90EAF30B89B /* Supporting Files */,
+				933739607D5BDB707DB50F4795406BAA /* TestTypes */,
+				ECF0DB858E1A2F74F81E9BBA44D44EDD /* TestDIOneParametersSpec.swift */,
+				5FDA36987BA5658A7FCE08445A1989BA /* TestDIParentChildSpec.swift */,
+				2F3B33E64187ED8A957E333D77AFEA5D /* TestDIRecursiveSingletonSpec.swift */,
+				6AB2BC257D7463AC234541B8B064D3ED /* TestDIThreeParametersSpec.swift */,
+				E65E5C92AB940935D3704BA29150BE87 /* TestDITwoParametersSpec.swift */,
+				76B9F6848EA48966053018E66F33CADF /* TestDIZeroParametersSpec.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		EEFC8ED08982266E41A310F8D84B940C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C54D870BA1ECCD0A3A8EA81972DA /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* TuringDI_Example */ = {
+		1D8FB9C7F08244619A860CD9E7CA63C3 /* TuringDI_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringDI_Example" */;
+			buildConfigurationList = F93737410DE23CAD5FDC183B011B1322 /* Build configuration list for PBXNativeTarget "TuringDI_Example" */;
 			buildPhases = (
-				35B4135FB762B8E388FC28CF /* [CP] Check Pods Manifest.lock */,
-				607FACCC1AFB9204008FA782 /* Sources */,
-				607FACCD1AFB9204008FA782 /* Frameworks */,
-				607FACCE1AFB9204008FA782 /* Resources */,
-				1D3FC05A2268A63B009A8280 /* ShellScript */,
-				47AF87F55038D1893DE51FAF /* [CP] Embed Pods Frameworks */,
+				92502A73293649D084F647F2C9338DBF /* [CP] Check Pods Manifest.lock */,
+				400CAA014CD01D22E4ACA87985CB1DE9 /* Sources */,
+				BDC8DB4B8E7EE79AA75818D481916CA9 /* Frameworks */,
+				1501D12B5A32720C49E662A007872EF1 /* Resources */,
+				E097CA43A447B10208849377F10D37C4 /* ShellScript */,
+				5B0D4337C2FA3D48C5D95B448290395B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,54 +240,54 @@
 			);
 			name = TuringDI_Example;
 			productName = TuringDI;
-			productReference = 607FACD01AFB9204008FA782 /* TuringDI_Example.app */;
+			productReference = A13101030091EE7CC8D3A40455783636 /* TuringDI_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* TuringDI_Tests */ = {
+		1DD60BFA71C8F1B34C8233B8D830A31C /* TuringDI_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringDI_Tests" */;
+			buildConfigurationList = 1A9667441410468F47F703CE885433AB /* Build configuration list for PBXNativeTarget "TuringDI_Tests" */;
 			buildPhases = (
-				55D34842D3DD6ECF26B29C54 /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				1D3FC05B2268A64C009A8280 /* ShellScript */,
-				E1C8DF25BC99B5977B7708B6 /* [CP] Embed Pods Frameworks */,
+				624DB1CE5E0DBADD0A78A62E99B5F940 /* [CP] Check Pods Manifest.lock */,
+				C1D72F7D5DF544375141D0868F034162 /* Sources */,
+				4668E4A2CF809169D5CAC4538AB894F2 /* Frameworks */,
+				C9E17C3A3B1E6FCC037BBE7A899B9230 /* Resources */,
+				539D92CD77BBBD0D3B629CEAA06E660D /* ShellScript */,
+				2734C7807C10B8835DCC1565BD0A85CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+				7D02E9F89CB5CBDFBF9885DC0AAF9EBC /* PBXTargetDependency */,
 			);
 			name = TuringDI_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* TuringDI_Tests.xctest */;
+			productReference = EFC7A5FC47D71A212E722F984A280648 /* TuringDI_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		607FACC81AFB9204008FA782 /* Project object */ = {
+		3BE4E65879B2F2ABBE3D25485C12B6A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
+					1D8FB9C7F08244619A860CD9E7CA63C3 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 7S572U2C68;
 						LastSwiftMigration = 0900;
 					};
-					607FACE41AFB9204008FA782 = {
+					1DD60BFA71C8F1B34C8233B8D830A31C = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 7S572U2C68;
 						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+						TestTargetID = 1D8FB9C7F08244619A860CD9E7CA63C3;
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TuringDI" */;
+			buildConfigurationList = 0F12166A83AB12AF44339E132FE491F8 /* Build configuration list for PBXProject "TuringDI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -269,29 +295,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 607FACC71AFB9204008FA782;
-			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			mainGroup = B7D776D8D7E8A49E2C9FDB11E333F0A2;
+			productRefGroup = 2AC905404C7CBA54D4C42174125D61BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* TuringDI_Example */,
-				607FACE41AFB9204008FA782 /* TuringDI_Tests */,
+				1D8FB9C7F08244619A860CD9E7CA63C3 /* TuringDI_Example */,
+				1DD60BFA71C8F1B34C8233B8D830A31C /* TuringDI_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACCE1AFB9204008FA782 /* Resources */ = {
+		1501D12B5A32720C49E662A007872EF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				4328285FED25C62C20E35224405A03EB /* Images.xcassets in Resources */,
+				585525B8DFCED2CD9BA67CAD439593A4 /* LaunchScreen.xib in Resources */,
+				5AB1B3F4AE0498DFDE6E08FC3043F35F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
+		C9E17C3A3B1E6FCC037BBE7A899B9230 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,24 +327,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D3FC05A2268A63B009A8280 /* ShellScript */ = {
+		2734C7807C10B8835DCC1565BD0A85CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../TuringDI\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		1D3FC05B2268A64C009A8280 /* ShellScript */ = {
+		539D92CD77BBBD0D3B629CEAA06E660D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,29 +364,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../Example/Tests\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
-		35B4135FB762B8E388FC28CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TuringDI_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		47AF87F55038D1893DE51FAF /* [CP] Embed Pods Frameworks */ = {
+		5B0D4337C2FA3D48C5D95B448290395B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,7 +386,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringDI_Example/Pods-TuringDI_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		55D34842D3DD6ECF26B29C54 /* [CP] Check Pods Manifest.lock */ = {
+		624DB1CE5E0DBADD0A78A62E99B5F940 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,80 +408,105 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1C8DF25BC99B5977B7708B6 /* [CP] Embed Pods Frameworks */ = {
+		92502A73293649D084F647F2C9338DBF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"$(DERIVED_FILE_DIR)/Pods-TuringDI_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuringDI_Tests/Pods-TuringDI_Tests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E097CA43A447B10208849377F10D37C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd ../TuringDI\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACCC1AFB9204008FA782 /* Sources */ = {
+		400CAA014CD01D22E4ACA87985CB1DE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA3431C22C0B5F40094E325 /* ParentClass.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				1DA3431B22C0B5E80094E325 /* RecursiveClass.swift in Sources */,
-				1DA3431D22C0B5F40094E325 /* ChildClass.swift in Sources */,
+				6A3AF27DBA2958E51CD34E8417C2F0D3 /* AppDelegate.swift in Sources */,
+				3D66C77170DFC3C87D341B1ECBFC07A1 /* ChildClass.swift in Sources */,
+				EB9CA7FDF4E4236BA5F100E90E330932 /* ParentClass.swift in Sources */,
+				910949FBF50748981BFBCA224161C5DE /* RecursiveClass.swift in Sources */,
+				035A02947DC60AC1635615BD8B2E288C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		C1D72F7D5DF544375141D0868F034162 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D912D1022C0AD6E00010675 /* TestDIParentChildSpec.swift in Sources */,
-				1D912D0F22C0AD6E00010675 /* TestDIOneParametersSpec.swift in Sources */,
-				1D912D1122C0AD6E00010675 /* TestDIRecursiveSingletonSpec.swift in Sources */,
-				1D3FC05D2268AC91009A8280 /* ParentClass.swift in Sources */,
-				1D912D1222C0AD6E00010675 /* TestDIThreeParametersSpec.swift in Sources */,
-				1D912D1522C0AD7500010675 /* RecursiveClass.swift in Sources */,
-				1D912D1422C0AD6E00010675 /* TestDIZeroParametersSpec.swift in Sources */,
-				1D912D1322C0AD6E00010675 /* TestDITwoParametersSpec.swift in Sources */,
-				1D3FC05E2268AC91009A8280 /* ChildClass.swift in Sources */,
+				7D224AFBF0633E5CD38C344A58F6FC24 /* ChildClass.swift in Sources */,
+				31C07C3FF66BE6E65421F8908DF2865D /* ParentClass.swift in Sources */,
+				B3FC13CA82B838D6F2E5B07D1522597F /* RecursiveClass.swift in Sources */,
+				8C757C905BC23CE1F9F3F9D43A592195 /* TestDILazyOneParametersSpec.swift in Sources */,
+				BE35641124AFFEC6DBD52D6B4298D720 /* TestDILazyParentChildSpec.swift in Sources */,
+				03B8277B50D3C8080BF1EE4898004C17 /* TestDILazyRecursiveSingletonSpec.swift in Sources */,
+				C6D432982ADCBE56F432745CBE49D781 /* TestDILazyThreeParametersSpec.swift in Sources */,
+				F2CF11C918785E4B30AA7FD6087AAD06 /* TestDILazyTwoParametersSpec.swift in Sources */,
+				30D2862E5BFCE40EA500A4184953B42C /* TestDILazyZeroParametersSpec.swift in Sources */,
+				CDEFEBF726C390FC2639483B67B100D5 /* TestDIOneParametersSpec.swift in Sources */,
+				A0CD6CC62E6E4DAAB2663A8F72E424D2 /* TestDIParentChildSpec.swift in Sources */,
+				E5B9F49174EA7D9F7C282873DA40A3DC /* TestDIRecursiveSingletonSpec.swift in Sources */,
+				B9670589C4DEDE62F44A2E59FC2111E6 /* TestDIThreeParametersSpec.swift in Sources */,
+				5EDA9D810E214A7019F0089C732E17DD /* TestDITwoParametersSpec.swift in Sources */,
+				0AE1C73CEB07996254E7B6A657528784 /* TestDIZeroParametersSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+		7D02E9F89CB5CBDFBF9885DC0AAF9EBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* TuringDI_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+			target = 1D8FB9C7F08244619A860CD9E7CA63C3 /* TuringDI_Example */;
+			targetProxy = 8B8A0D898BDC1CFC78A9DABCB46179D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		328BA1414D6B22FE5D9E72B729F2E8AA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
+				B13584F29BE04FEA068ECA5BC5F1134D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+		67581191EDB84E0304C8BC2BA372D631 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				102CF91115CF45FE8AECCD7F08B68D29 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -482,7 +514,23 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		607FACED1AFB9204008FA782 /* Debug */ = {
+		36B88BC14D2A02083E837192DCB593E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114CB0882164A69FB31BE70B1F93ECF5 /* Pods-TuringDI_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7S572U2C68;
+				INFOPLIST_FILE = TuringDI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3B83C6112F817F894E4212E1A5EA7E1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -539,7 +587,65 @@
 			};
 			name = Debug;
 		};
-		607FACEE1AFB9204008FA782 /* Release */ = {
+		4C0A9B327CF01794FE620BFDD9C9B57C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04552D6518D2672A4FE566516E173538 /* Pods-TuringDI_Tests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7S572U2C68;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringDI_Example.app/TuringDI_Example";
+			};
+			name = Debug;
+		};
+		61962764D4FFA6F34CE51C3B111DBF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79C4CB52E996072390EA6E38BC848F2 /* Pods-TuringDI_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7S572U2C68;
+				INFOPLIST_FILE = TuringDI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CA96DA4B2A68631DF32F38CB89A86C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A67633324D915F748F94FE5F572C7F0 /* Pods-TuringDI_Tests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7S572U2C68;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringDI_Example.app/TuringDI_Example";
+			};
+			name = Release;
+		};
+		EA193E1EDA53B3B5084E62B5F741E74A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -589,111 +695,37 @@
 			};
 			name = Release;
 		};
-		607FACF01AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A83AC0E09CB5730983D12BA /* Pods-TuringDI_Example.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7S572U2C68;
-				INFOPLIST_FILE = TuringDI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		607FACF11AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 921DF072D98B4464A066111B /* Pods-TuringDI_Example.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7S572U2C68;
-				INFOPLIST_FILE = TuringDI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B1E133639E8A72DBECAF001 /* Pods-TuringDI_Tests.debug.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 7S572U2C68;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringDI_Example.app/TuringDI_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 123D73D987633E1FC650849C /* Pods-TuringDI_Tests.release.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 7S572U2C68;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuringDI_Example.app/TuringDI_Example";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TuringDI" */ = {
+		0F12166A83AB12AF44339E132FE491F8 /* Build configuration list for PBXProject "TuringDI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACED1AFB9204008FA782 /* Debug */,
-				607FACEE1AFB9204008FA782 /* Release */,
+				3B83C6112F817F894E4212E1A5EA7E1C /* Debug */,
+				EA193E1EDA53B3B5084E62B5F741E74A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringDI_Example" */ = {
+		1A9667441410468F47F703CE885433AB /* Build configuration list for PBXNativeTarget "TuringDI_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF01AFB9204008FA782 /* Debug */,
-				607FACF11AFB9204008FA782 /* Release */,
+				4C0A9B327CF01794FE620BFDD9C9B57C /* Debug */,
+				CA96DA4B2A68631DF32F38CB89A86C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TuringDI_Tests" */ = {
+		F93737410DE23CAD5FDC183B011B1322 /* Build configuration list for PBXNativeTarget "TuringDI_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
+				61962764D4FFA6F34CE51C3B111DBF2F /* Debug */,
+				36B88BC14D2A02083E837192DCB593E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+	rootObject = 3BE4E65879B2F2ABBE3D25485C12B6A2 /* Project object */;
 }

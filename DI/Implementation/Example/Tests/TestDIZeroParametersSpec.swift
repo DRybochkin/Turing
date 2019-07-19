@@ -9,6 +9,7 @@
 import Quick
 import Nimble
 import TuringDI
+import TuringDIInterface
 
 final class TestDIZeroParametersSpec: QuickSpec {
 
@@ -17,11 +18,11 @@ final class TestDIZeroParametersSpec: QuickSpec {
     override func spec() {
         describe("these will success") {
             it("test init") {
-                _ = DIContainer(maxRecursiveDepth: 10)
-                expect("init") == "init"
+                let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
+                expect(diContainer).notTo(beNil())
             }
             it("test register/resolve zero parameters ") {
-                let diContainer = DIContainer(maxRecursiveDepth: 10)
+                let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
                 diContainer.register(ParentProtocol.self, factory: { ParentClass() })
                 guard let parent1: ParentProtocol = diContainer.resolve() else {
                     expect("resolve") == "fail"
@@ -43,7 +44,7 @@ final class TestDIZeroParametersSpec: QuickSpec {
                 expect(equalParent1 == equalParent2) == true
             }
             it("test register/resolve singletone zero parameters ") {
-                let diContainer = DIContainer(maxRecursiveDepth: 10)
+                let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
                 diContainer.register(ParentProtocol.self, factory: { ParentClass() })
                 guard let parent1: ParentProtocol = diContainer.resolveSingletone() else {
                     expect("resolve") == "fail"
