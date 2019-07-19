@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TuringAnyRecursive'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of TuringAnyRecursive.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
   s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'AnyRecursive/TuringAnyRecursive/Classes/**/*'
   
