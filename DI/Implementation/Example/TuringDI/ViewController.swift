@@ -30,18 +30,10 @@ class ViewController: UIViewController {
         diContainer.register(ParentProtocol.self, factory: {
             ParentClass(property2: $1, property3: $2, property4: $3)
         })
-        let _ = diContainer.resolve(ParentProtocol.self,
-                                    parameter1: 10,
-                                    parameter2: 11,
-                                    parameter3: nil as ParentProtocol?)
+        let _ = diContainer.resolve(ParentProtocol.self, 10, 11, nil as ParentProtocol?)
         let child1: ChildProtocol? = diContainer.resolve()
-        let parent1: ParentProtocol! = diContainer.resolve(parameter1: 10,
-                                                           parameter2: "11",
-                                                           parameter3: child1)
-        let parent2 = diContainer.resolve(ParentProtocol.self,
-                                          parameter1: 10,
-                                          parameter2: "11",
-                                          parameter3: child1)
+        let parent1: ParentProtocol! = diContainer.resolve(10, "11", child1)
+        let parent2 = diContainer.resolve(ParentProtocol.self, 10, "11", child1)
         guard let equalParent1 = parent1 as? ParentClass else {
             return
         }
@@ -55,10 +47,7 @@ class ViewController: UIViewController {
         let parentObject = lazyParent?.instance
         print("zzzz => 1 => " + String(describing: parentObject))
 
-        let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self,
-                                                                           parameter1: 10,
-                                                                           parameter2: "11",
-                                                                           parameter3: child1)
+        let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self, 10, "11", child1)
         let parentObject2 = lazyParent2?.instance
         print("zzzz => 2 => " + String(describing: parentObject2))
 

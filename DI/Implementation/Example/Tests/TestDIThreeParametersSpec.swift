@@ -38,16 +38,11 @@ private extension TestDIThreeParametersSpec {
             })
             let child1: ChildProtocol? = diContainer.resolve()
             expect(child1).toNot(beNil())
-            guard let parent1: ParentProtocol = diContainer.resolve(parameter1: 10,
-                                                                    parameter2: "11",
-                                                                    parameter3: child1) else {
+            guard let parent1: ParentProtocol = diContainer.resolve(10, "11", child1) else {
                 expect("resolve parent") == "fail"
                 return
             }
-            guard let parent2 = diContainer.resolve(ParentProtocol.self,
-                                                    parameter1: 10,
-                                                    parameter2: "11",
-                                                    parameter3: child1) else {
+            guard let parent2 = diContainer.resolve(ParentProtocol.self, 10, "11", child1) else {
                 expect("resolve child") == "fail"
                 return
             }
@@ -76,16 +71,11 @@ private extension TestDIThreeParametersSpec {
                 expect("resolve child") == "fail"
                 return
             }
-            guard let parent1: ParentProtocol = diContainer.resolve(parameter1: 10,
-                                                                    parameter2: "11",
-                                                                    parameter3: child1) else {
+            guard let parent1: ParentProtocol = diContainer.resolve(10, "11", child1) else {
                 expect("resolve parent") == "fail"
                 return
             }
-            guard let parent2 = diContainer.resolve(ParentProtocol.self,
-                                                    parameter1: 10,
-                                                    parameter2: "11",
-                                                    parameter3: child1) else {
+            guard let parent2 = diContainer.resolve(ParentProtocol.self, 10, "11", child1) else {
                 expect("resolve child") == "fail"
                 return
             }
@@ -114,16 +104,11 @@ private extension TestDIThreeParametersSpec {
             expect(child1).toNot(beNil())
             let child2: ChildProtocol? = diContainer.resolveSingletone()
             expect(child2).toNot(beNil())
-            guard let parent1: ParentProtocol = diContainer.resolveSingletone(parameter1: 10,
-                                                                              parameter2: "11",
-                                                                              parameter3: child1) else {
+            guard let parent1: ParentProtocol = diContainer.resolveSingletone(10, "11", child1) else {
                 expect("resolve") == "fail"
                 return
             }
-            guard let parent2 = diContainer.resolveSingletone(ParentProtocol.self,
-                                                              parameter1: 10,
-                                                              parameter2: "11",
-                                                              parameter3: child2) else {
+            guard let parent2 = diContainer.resolveSingletone(ParentProtocol.self, 10, "11", child2) else {
                 expect("resolve") == "fail"
                 return
             }
@@ -156,16 +141,11 @@ private extension TestDIThreeParametersSpec {
                 expect("resolve child") == "fail"
                 return
             }
-            guard let parent1: ParentProtocol = diContainer.resolveSingletone(parameter1: 10,
-                                                                              parameter2: "11",
-                                                                              parameter3: child1) else {
+            guard let parent1: ParentProtocol = diContainer.resolveSingletone(10, "11", child1) else {
                 expect("resolve") == "fail"
                 return
             }
-            guard let parent2 = diContainer.resolveSingletone(ParentProtocol.self,
-                                                              parameter1: 10,
-                                                              parameter2: "11",
-                                                              parameter3: child2) else {
+            guard let parent2 = diContainer.resolveSingletone(ParentProtocol.self, 10, "11", child2) else {
                 expect("resolve") == "fail"
                 return
             }

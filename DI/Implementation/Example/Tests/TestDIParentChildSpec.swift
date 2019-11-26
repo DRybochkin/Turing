@@ -49,7 +49,7 @@ private extension TestDIParentChildSpec {
             diContainer.register(ChildProtocol.self, factory: { ChildClass(parent: $1) })
             diContainer.register(ParentProtocol.self, factory: {
                 let parent: ParentProtocol? = ParentClass()
-                parent?.property1 = $0.resolve(parameter: parent)
+                parent?.property1 = $0.resolve(parent)
                 return parent
             })
             let parent: ParentProtocol? = diContainer.resolve()
@@ -67,7 +67,7 @@ private extension TestDIParentChildSpec {
             diContainer.register(ParentProtocol.self, factory: {
                 ParentClass()
             }, completion: {
-                $1?.property1 = $0.resolve(parameter: $1)
+                $1?.property1 = $0.resolve($1)
             })
             let parent: ParentProtocol? = diContainer.resolve()
             expect(parent === parent?.property1?.parent) == true
@@ -80,7 +80,7 @@ private extension TestDIParentChildSpec {
         it("test register/resolve optional/strong") {
             let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass(parent: $1) })
-            let child = diContainer.resolve(ChildProtocol.self, parameter: ParentClass() as ParentProtocol)
+            let child = diContainer.resolve(ChildProtocol.self, ParentClass() as ParentProtocol)
             expect(child).toNot(beNil())
         }
     }

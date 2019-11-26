@@ -31,7 +31,7 @@
 		D563107F1B7BFE76433C18F47872560B /* Pods_TuringDIInterface_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringDIInterface_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9323EF079A1A9DC1815418A37FFEC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FD167963C926B052916FA1F22AE94B34 /* Pods-TuringDIInterface_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringDIInterface_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringDIInterface_Tests/Pods-TuringDIInterface_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FE2B453232CB5B9767CB091B3BEB9207 /* TuringDIInterface.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringDIInterface.podspec; path = ../../../TuringDIInterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE2B453232CB5B9767CB091B3BEB9207 /* TuringDIInterface.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TuringDIInterface.podspec; path = ../../../TuringDIInterface.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,13 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D8D4D8B635BA77A7853F51FFE27906B /* Frameworks */ = {
+		34C4CD5C9960F9BFD92C33A40BD1F5C4 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				D563107F1B7BFE76433C18F47872560B /* Pods_TuringDIInterface_Example.framework */,
-				7199A66A8C2B086816FE6FA8A36365B9 /* Pods_TuringDIInterface_Tests.framework */,
+				40D409FAC539149B7A067FB205558812 /* LICENSE */,
+				99F7120F2311FE1265B30D9447DC5CE9 /* README.md */,
+				FE2B453232CB5B9767CB091B3BEB9207 /* TuringDIInterface.podspec */,
 			);
-			name = Frameworks;
+			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 		428F768CB8680E6675265701C017C898 = {
@@ -64,14 +65,6 @@
 				34C4CD5C9960F9BFD92C33A40BD1F5C4 /* Podspec Metadata */,
 				745F289281EF616E57117ED5EAAAFEAF /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		745F289281EF616E57117ED5EAAAFEAF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0C9F504FE929BC39CE2B95C9D33B204F /* TuringDIInterface_Example.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		69E6120D238A60335F96D5C24B82D029 /* Example for TuringDIInterface */ = {
@@ -88,6 +81,14 @@
 			path = TuringDIInterface;
 			sourceTree = "<group>";
 		};
+		745F289281EF616E57117ED5EAAAFEAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C9F504FE929BC39CE2B95C9D33B204F /* TuringDIInterface_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		79F4B5DB2F0B060F9163C85203B3D363 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,14 +97,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		34C4CD5C9960F9BFD92C33A40BD1F5C4 /* Podspec Metadata */ = {
+		8D8D4D8B635BA77A7853F51FFE27906B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				40D409FAC539149B7A067FB205558812 /* LICENSE */,
-				99F7120F2311FE1265B30D9447DC5CE9 /* README.md */,
-				FE2B453232CB5B9767CB091B3BEB9207 /* TuringDIInterface.podspec */,
+				D563107F1B7BFE76433C18F47872560B /* Pods_TuringDIInterface_Example.framework */,
+				7199A66A8C2B086816FE6FA8A36365B9 /* Pods_TuringDIInterface_Tests.framework */,
 			);
-			name = "Podspec Metadata";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F48447FE7630644E52A239FCE4A97124 /* Pods */ = {
@@ -280,62 +280,21 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D71FD1129B5EC122146912D083BDABE7 /* Debug */ = {
+		626373AD0B42B4FDC62AFA6E9DD89E19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E51298E569ED4168C3A0DD7D31CCF8B /* Pods-TuringDIInterface_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7S572U2C68;
+				INFOPLIST_FILE = TuringDIInterface/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
-			name = Debug;
+			name = Release;
 		};
 		91F5B55AA7D5465376C37E216880534B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -403,21 +362,62 @@
 			};
 			name = Debug;
 		};
-		626373AD0B42B4FDC62AFA6E9DD89E19 /* Release */ = {
+		D71FD1129B5EC122146912D083BDABE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E51298E569ED4168C3A0DD7D31CCF8B /* Pods-TuringDIInterface_Example.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7S572U2C68;
-				INFOPLIST_FILE = TuringDIInterface/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 

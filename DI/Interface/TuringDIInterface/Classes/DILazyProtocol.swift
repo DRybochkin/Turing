@@ -9,11 +9,10 @@ public protocol DILazyProtocol {
 
     // MARK: - Types
 
-    associatedtype P
-    typealias Facrory = (DIResolveProtocol?) -> P?
+    associatedtype LazyType
+    typealias Facrory = (DIResolveProtocol?) -> LazyType?
 
     // MARK: - Properties
 
-    var instance: P? { get }
+    var instance: LazyType? { get }
 }
-
