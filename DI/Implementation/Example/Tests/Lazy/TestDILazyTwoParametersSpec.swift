@@ -40,13 +40,9 @@ private extension TestDILazyTwoParametersSpec {
             let child1 = lazyChild1?.instance
             expect(child1).notTo(beNil())
 
-            let lazyParent1: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self,
-                                                                               parameter1: child1,
-                                                                               parameter2: 10)
+            let lazyParent1: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self, child1, 10)
             expect(lazyParent1).notTo(beNil())
-            let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self,
-                                                                               parameter1: child1,
-                                                                               parameter2: 10)
+            let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self, child1, 10)
             expect(lazyParent2).notTo(beNil())
 
             guard let parent1: ParentProtocol = lazyParent1?.instance else {
@@ -84,13 +80,9 @@ private extension TestDILazyTwoParametersSpec {
                 expect("resolve child") == "fail"
                 return
             }
-            let lazyParent1: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self,
-                                                                               parameter1: child1,
-                                                                               parameter2: 10)
+            let lazyParent1: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self, child1, 10)
             expect(lazyParent1).notTo(beNil())
-            let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self,
-                                                                               parameter1: child1,
-                                                                               parameter2: 10)
+            let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self, child1, 10)
             expect(lazyParent2).notTo(beNil())
 
             guard let parent1: ParentProtocol = lazyParent1?.instance else {
@@ -118,26 +110,22 @@ private extension TestDILazyTwoParametersSpec {
 
     private func singletoneOptionalParameter() {
         it("test register/resolve singletone two optional parameters ") {
-            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
-            diContainer.register(ChildProtocol.self, factory: { ChildClass() })
-            diContainer.register(ParentProtocol.self, factory: { ParentClass(property1: $1, property2: $2) })
+            let resolver: DIProtocol = DIContainer(maxRecursiveDepth: 10)
+            resolver.register(ChildProtocol.self, factory: { ChildClass() })
+            resolver.register(ParentProtocol.self, factory: { ParentClass(property1: $1, property2: $2) })
 
-            let lazyChild1: DILazy<ChildProtocol>? = diContainer.lazyResolveSingletone(ChildProtocol.self)
+            let lazyChild1: DILazy<ChildProtocol>? = resolver.lazyResolveSingletone(ChildProtocol.self)
             expect(lazyChild1).notTo(beNil())
             let child1 = lazyChild1?.instance
             expect(child1).notTo(beNil())
-            let lazyChild2: DILazy<ChildProtocol>? = diContainer.lazyResolveSingletone(ChildProtocol.self)
+            let lazyChild2: DILazy<ChildProtocol>? = resolver.lazyResolveSingletone(ChildProtocol.self)
             expect(lazyChild2).notTo(beNil())
             let child2 = lazyChild2?.instance
             expect(child2).notTo(beNil())
 
-            let lazyParent1: DILazy<ParentProtocol>? = diContainer.lazyResolveSingletone(ParentProtocol.self,
-                                                                                         parameter1: child1,
-                                                                                         parameter2: 10)
+            let lazyParent1: DILazy<ParentProtocol>? = resolver.lazyResolveSingletone(ParentProtocol.self, child1, 10)
             expect(lazyParent1).notTo(beNil())
-            let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolveSingletone(ParentProtocol.self,
-                                                                                         parameter1: child2,
-                                                                                         parameter2: 10)
+            let lazyParent2: DILazy<ParentProtocol>? = resolver.lazyResolveSingletone(ParentProtocol.self, child2, 10)
             expect(lazyParent2).notTo(beNil())
 
             guard let parent1: ParentProtocol = lazyParent1?.instance else {
@@ -165,30 +153,26 @@ private extension TestDILazyTwoParametersSpec {
 
     private func singletoneUnwrappedParameter() {
         it("test register/resolve singletone two parameters") {
-            let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
-            diContainer.register(ChildProtocol.self, factory: { ChildClass() })
-            diContainer.register(ParentProtocol.self, factory: { ParentClass(property1: $1, property2: $2) })
+            let resolver: DIProtocol = DIContainer(maxRecursiveDepth: 10)
+            resolver.register(ChildProtocol.self, factory: { ChildClass() })
+            resolver.register(ParentProtocol.self, factory: { ParentClass(property1: $1, property2: $2) })
 
-            let lazyChild1: DILazy<ChildProtocol>? = diContainer.lazyResolveSingletone(ChildProtocol.self)
+            let lazyChild1: DILazy<ChildProtocol>? = resolver.lazyResolveSingletone(ChildProtocol.self)
             expect(lazyChild1).notTo(beNil())
             guard let child1: ChildProtocol = lazyChild1?.instance else {
                 expect("resolve child") == "fail"
                 return
             }
-            let lazyChild2: DILazy<ChildProtocol>? = diContainer.lazyResolveSingletone(ChildProtocol.self)
+            let lazyChild2: DILazy<ChildProtocol>? = resolver.lazyResolveSingletone(ChildProtocol.self)
             expect(lazyChild2).notTo(beNil())
             guard let child2: ChildProtocol = lazyChild2?.instance else {
                 expect("resolve child") == "fail"
                 return
             }
 
-            let lazyParent1: DILazy<ParentProtocol>? = diContainer.lazyResolveSingletone(ParentProtocol.self,
-                                                                                         parameter1: child1,
-                                                                                         parameter2: 10)
+            let lazyParent1: DILazy<ParentProtocol>? = resolver.lazyResolveSingletone(ParentProtocol.self, child1, 10)
             expect(lazyParent1).notTo(beNil())
-            let lazyParent2: DILazy<ParentProtocol>? = diContainer.lazyResolveSingletone(ParentProtocol.self,
-                                                                                         parameter1: child2,
-                                                                                         parameter2: 10)
+            let lazyParent2: DILazy<ParentProtocol>? = resolver.lazyResolveSingletone(ParentProtocol.self, child2, 10)
             expect(lazyParent2).notTo(beNil())
 
             guard let parent1: ParentProtocol = lazyParent1?.instance else {

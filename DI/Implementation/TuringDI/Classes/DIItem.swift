@@ -18,7 +18,7 @@ extension DIContainer {
         let types: [Any.Type]
         let factory: Factory
         let completion: Any?
-        var assembly: Any?
+        weak var assembly: AnyObject?
 
         // MARK: - Initialization
 

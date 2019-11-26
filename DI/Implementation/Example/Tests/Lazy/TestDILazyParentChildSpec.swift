@@ -52,7 +52,7 @@ private extension TestDILazyParentChildSpec {
             diContainer.register(ChildProtocol.self, factory: { ChildClass(parent: $1) })
             diContainer.register(ParentProtocol.self, factory: {
                 let parent: ParentProtocol? = ParentClass()
-                parent?.property1 = $0.resolve(parameter: parent)
+                parent?.property1 = $0.resolve(parent)
                 return parent
             })
             let lazyParent: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self)
@@ -73,7 +73,7 @@ private extension TestDILazyParentChildSpec {
             diContainer.register(ParentProtocol.self, factory: {
                 ParentClass()
             }, completion: {
-                $1?.property1 = $0.resolve(parameter: $1)
+                $1?.property1 = $0.resolve($1)
             })
             let lazyParent: DILazy<ParentProtocol>? = diContainer.lazyResolve(ParentProtocol.self)
             expect(lazyParent).notTo(beNil())
@@ -90,7 +90,7 @@ private extension TestDILazyParentChildSpec {
             let diContainer: DIProtocol = DIContainer(maxRecursiveDepth: 10)
             diContainer.register(ChildProtocol.self, factory: { ChildClass(parent: $1) })
             let lazyChild: DILazy<ChildProtocol>? = diContainer.lazyResolve(ChildProtocol.self,
-                                                                            parameter1: ParentClass() as ParentProtocol)
+                                                                            ParentClass() as ParentProtocol)
             expect(lazyChild).notTo(beNil())
             let child = lazyChild?.instance
             expect(child).notTo(beNil())
