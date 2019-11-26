@@ -20,6 +20,7 @@
 		5EDA9D810E214A7019F0089C732E17DD /* TestDITwoParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E5C92AB940935D3704BA29150BE87 /* TestDITwoParametersSpec.swift */; };
 		6A3AF27DBA2958E51CD34E8417C2F0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8529EA8D4C39C42023173A378729C50 /* AppDelegate.swift */; };
 		7D224AFBF0633E5CD38C344A58F6FC24 /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */; };
+		8B346DE9555FC64FABDC2932F79A2960 /* TestDILazyFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34D20A23A0352CD6E636FF6E318CA7 /* TestDILazyFactorySpec.swift */; };
 		8C757C905BC23CE1F9F3F9D43A592195 /* TestDILazyOneParametersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF726EBBCF58C55C33906B5D509FE5 /* TestDILazyOneParametersSpec.swift */; };
 		910949FBF50748981BFBCA224161C5DE /* RecursiveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */; };
 		A0CD6CC62E6E4DAAB2663A8F72E424D2 /* TestDIParentChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDA36987BA5658A7FCE08445A1989BA /* TestDIParentChildSpec.swift */; };
@@ -58,6 +59,7 @@
 		5FDA36987BA5658A7FCE08445A1989BA /* TestDIParentChildSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIParentChildSpec.swift; sourceTree = "<group>"; };
 		62FF5B54AE23B7B69E1D98F9746F6B84 /* Pods_TuringDI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringDI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB2BC257D7463AC234541B8B064D3ED /* TestDIThreeParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIThreeParametersSpec.swift; sourceTree = "<group>"; };
+		6D34D20A23A0352CD6E636FF6E318CA7 /* TestDILazyFactorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDILazyFactorySpec.swift; sourceTree = "<group>"; };
 		73D9C54D870BA1ECCD0A3A8EA81972DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76B9F6848EA48966053018E66F33CADF /* TestDIZeroParametersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDIZeroParametersSpec.swift; sourceTree = "<group>"; };
 		8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
@@ -100,19 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		933739607D5BDB707DB50F4795406BAA /* TestTypes */ = {
+		2AC905404C7CBA54D4C42174125D61BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */,
-				8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */,
-				D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */,
+				A13101030091EE7CC8D3A40455783636 /* TuringDI_Example.app */,
+				EFC7A5FC47D71A212E722F984A280648 /* TuringDI_Tests.xctest */,
 			);
-			path = TestTypes;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		42E966D0DD8EF10AB5BE2FD795564A76 /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
+				6D34D20A23A0352CD6E636FF6E318CA7 /* TestDILazyFactorySpec.swift */,
 				A1BF726EBBCF58C55C33906B5D509FE5 /* TestDILazyOneParametersSpec.swift */,
 				04EF6799D1781BE074A765DF3F4D08CB /* TestDILazyParentChildSpec.swift */,
 				0C9D0A7616D31D5764FCB33EAB8355A5 /* TestDILazyRecursiveSingletonSpec.swift */,
@@ -121,15 +123,6 @@
 				E0C29506C3AAD5051A1736EFD262FC3B /* TestDILazyZeroParametersSpec.swift */,
 			);
 			path = Lazy;
-			sourceTree = "<group>";
-		};
-		2AC905404C7CBA54D4C42174125D61BA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A13101030091EE7CC8D3A40455783636 /* TuringDI_Example.app */,
-				EFC7A5FC47D71A212E722F984A280648 /* TuringDI_Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4FA4B05FFE930850E12520BD98EAD599 /* Pods */ = {
@@ -155,6 +148,16 @@
 			);
 			name = "Example for TuringDI";
 			path = TuringDI;
+			sourceTree = "<group>";
+		};
+		933739607D5BDB707DB50F4795406BAA /* TestTypes */ = {
+			isa = PBXGroup;
+			children = (
+				F316C5E8460B2AD17068367C6F8EF415 /* ChildClass.swift */,
+				8862543FA6C99A71A560649A43B39053 /* ParentClass.swift */,
+				D20F39CD735F4BFDAFE051A0F08B6597 /* RecursiveClass.swift */,
+			);
+			path = TestTypes;
 			sourceTree = "<group>";
 		};
 		A1770B94268C112808EBC637F1F5F832 /* Podspec Metadata */ = {
@@ -469,6 +472,7 @@
 				7D224AFBF0633E5CD38C344A58F6FC24 /* ChildClass.swift in Sources */,
 				31C07C3FF66BE6E65421F8908DF2865D /* ParentClass.swift in Sources */,
 				B3FC13CA82B838D6F2E5B07D1522597F /* RecursiveClass.swift in Sources */,
+				8B346DE9555FC64FABDC2932F79A2960 /* TestDILazyFactorySpec.swift in Sources */,
 				8C757C905BC23CE1F9F3F9D43A592195 /* TestDILazyOneParametersSpec.swift in Sources */,
 				BE35641124AFFEC6DBD52D6B4298D720 /* TestDILazyParentChildSpec.swift in Sources */,
 				03B8277B50D3C8080BF1EE4898004C17 /* TestDILazyRecursiveSingletonSpec.swift in Sources */,
