@@ -10,9 +10,13 @@ public protocol DILazyProtocol {
     // MARK: - Types
 
     associatedtype LazyType
-    typealias Facrory = (DIResolveProtocol?) -> LazyType?
+    typealias Factory = (DIResolveProtocol?) -> LazyType?
 
     // MARK: - Properties
 
     var instance: LazyType? { get }
+
+    // MARK: - Functions
+
+    func instantiate() -> LazyType?
 }
