@@ -41,10 +41,10 @@
 		1DA3431322C0B3BC0094E325 /* TestSafeValueInitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSafeValueInitSpec.swift; sourceTree = "<group>"; };
 		1DA3431422C0B3BC0094E325 /* TestSafeValueAsyncSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSafeValueAsyncSpec.swift; sourceTree = "<group>"; };
 		1DA3431522C0B3BC0094E325 /* TestSafeValueOperatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSafeValueOperatorSpec.swift; sourceTree = "<group>"; };
+		1DD2AAE623F89E6200E6BC2B /* TuringSafeValue.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringSafeValue.podspec; path = ../../../../TuringSafeValue.podspec; sourceTree = "<group>"; };
 		1DD30F73226761A200DAA4A1 /* TestEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
 		1DD30F75226761C300DAA4A1 /* TestStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStruct.swift; sourceTree = "<group>"; };
 		1DD30F77226761E500DAA4A1 /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
-		1DD30F792267642500DAA4A1 /* TuringSafeValue.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringSafeValue.podspec; path = ../../../TuringSafeValue.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		41FBE193EE57DCE421710824 /* Pods_TuringSafeValue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringSafeValue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CF69C9CA02C74FCEFD5649 /* Pods_TuringSafeValue_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringSafeValue_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E478FC7263BFFAE36535262 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				1DD30F792267642500DAA4A1 /* TuringSafeValue.podspec */,
+				1DD2AAE623F89E6200E6BC2B /* TuringSafeValue.podspec */,
 				4E478FC7263BFFAE36535262 /* README.md */,
 				9142EFC309BEF2BED1BC4F54 /* LICENSE */,
 			);

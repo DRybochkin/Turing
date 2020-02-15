@@ -6,6 +6,7 @@
 //  Copyright © 2019 Dmitry Rybochkin. All rights reserved.
 //
 
+import Foundation
 import Quick
 import Nimble
 import TuringError
@@ -92,7 +93,12 @@ private extension TestErrorSpec {
                     let baseError = TestError.error0.error.underlying(error)
                     let secondError = TestError.error404.error.underlying(baseError)
                     let nsError = TestError.error2.error.underlying(secondError)
+                    #if SWIFT_PACKAGE
+                    expect(nsError.path) == "TE2-TE404-TE0-NSE-1003"
+                    #else
                     expect(nsError.path) == "TE2-TE404-TE0-NSE-1022"
+                    #endif
+
                     expect(nsError.description.starts(with: description)) == true
                     done()
                 })

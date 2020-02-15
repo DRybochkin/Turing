@@ -2,36 +2,36 @@ PODS:
   - Nimble (8.0.2)
   - Quick (2.1.0)
   - SwiftLint (0.33.0)
-  - TuringError (0.1.0):
-    - TuringErrorInterface (= 0.1.0)
-  - TuringErrorInterface (0.1.0)
+  - TuringError (0.1.1):
+    - TuringErrorInterface (= 0.1.1)
+  - TuringErrorInterface (0.1.1)
 
 DEPENDENCIES:
   - Nimble
   - Quick
   - SwiftLint
-  - TuringError (from `../../../`)
-  - TuringErrorInterface (from `../../../`)
+  - TuringError (from `../../../../`)
+  - TuringErrorInterface (from `../../../../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Nimble
     - Quick
     - SwiftLint
 
 EXTERNAL SOURCES:
   TuringError:
-    :path: "../../../"
+    :path: "../../../../"
   TuringErrorInterface:
-    :path: "../../../"
+    :path: "../../../../"
 
 SPEC CHECKSUMS:
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
-  TuringError: d28855253e333c5494d9538e03afee106dbc553a
-  TuringErrorInterface: 99389b15c419cc518ed7f272efecc25c9afb0db2
+  TuringError: f50944765110bf7bfcf333a3abd84e8e8df67402
+  TuringErrorInterface: 55317d503044a16cee074b22c7035c93a60e7734
 
-PODFILE CHECKSUM: 0d540e5facce019354ae9952f02e4abe1ffc55e0
+PODFILE CHECKSUM: 73d7ce9b722695711ee01217009d5de3977b6de8
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.8.4

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5E087623F8A5CD00896498 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E087523F8A5CD00896498 /* Version.swift */; };
+		1D5E087823F8A5F000896498 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E087723F8A5F000896498 /* Device.swift */; };
+		1D5E087A23F8A68500896498 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E087923F8A68500896498 /* Size.swift */; };
 		1D9A6B2B22C0C52E00E66F97 /* TestValueSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A6B2922C0C52E00E66F97 /* TestValueSpec.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		00802878392A08A7DC1C7033 /* Pods_TuringValue_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringValue_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5E087523F8A5CD00896498 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		1D5E087723F8A5F000896498 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		1D5E087923F8A68500896498 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		1D9A6B2722C0C3F500E66F97 /* TuringValue.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TuringValue.podspec; path = ../../../TuringValue.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1D9A6B2922C0C52E00E66F97 /* TestValueSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestValueSpec.swift; sourceTree = "<group>"; };
 		2E8841CDCA9449453E27ABAD /* Pods_TuringValue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuringValue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +134,9 @@
 			children = (
 				1D9A6B2922C0C52E00E66F97 /* TestValueSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				1D5E087523F8A5CD00896498 /* Version.swift */,
+				1D5E087723F8A5F000896498 /* Device.swift */,
+				1D5E087923F8A68500896498 /* Size.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -272,13 +281,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TuringValue_Tests/Pods-TuringValue_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -399,7 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5E087A23F8A68500896498 /* Size.swift in Sources */,
+				1D5E087823F8A5F000896498 /* Device.swift in Sources */,
 				1D9A6B2B22C0C52E00E66F97 /* TestValueSpec.swift in Sources */,
+				1D5E087623F8A5CD00896498 /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

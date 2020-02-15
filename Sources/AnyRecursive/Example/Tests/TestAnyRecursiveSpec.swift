@@ -6,6 +6,7 @@
 //  Copyright © 2019 Dmitry Rybochkin. All rights reserved.
 //
 
+import Foundation
 import Quick
 import Nimble
 import TuringAnyRecursive

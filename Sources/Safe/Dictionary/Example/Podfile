@@ -2,7 +2,7 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringSafeDictionary_Example' do
-  pod 'TuringSafeDictionary', :path => '../../../'
+  pod 'TuringSafeDictionary', :path => '../../../../'
   pod 'SwiftLint'
 
   target 'TuringSafeDictionary_Tests' do

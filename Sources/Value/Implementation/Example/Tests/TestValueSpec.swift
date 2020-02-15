@@ -6,10 +6,12 @@
 //  Copyright © 2019 Dmitry Rybochkin. All rights reserved.
 //
 
-import Device
+import CoreGraphics
+import Foundation
 import Quick
 import Nimble
 import TuringValue
+import UIKit
 
 final class TestValueSpec: QuickSpec {
 
@@ -73,7 +75,7 @@ final class TestValueSpec: QuickSpec {
                     self.checkValue(portrait: 103, landscape: 113)
                     self.checkStringValue(portrait: "defaultTestStr", landscape: "landscapeIphonesTestStr")
                }
-            case .iPhoneX, .iPhoneXR, .iPhoneXS, .iPhoneXS_Max:
+            case .iPhoneX, .iPhoneXR, .iPhoneXS, .iPhoneXS_Max, .iPhone11Pro_Max:
                 it("test iphone X/XR/XS") {
                     self.checkValue(portrait: 104, landscape: 114)
                     self.checkStringValue(portrait: "defaultTestStr", landscape: "landscapeIphonesTestStr")
@@ -94,7 +96,13 @@ private extension TestValueSpec {
     // MARK: - Private function
 
     private func checkValue(portrait: Value, landscape: Value) {
-        switch UIDevice.current.orientation {
+        let orientation: UIDeviceOrientation
+        #if SWIFT_PACKAGE
+        orientation = .portrait
+        #else
+        orientation = UIDevice.current.orientation
+        #endif
+        switch orientation {
         case .unknown, .faceDown, .faceUp:
             expect(false) == true
         case .landscapeLeft, .landscapeRight:
@@ -109,7 +117,13 @@ private extension TestValueSpec {
     }
 
     private func checkStringValue(portrait: String, landscape: String) {
-        switch UIDevice.current.orientation {
+        let orientation: UIDeviceOrientation
+        #if SWIFT_PACKAGE
+        orientation = .portrait
+        #else
+        orientation = UIDevice.current.orientation
+        #endif
+        switch orientation {
         case .unknown, .faceDown, .faceUp:
             expect(false) == true
         case .landscapeLeft, .landscapeRight:
@@ -124,7 +138,7 @@ private extension TestValueSpec {
     }
 
     private func checkSimulator() {
-        switch Device.size() {
+        switch Device.Size.size() {
         case .screen10_5Inch, .screen12_9Inch:
             it("test ipad pro") {
                 self.checkValue(portrait: 202, landscape: 212)
@@ -161,7 +175,7 @@ private extension TestValueSpec {
                 self.checkStringValue(portrait: "defaultTestStr", landscape: "landscapeIphonesTestStr")
             }
         default:
-            it("test \(Device.version()) \(Device.size())") {
+            it("test \(Device.version()) \(Device.Size.size())") {
                 expect(false) == true
             }
         }

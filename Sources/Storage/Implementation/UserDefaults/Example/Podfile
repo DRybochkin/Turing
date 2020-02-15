@@ -2,10 +2,10 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringUserDefaultsService_Example' do
-  pod 'TuringUserDefaultsService', :path => '../../../../'
-  pod 'TuringStorageServiceInterface', :path => '../../../../'
-  pod 'TuringErrorInterface', :path => '../../../../'
-  pod 'TuringError', :path => '../../../../'
+  pod 'TuringUserDefaultsService', :path => '../../../../../'
+  pod 'TuringStorageServiceInterface', :path => '../../../../../'
+  pod 'TuringErrorInterface', :path => '../../../../../'
+  pod 'TuringError', :path => '../../../../../'
   pod 'SwiftLint'
 
   target 'TuringUserDefaultsService_Tests' do

@@ -2,8 +2,8 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringError_Example' do
-  pod 'TuringErrorInterface', :path => '../../../'
-  pod 'TuringError', :path => '../../../'
+  pod 'TuringErrorInterface', :path => '../../../../'
+  pod 'TuringError', :path => '../../../../'
   pod 'SwiftLint'
 
   target 'TuringError_Tests' do

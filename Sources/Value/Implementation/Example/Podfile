@@ -2,13 +2,13 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringValue_Example' do
-  pod 'TuringValue', :path => '../../../'
+  pod 'TuringValue', :path => '../../../../'
   pod 'SwiftLint'
 
   target 'TuringValue_Tests' do
     inherit! :search_paths
 
-    pod 'Device'
+#    pod 'Device'
     pod 'Quick'
     pod 'Nimble'
   end

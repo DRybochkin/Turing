@@ -2,7 +2,7 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'TuringSafeArray_Example' do
-  pod 'TuringSafeArray', :path => '../../../'
+  pod 'TuringSafeArray', :path => '../../../../'
   pod 'SwiftLint'
 
   target 'TuringSafeArray_Tests' do

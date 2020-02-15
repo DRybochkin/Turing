@@ -3,8 +3,14 @@
 import PackageDescription
 
 let package = Package(
+
+    // MARK: - Settings
+
     name: "Turing",
     platforms: [.iOS(.v9)],
+
+    // MARK: - Products
+
     products: [
         .library(name: "TuringAnyRecursive", targets: ["TuringAnyRecursive"]),
 
@@ -25,9 +31,18 @@ let package = Package(
         .library(name: "TuringValueInterface", targets: ["TuringValueInterface"]),
         .library(name: "TuringValue", targets: ["TuringValue"]),
     ],
+
+    // MARK: - Dependencies
+
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.9.1")
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.9.1"),
+        // По непонятным причинам иногда добавление библиотек приводит к падению xcode и требуется удалять весь кеш
+        .package(url: "https://github.com/Quick/Quick.git", .branch("master")),
+        .package(url: "https://github.com/Quick/Nimble.git", .branch("master"))
     ],
+
+    // MARK: - Targets
+
     targets: [
         .target(
             name: "TuringAnyRecursive",
@@ -78,8 +93,46 @@ let package = Package(
             dependencies: ["TuringValueInterface"],
             path: "Sources/Value/Implementation/TuringValue/Classes"),
 
+        // MARK: - Tests
+
         .testTarget(
-            name: "TuringTests",
-            dependencies: ["TuringAnyRecursive"]),
+            name: "TuringAnyRecursiveTests",
+            dependencies: ["TuringAnyRecursive", "Quick", "Nimble"],
+            path: "Sources",
+            sources: ["AnyRecursive/Example/Tests"]),
+        .testTarget(
+            name: "TuringSafeValueTests",
+            dependencies: ["TuringSafeValue", "Quick", "Nimble"],
+            path: "Sources",
+            sources: ["Safe/Value/Example/Tests"]),
+        .testTarget(
+            name: "TuringDITests",
+            dependencies: ["TuringDI", "TuringDIInterface", "TuringSafeValue", "Quick", "Nimble"],
+            path: "Sources",
+            sources: ["DI/Implementation/Example/Tests"]),
+        .testTarget(
+            name: "TuringErrorTests",
+            dependencies: ["TuringError", "TuringErrorInterface", "Quick", "Nimble"],
+            path: "Sources",
+            sources: ["Error/Implementation/Example/Tests"]),
+        .testTarget(
+            name: "TuringHttpServiceTests",
+            dependencies: ["TuringHttpService", "TuringHttpServiceInterface", "TuringAnyRecursive",
+                           "TuringError", "TuringErrorInterface", "Alamofire",
+                           "Quick", "Nimble"],
+            path: "Sources",
+            sources: ["Http/Implementation/Example/Tests"]),
+        .testTarget(
+            name: "TuringUserDefaultsServiceTests",
+            dependencies: ["TuringUserDefaultsService", "TuringStorageServiceInterface",
+                           "TuringError", "TuringErrorInterface", 
+                           "Quick", "Nimble"],
+            path: "Sources",
+            sources: ["Storage/Implementation/UserDefaults/Example/Tests"]),
+        .testTarget(
+            name: "TuringValueTests",
+            dependencies: ["TuringValue", "TuringValueInterface", "Quick", "Nimble"],
+            path: "Sources",
+            sources: ["Value/Implementation/Example/Tests"]),
     ]
 )

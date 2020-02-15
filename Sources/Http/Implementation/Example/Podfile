@@ -3,11 +3,11 @@ use_frameworks!
 
 target 'TuringHttpService_Example' do
   pod 'Alamofire'
-  pod 'TuringAnyRecursive', :path => '../../../'
-  pod 'TuringHttpServiceInterface', :path => '../../../'
-  pod 'TuringHttpService', :path => '../../../'
-  pod 'TuringErrorInterface', :path => '../../../'
-  pod 'TuringError', :path => '../../../'
+  pod 'TuringAnyRecursive', :path => '../../../../'
+  pod 'TuringHttpServiceInterface', :path => '../../../../'
+  pod 'TuringHttpService', :path => '../../../../'
+  pod 'TuringErrorInterface', :path => '../../../../'
+  pod 'TuringError', :path => '../../../../'
   pod 'SwiftLint'
 
   target 'TuringHttpService_Tests' do

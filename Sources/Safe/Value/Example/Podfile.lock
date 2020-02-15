@@ -2,30 +2,30 @@ PODS:
   - Nimble (8.0.2)
   - Quick (2.1.0)
   - SwiftLint (0.33.0)
-  - TuringSafeValue (0.1.0)
+  - TuringSafeValue (0.1.1)
 
 DEPENDENCIES:
   - Nimble
   - Quick
   - SwiftLint
-  - TuringSafeValue (from `../../../`)
+  - TuringSafeValue (from `../../../../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Nimble
     - Quick
     - SwiftLint
 
 EXTERNAL SOURCES:
   TuringSafeValue:
-    :path: "../../../"
+    :path: "../../../../"
 
 SPEC CHECKSUMS:
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
-  TuringSafeValue: 432a3297f481027f4b63413206a058620e60d893
+  TuringSafeValue: 83c73e1f6f698a5447ebe9f30b52034956807b2b
 
-PODFILE CHECKSUM: cd9cad65136cdea1d1a1d6215652e9143f3b4a5a
+PODFILE CHECKSUM: 4bcc7a1898f4afd7433c96cadc0eba22747a2237
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.8.4

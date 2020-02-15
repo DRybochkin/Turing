@@ -6,6 +6,7 @@
 //  Copyright (c) 2019 Dmitry Rybochkin. All rights reserved.
 //
 
+import Foundation
 import Quick
 import Nimble
 import TuringSafeValue
@@ -15,15 +16,18 @@ final class TestSafeValueAsyncSpec: QuickSpec {
     // MARK: - Life cycle
 
     override func spec() {
+        let dispatchQueue = DispatchQueue(label: "\(TestSafeValueAsyncSpec.self)", attributes: .concurrent)
         describe("these will success") {
             it("test async manipulating") {
                 waitUntil(timeout: 1.0, action: { done in
                     var iterations = 1000
-                    let safeString: SafeValue<String> = SafeValue("")
-                    let safeInt: SafeValue<Int> = SafeValue(0)
-                    let safeEnum: SafeValue<TestEnum> = SafeValue(.test1)
-                    let safeStruct: SafeValue<TestStruct> = SafeValue(.init(property1: "", property2: 0))
-                    let safeObject: SafeValue<TestObject> = SafeValue(.init(property1: "", property2: 0))
+                    let safeString: SafeValue<String> = SafeValue("", isConcurrent: true)
+                    let safeInt: SafeValue<Int> = SafeValue(0, isConcurrent: false)
+                    let safeEnum: SafeValue<TestEnum> = SafeValue(.test1, isConcurrent: true)
+                    let safeStruct: SafeValue<TestStruct> = SafeValue(.init(property1: "", property2: 0),
+                                                                      isConcurrent: false)
+                    let safeObject: SafeValue<TestObject> = SafeValue(.init(property1: "", property2: 0),
+                                                                      isConcurrent: true)
 
                     DispatchQueue.concurrentPerform(iterations: iterations) { index in
                         safeInt.value = index
@@ -39,7 +43,7 @@ final class TestSafeValueAsyncSpec: QuickSpec {
                                                       property2: safeInt.value)
                         safeObject.value = TestObject(property1: safeString.value,
                                                       property2: safeStruct.value.property2)
-                        DispatchQueue.global().async(flags: .barrier) {
+                        dispatchQueue.async(flags: .barrier) {
                             iterations -= 1
                             guard iterations <= 0 else {
                                 return
