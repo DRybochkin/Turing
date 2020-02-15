@@ -23,22 +23,15 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/drybochkin/Turing/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'DI/Implementation/LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'Sources/DI/Implementation/LICENSE' }
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
   s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.3'
 
-  s.source_files = 'DI/Implementation/TuringDI/Classes/**/*'
+  s.source_files = 'Sources/DI/Implementation/TuringDI/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TuringDI' => ['TuringDI/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'TuringDIInterface', s.version.to_s
   s.dependency 'TuringSafeValue', '0.1.1'
 end

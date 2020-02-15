@@ -1,0 +1,31 @@
+PODS:
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
+  - SwiftLint (0.33.0)
+  - TuringValue (0.1.1)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - SwiftLint
+  - TuringValue (from `../../../../`)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  TuringValue:
+    :path: "../../../../"
+
+SPEC CHECKSUMS:
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
+  TuringValue: 4dc1ec3ec984a026695f079905a526442617e1b6
+
+PODFILE CHECKSUM: d28c286514ba717d1f6b3b924baef8266a7cb6d6
+
+COCOAPODS: 1.8.4
