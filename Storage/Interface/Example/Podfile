@@ -1,7 +1,0 @@
-platform :ios, '9.3'
-use_frameworks!
-
-target 'TuringStorageServiceInterface_Example' do
-  pod 'TuringStorageServiceInterface', :path => '../../../'
-  pod 'SwiftLint'
-end

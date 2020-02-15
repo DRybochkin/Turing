@@ -1,0 +1,7 @@
+platform :ios, '9.3'
+use_frameworks!
+
+target 'TuringErrorInterface_Example' do
+  pod 'TuringErrorInterface', :path => '../../../../'
+  pod 'SwiftLint'
+end

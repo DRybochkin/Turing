@@ -22,7 +22,7 @@ TODO: Add long description of the pod here.
                        DESC
   s.homepage         = 'https://github.com/DRybochkin/Turing/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'Error/Interface/LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'Sources/Error/Interface/LICENSE' }
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
   # s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :branch => 'develop' }
   s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :tag => s.version.to_s }
@@ -30,13 +30,6 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.3'
 
-  s.source_files = 'Error/Interface/TuringErrorInterface/Classes/**/*'
+  s.source_files = 'Sources/Error/Interface/TuringErrorInterface/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TuringErrorInterface' => ['TuringErrorInterface/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
