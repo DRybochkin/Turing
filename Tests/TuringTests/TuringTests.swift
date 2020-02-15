@@ -1,12 +1,10 @@
 import XCTest
-@testable import Turing
+
+@testable import TuringAnyRecursive
 
 final class TuringTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Turing().text, "Hello, World!")
+        XCTAssertEqual(AnyRecursive.null, AnyRecursive.null)
     }
 
     static var allTests = [

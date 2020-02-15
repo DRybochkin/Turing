@@ -6,6 +6,8 @@
 //  Copyright © 2019 Turing. All rights reserved.
 //
 
+import Foundation
+
 public protocol HttpRequestProtocol {
 
     // MARK: - Properties
