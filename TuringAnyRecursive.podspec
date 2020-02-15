@@ -22,7 +22,7 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/drybochkin/Turing/'
-  s.license          = { :type => 'MIT', :file => 'AnyRecursive/LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'Sources/AnyRecursive/LICENSE' }
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
   s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :tag => s.version.to_s }
 

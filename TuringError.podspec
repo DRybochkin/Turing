@@ -23,7 +23,7 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/DRybochkin/Turing/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'Error/Implementation/LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'Sources/Error/Implementation/LICENSE' }
   s.author           = { 'drybochkin' => 'dmitry.rybochkin@gmail.com' }
   # s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :branch => 'develop' }
   s.source           = { :git => 'https://github.com/drybochkin/Turing.git', :tag => s.version.to_s }
