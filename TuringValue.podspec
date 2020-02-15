@@ -29,13 +29,6 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.3'
 
-  s.source_files = 'Value/Implementation/TuringValue/Classes/**/*'
+  s.source_files = 'Sources/Value/Implementation/TuringValue/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TuringValue' => ['TuringValue/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
