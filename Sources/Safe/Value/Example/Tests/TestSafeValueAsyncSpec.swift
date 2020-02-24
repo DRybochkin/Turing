@@ -20,7 +20,7 @@ final class TestSafeValueAsyncSpec: QuickSpec {
         describe("these will success") {
             it("test async manipulating") {
                 waitUntil(timeout: 1.0, action: { done in
-                    var iterations = 1000
+                    var iterations = 10000
                     let safeString: SafeValue<String> = SafeValue("", isConcurrent: true)
                     let safeInt: SafeValue<Int> = SafeValue(0, isConcurrent: false)
                     let safeEnum: SafeValue<TestEnum> = SafeValue(.test1, isConcurrent: true)

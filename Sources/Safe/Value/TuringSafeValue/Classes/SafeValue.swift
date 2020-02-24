@@ -17,13 +17,16 @@ public final class SafeValue<Value>: SafeValueProtocol {
 
     public var value: Value {
         get {
-            return dispatchQueue.sync(flags: .barrier) {
+            return dispatchQueue.sync {
                 safeValue
             }
         }
         set {
             dispatchQueue.async(flags: .barrier) { [weak self] in
-                self?.safeValue = newValue
+                guard let self = self else {
+                    return
+                }
+                self.safeValue = newValue
             }
         }
     }
@@ -54,7 +57,7 @@ public final class SafeValue<Value>: SafeValueProtocol {
 
     @discardableResult
     public func sync<T>(_ closure: @escaping (inout Value) -> T) -> T {
-        return dispatchQueue.sync(flags: .barrier) {
+        return dispatchQueue.sync {
             closure(&safeValue)
         }
     }
